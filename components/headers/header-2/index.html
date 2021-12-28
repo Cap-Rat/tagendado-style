@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Augusto Araujo, Wesley Ferreira, Rodrigo Geraldes" />
+
+    <!--Links para a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../global.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="Logo" />
+      
+      <form>
+        <input type="text" placeholder="Nome, especialidade, procedimento" class="search-input">
+        <input type="text" placeholder="Endereço, bairro, cidade" class="search-input">
+
+        <div class="radio-input-container">
+          <div>
+            <input type="radio" id="particular" name="tipo-pagamento">
+            <label for="particular">Particular</label>
+          </div>
+          <div>
+            <input type="radio" id="convenio" name="tipo-pagamento">
+            <label for="convenio">Convênio</label>
+          </div>
+        </div>
+
+        <button>PESQUISAR</button>
+      </form>
+
+      <div class="user-container">
+        <img src="./img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#">CADASTRE-SE</a>
+        <p>/</p>
+        <a href="#">LOGIN</a>
+      </div>
+    </header>
+  </body>
+</html>

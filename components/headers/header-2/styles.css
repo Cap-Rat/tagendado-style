@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 200px;
+
+  background-color: #1560A0;
+  color: #FFF;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+form .search-input {
+  border: none;
+  border-radius: 10px;
+
+  width: 350px;
+  height: 46px;
+
+  font-size: 14px;
+  padding: 0 20px;
+  margin: 0 10px
+}
+
+form label {
+  font-size: 15px;
+}
+
+form .radio-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+
+  padding: 10px 30px;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #9BD30F;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-container a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.user-container p {
+  font-size: 14px;
+  margin: 0 5px
+}
