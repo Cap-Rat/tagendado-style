@@ -13,32 +13,32 @@
     <link rel="stylesheet" type="text/css" href="../../global.css" />
   </head>
   <body>
-    <header>
-      <img src="./img/logo.png" alt="Logo" class="logo" />
+    <header class="header">
+      <img src="../../components/headers/header-2/img/logo.png" class="logo" alt="Logo" />
       
-      <form>
+      <form class="search-form">
         <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
         <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
 
         <div class="radio-input-container">
           <div>
             <input type="radio" id="particular" name="tipo-pagamento">
-            <label for="particular">Particular</label>
+            <label for="particular" class="radio-label">Particular</label>
           </div>
           <div>
             <input type="radio" id="convenio" name="tipo-pagamento">
-            <label for="convenio">Convênio</label>
+            <label for="convenio" class="radio-label">Convênio</label>
           </div>
         </div>
 
-        <button>PESQUISAR</button>
+        <button class="btn-search">PESQUISAR</button>
       </form>
 
       <div class="user-container">
-        <img src="./img/person_outline_black_24dp.png" alt="Cadastro/Login">
-        <a href="#">CADASTRE-SE</a>
+        <img src="../../components/headers/header-2/img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#" class="user-auth-button">CADASTRE-SE</a>
         <p>/</p>
-        <a href="#">LOGIN</a>
+        <a href="#" class="user-auth-button">LOGIN</a>
       </div>
     </header>
   </body>
