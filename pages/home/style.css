@@ -42,7 +42,7 @@ div.copyright{
     text-align: center;
 }
 
-p{
+footer p{
     color: #ffffff;
 }
 
@@ -65,33 +65,33 @@ img#imgGooglePlay{
 }
 
 /*CSS HOME*/
-section{
+section#sectionSearch{
     background-color: #2B8E91;
     padding-top: 104px;
     padding-left: 70px;
 }
-section p{
+section#sectionSearch p{
     font-size: 40px;
     color: #C4FDFF;
 }
-section ul li{
+section#sectionSearch ul li{
     font-size: 21px;
     color: #ffffff;
     display: inline-block;
 }
-section ul{
+section#sectionSearch ul{
     width: 902px;
     display: flex;
     justify-content: space-between;
 }
-section form{
+section#sectionSearch form{
     display: flex;
     justify-content: space-around; 
     padding-bottom: 144px;
     width: 65%;
 }
 
-section form .search-input {
+section#sectionSearch form .search-input {
     border: none;
     border-radius: 10px;
   
@@ -103,11 +103,11 @@ section form .search-input {
     margin: 0 10px
   }
   
-section form label {
+section#sectionSearch form label {
     font-size: 15px;
   }
   
-section form .radio-input-container {
+section#sectionSearch form .radio-input-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +117,7 @@ section form .radio-input-container {
     color: #FFFFFF;
   }
   
-section button {
+section#sectionSearch button {
     border: none;
     border-radius: 10px;
     font-size: 16px;
@@ -139,3 +139,113 @@ section button {
   div.search{
     z-index: 10;
   }
+
+section#medicalSpecialties p{
+  color: #1560A0;
+  font-size: 28px;
+  padding-top: 4.7%;
+  text-align: center;
+}
+
+div.specialties{
+  padding-left: 15%;
+}
+
+button.buttonSpecialties{
+  width: 225px;
+  background-color: #16688D;
+  border-radius: 10px;
+  color: #ffffff;
+  height: 63px;
+  font-size: 18px;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  border: 0;
+}
+
+div.specialties p{
+  text-align: center;
+}
+
+div.benefitsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 13.7%;
+  padding-right: 13.7%;
+  padding-bottom: 3%;
+}
+
+div.benefits{
+  align-items: center;
+  width: 90%;
+  text-align: center;
+}
+
+.benefitsTitle{
+  font-size: 17px !important;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.benefitsDetails{
+  font-size: 14px !important;
+  color: #525252 !important;
+  line-height: 18px !important;
+}
+
+section#schedulingTutorial{
+  background-color: #1560A0;
+  
+}
+
+div.schedulingTutorialContent{
+  padding-top: 6.2%;
+  margin-left: 13.6%;
+  width: 38%;
+  padding-bottom: 6.5%
+}
+
+p.schedulingTutorialTitle{
+  color: #86B9FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p.schedulingTutorialText{
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 90%;
+}
+
+button.schedulingButton{
+  width: 33.4%;
+  height: 54px;
+  border-radius: 10px;
+  background-color: #9BD30F;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+}
+
+section#specialtiesDetails{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 14.3%;
+  padding-top: 10.65%;
+  padding-right: 14.5%;
+}
+
+div.selectedSpecialties{
+  border: 1px solid #1560A0;
+  margin-right: 4.5%;
+  border-radius: 10px;
+}
+
+.selectedTitle{
+  color: #1560A0;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
