@@ -10,12 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="./style.css" />
-        <link rel="stylesheet" type="text/css" href="../../global.css" />
+        <link rel="stylesheet" type="text/css" href="../../components/global.css" />
     </head>
     <body>
         <header>
             <div class="logotype">
-                <img src="../../headers/header-1/img/logo.svg" alt="Logo Tagendado"/>
+                <img src="../../components/headers/header-1/img/logo.svg" alt="Logo Tagendado"/>
             </div>
             <div class="headerOptions">
                 <a href="#">PERGUNTE AO ESPECIALISTA</a>
@@ -26,15 +26,16 @@
             </div>
         </header>
         <img src="img/foto 2.png" alt="Grupo de médicos" id="medicalGroup">
-        <section>
+        <section id="sectionSearch">
             <div class="search">
                 <p>ENCONTRE AGORA O ESPECIALISTA QUE VOCÊ PRECISA</p>
+                <br/>
                 <ul>
                     <li>• Agendamento grátis</li>
                     <li>• Escolha o melhor horário</li>
                     <li>• Agende com apenas um clique</li>
                 </ul>
-                <br><br><br>
+                <br><br><br><br><br>
                 <form>
                     <input type="text" placeholder="Nome, especialidade, procedimento" class="search-input">
                     <input type="text" placeholder="Endereço, bairro, cidade" class="search-input">
@@ -53,6 +54,84 @@
                     <button>PESQUISAR</button>
                     
                 </form>
+            </div>
+        </section>
+        <section id="medicalSpecialties">
+            
+            <p id="medicalSpecialties">ESPECIALIDADES MAIS PROCURADAS</p>
+            <div class="specialties">
+                <br><br> 
+                <div class="buttonZone">
+                    <button class="buttonSpecialties">Psicólogo</button>
+                    <button class="buttonSpecialties">Ortopedista</button>
+                    <button class="buttonSpecialties">Cardiologista</button>
+                    <button class="buttonSpecialties">Urologista</button>
+                    <button class="buttonSpecialties">Clínico Geral</button>
+                    <br>
+                    <button class="buttonSpecialties">Fisioterapeuta</button>
+                    <button class="buttonSpecialties">Dentista</button>
+                    <button class="buttonSpecialties">Endocrinologista</button>
+                    <button class="buttonSpecialties">Neurologista</button>
+                    <button class="buttonSpecialties">Nutricionista</button>
+                </div>    
+            </div>
+            <div class="benefitsContainer">
+                <div class="benefits">
+                    <img src="./img/atendimento24h.svg" alt="Atendimento 24 horas">
+                    <br>
+                    <p class="benefitsTitle">Agendamento
+                    <br>
+                    24h por dia</p>
+                    <p class="benefitsDetails">Por aqui, você pode marcar as suas consultas a qualquer hora. O agendadmento fica disponível 24h durante todos os dias.</p>
+                </div>
+                <div class="benefits">
+                    <img src="./img/celular.svg" alt="Atendimento 24 horas">
+                    <p class="benefitsTitle">Acesso prático
+                    <br>
+                    e rápido</p>
+                    <p class="benefitsDetails">Saúde é assunto sério, algo que não pode ficar para depois. É por isso que, aqui, os agendamentos de consultas são práticos e rápidos. Basta acessar o site e escolher um médico.</p>
+                </div>
+                <div class="benefits">
+                    <img src="./img/calendario.svg" alt="Atendimento 24 horas">
+                    <p class="benefitsTitle">Data e hora conforme
+                    <br>
+                    a sua disponibilidade</p>
+                    <p class="benefitsDetails">O dia a dia atarefado não pode ser um empecilho para você cuidar da sua saúde. O Tagendado te dá a liberdade de encontrar dias e horários de consulta de acordo com a sua disponibilidade.</p>
+                </div>
+                <div class="benefits">
+                    <img src="./img/profissionaisEspecializados.svg" alt="Atendimento 24 horas">
+                    <p class="benefitsTitle">Profissionais
+                    <br>
+                    especializados</p>
+                    <p class="benefitsDetails">Encontre profissionais especializados, com grande conhecimento para tirar todas as suas dúvidas e indicar tratamentos eficazes!</p>
+                </div>
+            </div>    
+        </section>
+        <section id="schedulingTutorial">
+            <div class="schedulingTutorialContent">
+                <p class="schedulingTutorialTitle">SAIBA COMO REALIZAR O AGENDAMENTO
+                    <br> 
+                DE CONSULTAS ONLINE</p>
+                <br><br>
+                <p class="schedulingTutorialText">O primeiro passo para agendar a sua consulta é escolher uma das especialidades médicas. Aliás, uma das grandes vantagens do Tagendado é a enorme 
+                    variedade de profissionais da saúde.</p>
+                <br>
+                <p class="schedulingTutorialText">Dessa forma, você pode ter desde uma consulta com clínico geral a conversar com um ginecologista online 
+                    (por meio do sistema de telemedicina). Encontre muitas outras especialidades!</p>
+                <br><br><br>    
+                <button class="schedulingButton">AGENDE SUA CONSULTA</button>
+                
+            </div>
+        </section>
+        <section id="specialtiesDetails">
+            <div class="selectedSpecialties">
+                <p class="selectedTitle">Psicologia</p>
+            </div>
+            <div class="selectedSpecialties">
+                <p class="selectedTitle">Ginecologista</p>
+            </div>
+            <div class="selectedSpecialties">
+                <p class="selectedTitle">Clínco Geral</p>
             </div>
         </section>
         <footer>
@@ -107,11 +186,11 @@
                     <br/>
                     <br/>
                     <p class="listTitle">Baixe o app</p>
-                    <img src="../../footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
-                    <img src="../../footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+                    <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
+                    <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
                 </div>
                 <div class="contactInfos">
-                    <img src="../../footers/footer-1/img/Logo.svg" alt="Logo tagendado">
+                    <img src="../../components/footers/footer-1/img/Logo.svg" alt="Logo tagendado">
                     <br/>
                     <p>Telefone</p>
                     <p>+55 (11) 98273-1096</p>
