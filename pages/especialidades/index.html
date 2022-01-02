@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Augusto Araujo, Wesley Ferreira, Rodrigo Geraldes" />
+
+    <!--Links para a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="../../components/headers/header-2/img/logo.png" class="logo" alt="Logo" />
+      
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
+        <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
+
+        <div class="radio-input-container">
+          <div>
+            <input type="radio" id="particular" name="tipo-pagamento">
+            <label for="particular" class="radio-label">Particular</label>
+          </div>
+          <div>
+            <input type="radio" id="convenio" name="tipo-pagamento">
+            <label for="convenio" class="radio-label">Convênio</label>
+          </div>
+        </div>
+
+        <button class="btn-search">PESQUISAR</button>
+      </form>
+
+      <div class="user-container">
+        <img src="../../components/headers/header-2/img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#" class="user-auth-button">CADASTRE-SE</a>
+        <p>/</p>
+        <a href="#" class="user-auth-button">LOGIN</a>
+      </div>
+    </header>
+
+    <section class="filter-container">
+      <h3 class="text-filtered-by">Ginecologista em São Paulo: 25 Resultados</h3>
+
+      <h4 class="title-filter-by">Filtrar por</h4>
+      <form class="filter-form">
+        <input type="text" class="filter-form-input" placeholder="Digite a Especialidade">
+
+        <input list="convenios" class="filter-form-input dropdown-input" placeholder="Escolha o Convênio">
+        <datalist id="convenios">
+          <option value="Unimed">
+          <option value="NotreDame">
+          <option value="Particular">
+        </datalist>
+
+        <input list="cidades" class="filter-form-input dropdown-input" placeholder="Cidade">
+        <datalist id="cidades">
+          <option value="Arujá">
+          <option value="Guarulhos">
+          <option value="São Paulo">
+        </datalist>
+
+        <button class="filter-form-btn">FILTRAR</button>
+      </form>
+    </section>
+  </body>
+</html>
