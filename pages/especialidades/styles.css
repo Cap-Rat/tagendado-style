@@ -130,36 +130,42 @@
 /* ============= MAIN ============= */
 
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
 
-  padding: 2.5% 10.5%;
+  padding: 0 10.5%;
+  padding-top: 2.5%;
+  margin-bottom: 12rem;
 }
 
 /* ============= CARDS SECTION ============= */
 
 .doctor-cards-section {
-  width: 59.5%;
-
   display: flex;
+  flex-direction: column;
 }
 
 /* ============= DOCTOR CARD ============= */
 
 .doctor-card-container {
-  border-top: solid 1px #D6D6D6;
-  border-left: solid 1px #D6D6D6;
-  border-bottom: solid 1px #D6D6D6;
-  border-radius: 5px 0 0 5px;
-  padding: 2rem;
+  border: solid 1px #D6D6D6;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+
+  display: flex;
 }
 
 /* ============= DOCTOR CARD INFO ============= */
+
+.doctor-info-container {
+  padding: 2rem;
+}
 
 .doctor-info {
   display: flex;
 }
 
-.doctor-image {
+.doctor-image-container {
   margin-right: 2rem;
 }
 
@@ -229,10 +235,8 @@
 /* ============= DOCTOR SCHEDULE ============= */
 
 .doctor-schedule-container {
-  border-left: solid 1px #EDEDED;
-  border-top: solid 1px #D6D6D6;
-  border-right: solid 1px #D6D6D6;
-  border-bottom: solid 1px #D6D6D6;
+  border-left: solid 1px #D6D6D6;
+
   border-radius: 0 5px 5px 0;
 
   padding: 2rem 2rem;
@@ -287,7 +291,7 @@
 }
 
 .time-unavailable {
-  border: solid 1px #A7A7A7;
+  border: solid 0.5px #A7A7A7;
   width: 100%;
 }
 
@@ -315,4 +319,96 @@
   font-size: 1.4rem;
   font-weight: 500;
   font-style: italic;
+}
+
+/* ============= MAP ============= */
+
+.map-container {
+  width: 95%;
+  max-height: 85%;
+  margin-left: 3rem;
+  
+  border: solid 1px #CBCBCB;
+  border-radius: 3px;
+}
+
+.map-container img {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* ============= PAGINAÇÃO ============= */
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.page-item {
+  background-color: transparent;
+  border: solid 1px #C3C3C3;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  padding: 0.4em 0.8em;
+}
+
+.page-item a {
+  color: #9B9B9B;
+  text-decoration: none;
+}
+
+/* ============= BOTÃO PAGINAÇÃO ATIVO ============= */
+
+.on {
+  background-color: #D0D0D0;
+}
+
+.on a {
+  color: #484848;
+}
+
+/* ============= FOOTER ============= */
+
+div.options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 260px;
+  padding-right: 135px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+div.copyright{
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+p{
+  color: #ffffff;
+}
+
+footer p.listTitle{
+  font-weight: bold;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a#seeAll{
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay{
+  height: 35px;
+  width: 117px;
 }
