@@ -1,0 +1,202 @@
+/* ============= HEADER ============= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 10.5%;
+
+  background-color: #1560A0;
+  color: #FFF;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-evenly;
+
+  min-width: 65%;
+
+  min-height: 3rem;
+}
+
+.search-input {
+  border: none;
+  border-radius: 10px;
+  
+  width: 28%;
+  max-height: 5rem;
+
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  margin: 0 0.2rem;
+}
+
+.search-form .radio-label {
+  font-size: 1.5rem;
+}
+
+.radio-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.btn-search {
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  padding: 1em 3em;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #9BD30F;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-container .user-auth-button {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.4rem;
+}
+
+.user-container p {
+  font-size: 1.4rem;
+  margin: 0 0.5rem
+}
+
+/* ============= MAIN ============= */
+
+.main {
+  display: flex;
+  padding: 2% 10.5%;
+}
+
+.page-identifier {
+  color: #8D8D8D;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.doctor-details-header {
+  padding: 7.5% 0 6% 0;
+  display: flex;
+}
+
+.doctor-image-container {
+  margin-left: 1rem;
+  margin-right: 3.5%;
+}
+
+.doctor-header-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.doctor-name {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.doctor-specialties {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 17px;
+  color: #848484;
+}
+
+.doctor-header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doctor-rating {
+  display: flex;
+  align-items: flex-end;
+}
+
+.rating-counter {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7B7B7B;
+}
+
+.schedule-appointment-btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #2B8E91;
+  border: solid 1px #2B8E91;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  padding: 1em 0.8em;
+  margin-right: 1rem;
+}
+
+.see-phone-btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2B8E91;
+  background-color: transparent;
+  border: solid 1px #2B8E91;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  padding: 1em 2em;
+  margin-left: 1rem;
+}
+
+/* ============= FOOTER ============= */
+
+div.options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 260px;
+  padding-right: 135px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+div.copyright{
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+p{
+  color: #ffffff;
+}
+
+footer p.listTitle{
+  font-weight: bold;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a#seeAll{
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay{
+  height: 35px;
+  width: 117px;
+}
