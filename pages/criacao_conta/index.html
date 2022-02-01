@@ -47,98 +47,139 @@
             <br><br>
             <p id="createAccountTitle">Crie sua conta</p>
             <br>
-            <form action="">
-                <label for="name">Nome Completo*:</label><br>
-                <input type="text" placeholder="Digite seu nome" id="name" class="formInputs"/>
+            <form action="" >
 
-                <br>
-                <label for="cpf">CPF*:</label><br>
-                <input type="text" placeholder="Digite seu CPF" id="cpf" class="formInputs"/>
+              <div class="form-group">
+                <label for="name">Nome Completo*:<br>
+                  <input type="text" placeholder="Digite seu nome" id="name" class="formInputs"/>
+                </label>
+                <label for="cpf">CPF*:<br>
+                  <input type="text" placeholder="Digite seu CPF" id="cpf" class="formInputs"/>
+                </label>
+              </div>
 
-                <br>
-                <label for="genero">Gênero*:</label><br>
-                <select name="genero" id="genero">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
-                </select>
+              <div class="form-group">
 
-                <br>
-                <label for="dataNascimento">Data de Nascimento*:</label><br>
-                <input type="text" placeholder="DD/MM/AA" id="dataNascimento" class="formInputs"/>
+                <div class="input-subgroup" style="width: 34.5%;">
 
-                <br>
-                <label for="cep">CEP*:</label><br>
-                <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs"/>
+                  <label for="genero">Gênero*:<br>
+                    <select name="genero" id="genero">
+                      <option value="masculino">Masculino</option>
+                      <option value="feminino">Feminino</option>
+                      <option value="outro">Outro</option>
+                    </select>
+                  </label>
 
-                <br>
-                <label for="endereco">Endereço*:</label><br>
-                <input type="text" placeholder="Digite seu endereço" id="endereco" class="formInputs"/>
+                  <label for="dataNascimento">Data de Nascimento*:<br>
+                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" class=""/>
+                  </label> 
 
-                <br>
-                <label for="complemento">Complemento*:</label><br>
-                <input type="text" placeholder="Apto, casa, fundos, etc." id="complemento" class="formInputs"/>
+                </div>
 
-                <br>
-                <label for="complemento">Bairro*:</label><br>
-                <input type="text" placeholder="Bairro" id="bairro" class="formInputs"/>
+                <label for="cep">CEP*:<br>
+                  <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs"/>
+                </label>
 
-                <br>
-                <label for="cidade">Cidade*:</label><br>
-                <input type="text" placeholder="Digite sua cidade" id="cidade" class="formInputs"/>
+              </div>
 
-                <br>
-                <label for="estado">Estado*:</label><br>
-                <select name="estado" id="estado">
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM">AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MT">MT</option>
-                    <option value="MS">MS</option>
-                    <option value="MG">MG</option>
-                    <option value="PA">PA</option>
-                    <option value="PB">PB</option>
-                    <option value="PR">PR</option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="RJ">RJ</option>
-                    <option value="RN">RN</option>
-                    <option value="RS">RS</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="SC">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SE">SE</option>
-                    <option value="TO">TO</option>
-                </select>
+              <div class="form-group"> 
+
+                <label for="endereco">Endereço*:<br>
+                  <input type="text" placeholder="Digite seu endereço" id="endereco" class="formInputs"/>
+                </label>  
                 
-                <br>
-                <label for="estado">Estado*:</label><br>
-                <input type="text" placeholder="Digite seu estado" id="estado" class="formInputs"/>
+                <label for="complemento">Complemento*:<br>
+                  <input type="text" placeholder="Apto, casa, fundos, etc." id="complemento" class="formInputs"/>
+                </label>
 
-                <br>
-                <label for="telefone">Telefone para contato*:</label><br>
-                <input type="text" placeholder="DDD" id="telefone" class="formInputs"/>
-                <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs"/>
+              </div> 
+
+              <div class="form-group"> 
+              
+                <label for="complemento">Bairro*:<br>
+                  <input type="text" placeholder="Bairro" id="bairro" class="formInputs"/>
+                </label>
+
+                <div class="input-subgroup">
+
+                  <label for="cidade">Cidade*:<br>
+                    <input type="text" placeholder="Digite sua cidade" id="cidade" class="formInputs"/>
+                  </label>
+
+                  <label for="estado">Estado*:<br>
+                    <select name="estado" id="estado">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                  </label>
+                </div>
+              </div>  
+
+              <div class="form-group"> 
+                
+                <label for="estado">Estado*:<br>
+                  <input type="text" placeholder="Digite seu estado" id="estado" class="formInputs"/>
+                </label>
+
+                
+                <label for="telefone">Telefone para contato*:<br>
+                  <input type="text" placeholder="DDD" id="telefone" class="formInputs"/>
+                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs"/>
+                </label>
+
+              </div>  
 
                 <br><br><br>
 
-                <label for="email">E-mail*:</label><br>
-                <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs"/>
+                <p id="createAccountTitle">Dados para login</p>
+                <br><br>
 
-                <label for="senha">Senha*:</label><br>
-                <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs"/>
+                <div class="form-group">
 
-                <label for="senhaConfirma">Confirme sua senha*:</label><br>
-                <input type="password" placeholder="Confirme sua senha" id="senhaConfirma" class="formInputs"/>
-            </form>
+                  <label for="email">E-mail*:<br>
+                    <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs"/>
+                  </label>
+
+                  <div class="input-subgroup">
+
+                    <label for="senha">Senha*:<br>
+                      <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs"/>
+                    </label>  
+
+                    <label for="senhaConfirma">Confirme sua senha*:<br>
+                      <input type="password" placeholder="Confirme sua senha" id="senhaConfirma" class="formInputs"/>
+                    </label>
+
+                  </div>
+                
+                </div>
+
+              </form>
         </div>  
     </section>
     <footer>

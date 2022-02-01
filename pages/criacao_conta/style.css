@@ -83,7 +83,8 @@
 
 div#createAccountForm{
     padding-top: 3%;
-    padding-left: 5%;
+    padding-left: 10%;
+    padding-right: 17%;
 }
 
 #createAccountLocation{
@@ -101,11 +102,27 @@ p#createAccountTitle{
     font-weight: bold;
 }
 
-input.formInputs{
-    width: 34%;
+.formInputs{
+    width: 662px;
     height: 51px;
     border: 1px solid #525252;
     border-radius: 6px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.input-subgroup {
+  display: flex;
+  flex: 1 1;
+}
+
+#genero{
+  width: 289px;
 }
 
 /** =========== FOOTER ===========**/
