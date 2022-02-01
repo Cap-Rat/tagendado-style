@@ -51,10 +51,10 @@
 
               <div class="form-group">
                 <label for="name">Nome Completo*:<br>
-                  <input type="text" placeholder="Digite seu nome" id="name" class="formInputs"/>
+                  <input type="text" placeholder="Digite seu nome" id="name" class="formInputs border"/>
                 </label>
                 <label for="cpf">CPF*:<br>
-                  <input type="text" placeholder="Digite seu CPF" id="cpf" class="formInputs"/>
+                  <input type="text" placeholder="Digite seu CPF" id="cpf" class="formInputs border"/>
                 </label>
               </div>
 
@@ -63,7 +63,8 @@
                 <div class="input-subgroup" style="width: 34.5%;">
 
                   <label for="genero">Gênero*:<br>
-                    <select name="genero" id="genero">
+                    <select name="genero" id="genero" style="height: 51px;" class="border">
+                      <option value="selecione" disabled selected style="color: #A8A8A8;">Selecione</option>
                       <option value="masculino">Masculino</option>
                       <option value="feminino">Feminino</option>
                       <option value="outro">Outro</option>
@@ -71,13 +72,13 @@
                   </label>
 
                   <label for="dataNascimento">Data de Nascimento*:<br>
-                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" class=""/>
+                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" style="height: 47px; width: 182%; margin-left: 20px;" class="border"/>
                   </label> 
 
                 </div>
 
                 <label for="cep">CEP*:<br>
-                  <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs"/>
+                  <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs border"/>
                 </label>
 
               </div>
@@ -85,11 +86,11 @@
               <div class="form-group"> 
 
                 <label for="endereco">Endereço*:<br>
-                  <input type="text" placeholder="Digite seu endereço" id="endereco" class="formInputs"/>
+                  <input type="text" placeholder="Digite seu endereço" id="endereco" class="formInputs border"/>
                 </label>  
                 
                 <label for="complemento">Complemento*:<br>
-                  <input type="text" placeholder="Apto, casa, fundos, etc." id="complemento" class="formInputs"/>
+                  <input type="text" placeholder="Apto, casa, fundos, etc." id="complemento" class="formInputs border"/>
                 </label>
 
               </div> 
@@ -97,17 +98,17 @@
               <div class="form-group"> 
               
                 <label for="complemento">Bairro*:<br>
-                  <input type="text" placeholder="Bairro" id="bairro" class="formInputs"/>
+                  <input type="text" placeholder="Bairro" id="bairro" class="formInputs border"/>
                 </label>
 
-                <div class="input-subgroup">
+                <div class="input-subgroup" style="margin-left: 59px;">
 
-                  <label for="cidade">Cidade*:<br>
-                    <input type="text" placeholder="Digite sua cidade" id="cidade" class="formInputs"/>
+                  <label for="cidade" style="width: 81%;">Cidade*:<br>
+                    <input type="text" placeholder="Digite sua cidade" id="cidade" class="formInputs border" style="width: 100%;"/>
                   </label>
 
-                  <label for="estado">Estado*:<br>
-                    <select name="estado" id="estado">
+                  <label for="estado" style="margin-left: 14px; ">Estado*:<br>
+                    <select name="estado" id="estado" style="width: 98px; height: 51px;" class="border">
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
                         <option value="AP">AP</option>
@@ -143,13 +144,13 @@
               <div class="form-group"> 
                 
                 <label for="estado">Estado*:<br>
-                  <input type="text" placeholder="Digite seu estado" id="estado" class="formInputs"/>
+                  <input type="text" placeholder="Digite seu estado" id="estado" class="formInputs border"/>
                 </label>
 
                 
-                <label for="telefone">Telefone para contato*:<br>
-                  <input type="text" placeholder="DDD" id="telefone" class="formInputs"/>
-                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs"/>
+                <label for="telefone" style="margin-left: 4.2%;">Telefone para contato*:<br>
+                  <input type="text" placeholder="DDD" id="telefone" class="formInputs border" style="width: 100px;"/>
+                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs border" style="width: 538px; margin-left: 20px;" ;/>
                 </label>
 
               </div>  
@@ -162,23 +163,34 @@
                 <div class="form-group">
 
                   <label for="email">E-mail*:<br>
-                    <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs"/>
+                    <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs border"/>
                   </label>
 
-                  <div class="input-subgroup">
+                  <div class="input-subgroup" style="margin-left: 59px;">
 
                     <label for="senha">Senha*:<br>
-                      <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs"/>
+                      <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs border password"/>
                     </label>  
 
                     <label for="senhaConfirma">Confirme sua senha*:<br>
-                      <input type="password" placeholder="Confirme sua senha" id="senhaConfirma" class="formInputs"/>
+                      <input type="password" placeholder="Confirme sua senha" id="senhaConfirma" class="formInputs border password"/>
                     </label>
 
                   </div>
                 
                 </div>
+                
+                <br><br>
 
+                <label for="terms">
+                  <input type="checkbox" name="checkboxTerm" id="checkboxTerm" style="font-size: 16px;"/> Aceito os 
+                  <a href="#" style="text-decoration: underline; color: #000000;">Termos e condições de Uso</a> 
+                </label>
+
+                <br><br>
+
+              <input type="button" value="FAZER CADASTRO" id="registerButton">
+              <br><br><br><br>
               </form>
         </div>  
     </section>
