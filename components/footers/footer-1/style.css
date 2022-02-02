@@ -8,6 +8,11 @@ div.options{
     padding-right: 135px;
     line-height: 25px;
     font-size: 15px;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
 }
 
 div.copyright{

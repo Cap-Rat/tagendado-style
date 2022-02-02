@@ -9,7 +9,7 @@ div.optionsHeader{
     margin-top: 30px;
 }
   
-div.options a {
+div.optionsHeader a {
     text-decoration: none;
     color: #000000;
 }
@@ -92,4 +92,50 @@ p#benefitsText{
     line-height: 27px;
     font-weight: bold;
     width: 35%;
+}
+
+section#scheduling{
+    padding-top: 4%;
+    height: 600px;
+    margin-bottom: 14%;
+}
+
+p#schedulingTitle{
+    text-align: center;
+    color: #1560A0;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: bold;
+}
+
+p#schedulingSubtitle{
+    text-align: center;
+    font-weight: medium;
+    font-size: 19px;
+    line-height: 23px;
+    color: #525252;
+}
+
+div#responsiveWebsite{
+    padding-left: 20%;
+    padding-top: 9%;
+    width: 43%;
+    float: left;
+}
+
+p#responsiveWebsiteTitle{
+    color: #16688D;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+}
+div#responsiveWebsiteImage{
+    float:right;
+    padding-right: 12%;
+}
+
+p#responsiveWebsiteText{
+    font-size: 20px;
+    line-height: 24px;
+    color: #525252;
 }
