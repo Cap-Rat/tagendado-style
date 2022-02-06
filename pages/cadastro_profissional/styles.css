@@ -200,16 +200,14 @@
   margin-bottom: 20px;
 }
 
-/* ============= FOOTER ============= */
-
 div.options{
   background-color: #525252;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 260px;
-  padding-right: 135px;
+  padding-left: 13.5%;
+  padding-right: 7%;
   line-height: 25px;
   font-size: 15px;
 }
@@ -222,7 +220,7 @@ div.copyright{
   text-align: center;
 }
 
-.pacientOptions p {
+p{
   color: #ffffff;
 }
 
@@ -240,8 +238,8 @@ a#seeAll{
   font-style: italic;
 }
 img#imgGooglePlay{
-  height: 35px;
-  width: 117px;
+  height: 46px;
+  width: 156px;
 }
 
 /* ============= MEDIA QUERIES ============= */
