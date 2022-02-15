@@ -1,40 +1,45 @@
-/*CSS Header*/
-div.headerOptions {
-    font-size: 15px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns:  2fr 1.5fr 1fr 1fr 1fr;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  div.headerOptions a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 33px;
-    margin-left: 70px;
-    padding-bottom: 20px;
-  }
+/* ============= HEADER ============= */
 
-  /*CSS Footer*/
-  div.footerOptions{
-    background-color: #525252;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 260px;
-    padding-right: 135px;
-    line-height: 25px;
-    font-size: 15px;
+header .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 1.5rem;
+
+  text-align: center;
 }
 
-div.copyright{
+header .options a {
+  margin: 0 20px;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 32px 3.6% 24px 3.6%;
+}
+
+/* ============= FOOTER ============= */
+
+footer .options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 13.5%;
+  padding-right: 7%;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+footer .copyright{
     background-color: #363636;
     color: #ADADAD;
     font-size: 14px;
@@ -42,15 +47,16 @@ div.copyright{
     text-align: center;
 }
 
-footer p{
+footer p.listTitle{
+    font-weight: bold;
     color: #ffffff;
 }
 
-footer p.listTitle{
-    font-weight: bold;
+footer p {
+  color: #ffffff;
 }
 
-footer a{
+footer .options a{
     text-decoration: none;
     color: #ffffff;
 }
@@ -59,37 +65,39 @@ a#seeAll{
     color: #86B9FF;
     font-style: italic;
 }
+
 img#imgGooglePlay{
-    height: 69px;
-    width: 179px;
-    padding-top: 15px;
+    height: 46px;
+    width: 156px;
 }
 
-/*CSS HOME*/
+/* ============= MAIN ============= */
 section#sectionSearch{
     background-color: #2B8E91;
-    padding-top: 104px;
-    padding-left: 70px;
+    padding: 4% 3% 4% 3%;
 }
-section#sectionSearch p{
-    font-size: 40px;
+
+section#sectionSearch h2{
+    font-size: 4rem;
     color: #C4FDFF;
 }
+
 section#sectionSearch ul li{
     font-size: 21px;
     color: #ffffff;
     display: inline-block;
+
+    margin-right: 30px;
 }
+
 section#sectionSearch ul{
-    width: 902px;
     display: flex;
-    justify-content: space-between;
+
+    margin-bottom: 3.8%;
 }
-section#sectionSearch form{
+
+section#sectionSearch form {
     display: flex;
-    justify-content: space-around; 
-    padding-bottom: 144px;
-    width: 65%;
 }
 
 section#sectionSearch form .search-input {
@@ -113,7 +121,7 @@ section#sectionSearch form .radio-input-container {
     flex-direction: column;
     justify-content: center;
     margin: 0 20px;
-    width: 100px;
+    min-width: 100px;
     line-height: 19px;
     color: #FFFFFF;
   }
@@ -131,17 +139,19 @@ section#sectionSearch button {
     background-color: #9BD30F;
   }
 
-  #medicalGroup{
-      position:absolute;
-      right: 0;
-      top: 128;
-      z-index: 0;
-  }
-  div.search{
-    z-index: 10;
-  }
+#medicalGroup{
+    position: absolute;
+    right: 70px;
+    top: 13.5%;
+    z-index: 0;
+}
 
-section#medicalSpecialties p{
+div.search{
+    position: relative;
+    z-index: 1;
+}
+
+section#medicalSpecialties h3 {
   color: #1560A0;
   font-size: 28px;
   padding-top: 4.7%;
@@ -152,8 +162,14 @@ div.specialties{
   padding-left: 15%;
 }
 
+.buttonZone {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 25px;
+  margin-top: 30px;
+}
+
 button.buttonSpecialties{
-  width: 225px;
   background-color: #16688D;
   border-radius: 10px;
   color: #ffffff;
@@ -169,11 +185,14 @@ div.specialties p{
 }
 
 div.benefitsContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  gap: 100px;
+
   padding-left: 13.7%;
   padding-right: 13.7%;
   padding-bottom: 3%;
+
+  margin-top: 5%;
 }
 
 div.benefits{
@@ -183,9 +202,12 @@ div.benefits{
 }
 
 .benefitsTitle{
-  font-size: 17px !important;
+  font-size: 1.7rem;
   line-height: 20px;
   font-weight: bold;
+  color: #1560A0;
+
+  margin: 18px 0;
 }
 
 .benefitsDetails{
@@ -196,17 +218,22 @@ div.benefits{
 
 section#schedulingTutorial{
   background-color: #1560A0;
-  
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 13.6%;
 }
 
 div.schedulingTutorialContent{
-  padding-top: 6.2%;
-  margin-left: 13.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-right: 10%;
   width: 38%;
-  padding-bottom: 6.5%
 }
 
-p.schedulingTutorialTitle{
+h2.schedulingTutorialTitle{
   color: #86B9FF;
   font-size: 28px;
   font-weight: bold;
@@ -216,11 +243,12 @@ p.schedulingTutorialText{
   color: #ffffff;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 50px;
   opacity: 90%;
 }
 
 button.schedulingButton{
-  width: 33.4%;
+  max-width: 50%;
   height: 54px;
   border-radius: 10px;
   background-color: #9BD30F;
@@ -231,21 +259,30 @@ button.schedulingButton{
 }
 
 section#specialtiesDetails{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 14.3%;
-  padding-top: 10.65%;
-  padding-right: 14.5%;
-  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 6% 14.3%;
 }
 
 div.selectedSpecialties{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+
   border: 1px solid #1560A0;
-  margin-right: 4.5%;
   border-radius: 10px;
   text-align: center;
-  width: 395px;
-  
+
+  max-width: 395px;
+
+  padding: 30px 30px;
+}
+
+.selectedSpecialties img {
+  max-width: 280px;
 }
 
 .selectedTitle{
@@ -259,38 +296,38 @@ div.selectedSpecialties{
   color: #7C7C7C;
   font-size: 16px;
   line-height: 19px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .schedulingSpecialties{
   background-color: #1560A0;
+  border: none;
   border-radius: 10px;
   color: white;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
-  border: 0;
-  width: 62%;
-  height: 9%;
-  margin-bottom: 20%;
+
+  padding: 1em 1em;
 }
 
 section#someSpecialties{
   background-color: #1560A0;
-  padding-left: 15%;
+  display: flex;
+
+  padding: 2% 14.3%;
 }
 
 div#allSpecialties{
-  padding-top: 4%;
-  width: 66%;
-  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 5% 0 5% 2%;
 }
 
 p#allSpecialtiesSubtitle{
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 23px;
   color: #ffffff;
-  width: 64%;
 }
 
 #specialtiesNames{
@@ -307,8 +344,8 @@ p#allSpecialtiesSubtitle{
 }
 
 #specialtiesList{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 div#appPicture{
@@ -316,7 +353,13 @@ div#appPicture{
   
 }
 
-p#onlineSchedulingTitle{
+#onlineScheduling {
+  display: flex;
+
+  padding: 2% 14.3%;
+}
+
+#onlineSchedulingTitle{
   color: #1560A0;
   font-size: 28px;
   line-height: 34px;
@@ -324,25 +367,35 @@ p#onlineSchedulingTitle{
 }
 
 #onlineSchedulingText{
-  padding-top: 5%;
-  padding-left: 14%;
-  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 5% 8% 5% 0;
+}
+
+.appDownloadButton {
+  margin-right: 3%;
+  height: 46px;
+  width: 156px;
 }
 
 .onlineSchedulingP{
   font-size: 16px;
   line-height: 19px;
   color: #525252;
-  width: 37%;
 }
 
 section#newProfessionals{
+  display: flex;
+  justify-content: space-between;
+
   background-color: #2B8E91;
-  padding-left: 10%;
-  padding-top: 3%;
+
+  padding: 4% 13% 0 10%;
 }
 
-p#newProfessionalsTitle{
+h2#newProfessionalsTitle{
   font-size: 38px;
   line-height: 47px;
   color: #B4FBFD;
@@ -355,19 +408,21 @@ section#newProfessionals{
 }
 
 #newProfessionalsText{
-  width: 75%;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 
-.newProfessionalsDescription{
-  width: 81%;
-  text-align: right;
-  color: #ffffff;
-  float: right;
+  padding: 3% 0;
 }
 
 .bePart{
-  font-size:  16px;
+  font-size:  1.6rem;
   line-height: 19px;
+  color: #ffffff;
+  text-align: right;
+  
+  margin-left: 15%;
 }
 
 #connection{
@@ -389,7 +444,7 @@ section#newProfessionals{
 
 #testimonial{
   text-align: center;
-  padding-top: 6%;
+  padding: 4% 9% 4% 9%;
 }
 
 #testimonialTitle{
@@ -398,6 +453,83 @@ section#newProfessionals{
   line-height: 34px;
 }
 
-.testimonials{
-  padding-left: 92px;
+#testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+  padding: 4% 0;
+}
+
+.testimonial-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+
+  max-width: 475px;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  box-shadow: 0px 0px 5px 0.5px  rgba(0, 0, 0, 0.2);
+  text-align: left;
+
+  padding: 20px;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1560A0;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.testimonial-picture {
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  max-height: 148px;
+
+  box-shadow: 0px 0px 5px 0.5px  rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-blank {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.pagination-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+  border: 1px solid #525252;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  background-color: #525252;
+
+  position: relative;
+  top: 4px;
+}
+
+.pagination-radio:checked {
+  background-color: #FFF;
 }

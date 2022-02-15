@@ -7,17 +7,21 @@
         <!--Links para a fonte-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Icons script -->
+        <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./media.css" />
         <link rel="stylesheet" type="text/css" href="../../components/global.css" />
     </head>
     <body>
         <header>
             <div class="logotype">
-                <img src="../../components/headers/header-1/img/logo.svg" alt="Logo Tagendado"/>
+                <img src="../../components/headers/header-1/img/logo.svg" alt="Logo tá agendado"/>
             </div>
-            <div class="headerOptions">
+            <div class="options">
                 <a href="#">PERGUNTE AO ESPECIALISTA</a>
                 <a href="#">SEGURANÇA DE DADOS</a>
                 <a href="#">CONTATO</a>
@@ -25,49 +29,48 @@
                 <a href="#">LOGIN</a>
             </div>
         </header>
-        <img src="img/foto 2.png" alt="Grupo de médicos" id="medicalGroup">
+
         <section id="sectionSearch">
             <div class="search">
-                <p>ENCONTRE AGORA O ESPECIALISTA QUE VOCÊ PRECISA</p>
-                <br/>
+                <h2>ENCONTRE AGORA O ESPECIALISTA QUE VOCÊ PRECISA</h2>
+
                 <ul>
                     <li>• Agendamento grátis</li>
                     <li>• Escolha o melhor horário</li>
                     <li>• Agende com apenas um clique</li>
                 </ul>
-                <br><br><br><br><br>
+
                 <form>
                     <input type="text" placeholder="Nome, especialidade, procedimento" class="search-input">
                     <input type="text" placeholder="Endereço, bairro, cidade" class="search-input">
             
                     <div class="radio-input-container">
-                    <div>
-                        <input type="radio" id="particular" name="tipo-pagamento">
-                        <label for="particular">Particular</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="convenio" name="tipo-pagamento">
-                        <label for="convenio">Convênio</label>
-                    </div>
+                        <div>
+                            <input type="radio" id="particular" name="tipo-pagamento">
+                            <label for="particular">Particular</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="convenio" name="tipo-pagamento">
+                            <label for="convenio">Convênio</label>
+                        </div>
                     </div>
             
                     <button>PESQUISAR</button>
-                    
                 </form>
             </div>
+            <img src="img/foto 2.png" alt="Grupo de médicos" id="medicalGroup">
         </section>
+
         <section id="medicalSpecialties">
             
-            <p id="medicalSpecialties">ESPECIALIDADES MAIS PROCURADAS</p>
+            <h3 id="medicalSpecialties">ESPECIALIDADES MAIS PROCURADAS</h3>
             <div class="specialties">
-                <br><br> 
                 <div class="buttonZone">
                     <button class="buttonSpecialties">Psicólogo</button>
                     <button class="buttonSpecialties">Ortopedista</button>
                     <button class="buttonSpecialties">Cardiologista</button>
                     <button class="buttonSpecialties">Urologista</button>
                     <button class="buttonSpecialties">Clínico Geral</button>
-                    <br>
                     <button class="buttonSpecialties">Fisioterapeuta</button>
                     <button class="buttonSpecialties">Dentista</button>
                     <button class="buttonSpecialties">Endocrinologista</button>
@@ -109,34 +112,26 @@
         </section>
         <section id="schedulingTutorial">
             <div class="schedulingTutorialContent">
-                <p class="schedulingTutorialTitle">SAIBA COMO REALIZAR O AGENDAMENTO
-                    <br> 
-                DE CONSULTAS ONLINE</p>
-                <br><br>
-                <p class="schedulingTutorialText">O primeiro passo para agendar a sua consulta é escolher uma das especialidades médicas. Aliás, uma das grandes vantagens do Tagendado é a enorme 
-                    variedade de profissionais da saúde.</p>
-                <br>
-                <p class="schedulingTutorialText">Dessa forma, você pode ter desde uma consulta com clínico geral a conversar com um ginecologista online 
-                    (por meio do sistema de telemedicina). Encontre muitas outras especialidades!</p>
-                <br><br><br>    
+                <h2 class="schedulingTutorialTitle">SAIBA COMO REALIZAR O AGENDAMENTO DE CONSULTAS ONLINE</h2>
+                <p class="schedulingTutorialText" style="margin-bottom: 20px;">O primeiro passo para agendar a sua consulta é escolher uma das especialidades médicas. Aliás, uma das grandes vantagens do Tagendado é a enorme variedade de profissionais da saúde.</p>
+                <p class="schedulingTutorialText">Dessa forma, você pode ter desde uma consulta com clínico geral a conversar com um ginecologista online (por meio do sistema de telemedicina). Encontre muitas outras especialidades!</p>   
                 <button class="schedulingButton">AGENDE SUA CONSULTA</button>
-                
+            </div>
+            <div class="schedulingImage">
+                <img src="./img/avó.png" alt="Avo imagem"/>
             </div>
         </section>
         <section id="specialtiesDetails">
             <div class="selectedSpecialties">
-                <p class="selectedTitle">Psicologia</p>
-                <br><br>
+                <h3 class="selectedTitle">Psicologia</h3>
                 <img src="./img/psicologia.svg" alt="Imagem sobre psicologia">
-                <br><br>
                 <p class="specialtiesDescription">O Psicólogo é o profissional que busca entender os comportamentos, emoções, sentimentos e pensamentos humanos. 
                     Com isso, ele ajuda o paciente a se conhecer melhor e, se for o caso, prevenir ou tratar doenças psíquicas, como a ansiedade e a depressão.</p>
-                <br><br>
                 <button class="schedulingSpecialties">AGENDE SUA CONSULTA</button>
-                
             </div>
+
             <div class="selectedSpecialties">
-                <p class="selectedTitle">Ginecologista</p>
+                <h3 class="selectedTitle">Ginecologista</h3>
                 <br><br>
                 <img src="./img/ginecologia.svg" alt="Imagem sobre ginecologia">
                 <br><br>
@@ -147,7 +142,7 @@
                 
             </div>
             <div class="selectedSpecialties">
-                <p class="selectedTitle">Clínco Geral</p>
+                <h3 class="selectedTitle">Clínico Geral</h3>
                 <br><br>
                 <img src="./img/clinicogeral.svg" alt="Imagem sobre clínico geral">
                 <br><br>
@@ -160,10 +155,14 @@
             </div>
         </section>
         <section id="someSpecialties">
+            <div id="medicalGroup2">
+                <img src="./img/Médicos.png" alt="Grupo de médicos">
+            </div>
             <div id="allSpecialties">
-                <p class="schedulingTutorialTitle">ESPECIALIDADES MÉDICAS E PLANOS DE SAÚDE</p>
-                <p id="allSpecialtiesSubtitle">O Tagendado conta com médicos das mais diversas especialidades e diversos tipos de plano de saúde.</p>
-                <br><br><br>
+                <div>
+                    <h2 class="schedulingTutorialTitle">ESPECIALIDADES MÉDICAS E PLANOS DE SAÚDE</h2>
+                    <p id="allSpecialtiesSubtitle">O Tagendado conta com médicos das mais diversas especialidades e diversos tipos de plano de saúde.</p>
+                </div>
                 <div id="specialtiesList">
                     <div id="specialtiesListLeft">
                         <p class="specialtiesListTitle">Algumas de nossas especialidades</p>
@@ -190,62 +189,101 @@
                     </div>
                 </div>
             </div>
-            <div id="medicalGroup2">
-                <img src="./img/Médicos.png" alt="Grupo de médicos">
-            </div>
         </section>
         <section id="onlineScheduling">
+            <div id="onlineSchedulingText">
+                <h2 id="onlineSchedulingTitle">MARQUE A SUA CONSULTA POR MEIO DO AGENDAMENTO ONLINE</h2>
+                <p class="onlineSchedulingP">O acesso à saúde precisa ser algo fácil, prático e rápido. Aqui no Tagendado, você conta com o agendamento online. Assim, basta escolher uma especialidade médica, além do melhor dia e horário, conforme a sua disponibilidade.</p>
+                <p class="onlineSchedulingP">Se preferir, você ainda pode baixar o aplicativo do Tagendado e marcar as suas consultas na palma da mão.</p>
+                <div>
+                    <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore" class="appDownloadButton" />
+                    <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" class="appDownloadButton" />
+                </div>
+            </div>
             <div id="appPicture">
                 <img src="./img/app.png" alt="Aplicativo Mobile">
             </div>
-            <div id="onlineSchedulingText">
-                <p id="onlineSchedulingTitle">Marque a sua consulta
-                <br>
-                por meio do agendamento online</p>
-                <br><br>
-                <p class="onlineSchedulingP">O acesso à saúde precisa ser algo fácil, prático e rápido. Aqui no Tagendado, você conta com o agendamento online. Assim, basta escolher uma especialidade médica, além do melhor dia e horário, conforme a sua disponibilidade.</p>
-                <br><br><br>
-                <p class="onlineSchedulingP">Se preferir, você ainda pode baixar o aplicativo do Tagendado e marcar as suas consultas na palma da mão.</p>
-                <br><br>
-                <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
-                <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
-            </div>
-            <br><br><br>
         </section>
         <section id="newProfessionals">
-            <div id="newProfessionalsPic">
-                <img src="./img/médicos2.png" alt="Médicos">
+            <div>
+                <img src="./img/médicos2.png" alt="Médicos" id="newProfessionalsPic">
             </div>
             <div id="newProfessionalsText">
-                <p id="newProfessionalsTitle">VOCÊ PROFISSIONAL DA SAÚDE</p>
-                <br><br><br>
-                <div class="newProfessionalsDescription">
-                <p class="bePart">Então, faça parte do Tagendado e garanta benefícios para o seu dia a dia profissional! 
-                    Há muito mais chances dos pacientes te encontrem de uma forma simples e fácil!</p>
-                    <br><br><br>
-                <p class="bePart">Ao fazer o seu cadastro aqui no site — com adição dos seus serviços ou, ainda, 
-                    com a construção de uma página própria — as pessoas podem encontrar o seu trabalho pela internet.</p>
-                    <br><br><br>
-                <p id="connection">Aumente a sua conexão com muito mais pacientes!</p>
-                <br><br><br>
-                <button class="NewProfessionalsButton">CADASTRE-SE AGORA</button>
+                <h2 id="newProfessionalsTitle">VOCÊ PROFISSIONAL DA SAÚDE</h2>
+                <!-- <div class="newProfessionalsDescription"> -->
+                    <p class="bePart">Então, faça parte do Tagendado e garanta benefícios para o seu dia a dia profissional! Há muito mais chances dos pacientes te encontrem de uma forma simples e fácil!</p>
+                    <p class="bePart">Ao fazer o seu cadastro aqui no site — com adição dos seus serviços ou, ainda, com a construção de uma página própria — as pessoas podem encontrar o seu trabalho pela internet.</p>
+                    <p id="connection">Aumente a sua conexão com muito mais pacientes!</p>
+                    <button class="NewProfessionalsButton">CADASTRE-SE AGORA</button>
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <h2 id="testimonialTitle">DEPOIMENTO DE QUEM CONFIA</h2>
+            <div id="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-picture">
+                        <img src="./img/LuizGustavo.png" alt="Foto do usuario">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-title">Luiz Gustavo</h3>
+                        <p class="testimonial-text">" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptate, velit fuga enim architecto hic reprehenderit quam consequatur. Quo autem porro hic veniam ab similique magnam velit eius facere odio.</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-blank"></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-picture">
+                        <img src="./img/LuizGustavo.png" alt="Foto do usuario">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-title">Luiz Gustavo</h3>
+                        <p class="testimonial-text">" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptate, velit fuga enim architecto hic reprehenderit quam consequatur. Quo autem porro hic veniam ab similique magnam velit eius facere odio.</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-blank"></div>
+                </div>
+                <div class="testimonial-card hide">
+                    <div class="testimonial-picture">
+                        <img src="./img/LuizGustavo.png" alt="Foto do usuario">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-title">Luiz Gustavo</h3>
+                        <p class="testimonial-text">" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptate, velit fuga enim architecto hic reprehenderit quam consequatur. Quo autem porro hic veniam ab similique magnam velit eius facere odio.</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                            <i class="fas fa-star fa-2x rating-star" style="color: #f5cf00;"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-blank"></div>
                 </div>
             </div>
-        </section>
-        <section id="testimonial">
-            <p id="testimonialTitle">DEPOIMENTO DE QUEM CONFIA</p>
-            <br><br><br>
-            <div id="testimonials">
-                <img src="./img/LuizGustavo.png" alt="Depoimento" class="testimonials">
-                <img src="./img/LuizGustavo.png" alt="Depoimento" class="testimonials">
-                <img src="./img/LuizGustavo.png" alt="Depoimento" class="testimonials">
+            <div class="pagination-container">
+                <input name="pagination" type="radio" class="pagination-radio" checked>
+                <input name="pagination" type="radio" class="pagination-radio">
+                <input name="pagination" type="radio" class="pagination-radio">
+                <input name="pagination" type="radio" class="pagination-radio">
             </div>
-            <br><br><br>
-            <img src="./img/Paginacao.svg" alt="Sistema de paginação">
-            <br><br><br><br>
         </section>
+
         <footer>
-            <div class="footerOptions">
+            <div class="options">
                 <div class="pacientOptions">
                     <p class="listTitle">Pacientes</p>
                     <br/>
@@ -265,6 +303,7 @@
                     <br/>
                     <a href="#">Diagnósticos por imagem</a>
                     <br/>
+
                 </div>
                 <div class="specialistOptions">
                     <p class="listTitle">Especialistas da saúde</p>
@@ -284,6 +323,7 @@
                     <a href="#">Cirurgião</a>
                     <br/>
                     <a href="#" id="seeAll">+ Veja todos</a>
+
                 </div>
                 <div class="aboutUs">
                     <p class="listTitle">Sobre nós</p>
@@ -318,3 +358,4 @@
             </div>
         </footer>
     </body>
+</html>
