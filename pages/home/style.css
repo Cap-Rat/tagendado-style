@@ -74,7 +74,9 @@ img#imgGooglePlay{
 /* ============= MAIN ============= */
 section#sectionSearch{
     background-color: #2B8E91;
-    padding: 4% 3% 4% 3%;
+    padding: 7% 3% 7% 3%;
+
+    position: relative;
 }
 
 section#sectionSearch h2{
@@ -142,7 +144,7 @@ section#sectionSearch button {
 #medicalGroup{
     position: absolute;
     right: 70px;
-    top: 13.5%;
+    bottom: 0;
     z-index: 0;
 }
 
@@ -159,7 +161,7 @@ section#medicalSpecialties h3 {
 }
 
 div.specialties{
-  padding-left: 15%;
+  padding: 0 15%;
 }
 
 .buttonZone {
@@ -259,10 +261,11 @@ button.schedulingButton{
 }
 
 section#specialtiesDetails{
+  gap: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  padding: 6% 14.3%;
+  padding: 0 14.3% 5% 14.3%;
 }
 
 div.selectedSpecialties{
@@ -279,6 +282,7 @@ div.selectedSpecialties{
   max-width: 395px;
 
   padding: 30px 30px;
+  margin-top: 5%;
 }
 
 .selectedSpecialties img {
@@ -389,6 +393,7 @@ div#appPicture{
 section#newProfessionals{
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   background-color: #2B8E91;
 
@@ -400,11 +405,14 @@ h2#newProfessionalsTitle{
   line-height: 47px;
   color: #B4FBFD;
   font-weight: bold;
+  margin-bottom: 30px;
+  text-align: right;
 }
 
-section#newProfessionals{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#newProfessionalsPic {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
 }
 
 #newProfessionalsText{
@@ -412,8 +420,10 @@ section#newProfessionals{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  max-width: 50%;
 
-  padding: 3% 0;
+  z-index: 1;
+  padding: 0 0 3% 0;
 }
 
 .bePart{
@@ -423,12 +433,15 @@ section#newProfessionals{
   text-align: right;
   
   margin-left: 15%;
+  margin-bottom: 30px;
 }
 
 #connection{
   color: #B4FDFF;
   font-size: 19px;
   line-height: 23px;
+  margin-bottom: 30px;
+  text-align: right;
 }
 
 .NewProfessionalsButton{

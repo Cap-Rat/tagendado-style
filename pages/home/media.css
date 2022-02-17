@@ -1,5 +1,23 @@
 /* ============= MEDIA QUERIES ============= */
 
+@media (max-width: 1800px) {
+  #medicalGroup {
+    max-width: 570px;
+  }
+
+  .search {
+    max-width: 70%;
+  }
+
+  section#newProfessionals {
+    padding: 2% 10% 0 7%;
+  }
+
+  #newProfessionalsPic {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 1440px) {
   header {
     padding: 20px 1% 15px 1%;
@@ -8,8 +26,11 @@
   #medicalGroup {
     position: absolute;
     right: 30px;
-    top: 12.6%;
     width: 530px;
+  }
+
+  section#sectionSearch {
+    padding: 4% 3%
   }
 
   section#sectionSearch ul li{
@@ -43,7 +64,9 @@
 
   section#specialtiesDetails{
     gap: 5%;
-    padding: 6% 10%;
+    padding: 0 10%;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
   }
 
   /* ============= SOME SPECIALTIES ============= */
@@ -65,7 +88,11 @@
   }
 
   #newProfessionalsPic {
-    max-width: 700px;
+    max-width: 750px;
+  }
+
+  #newProfessionalsText {
+    max-width: 40%;
   }
 
   /* ============= TESTIMONIAL ============= */
@@ -75,12 +102,16 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .logotype img {
     width: 200px;
   }
 
   div.options {
     font-size: 1.2rem;
+  }
+
+  div.specialties{
+    padding: 0 7%;
   }
 }
