@@ -139,3 +139,32 @@ p#responsiveWebsiteText{
     line-height: 24px;
     color: #525252;
 }
+
+section#allBenefits{
+    background-color: #2B8E91;
+    padding-top: 4.5%;
+}
+
+p#allBenefitsTitle{
+    color: #3CEBF0;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+}
+
+div.benefitsContainer{
+    display: flex;
+    gap: 100px;
+
+    padding-left: 13.7%;
+    padding-right: 13.7%;
+    padding-bottom: 3%;
+
+    margin-top: 5%;
+}
+
+div.benefitsContainerItems{
+    align-items: center;
+  width: 90%;
+  text-align: center;
+}
