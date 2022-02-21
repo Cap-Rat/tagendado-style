@@ -152,19 +152,38 @@ p#allBenefitsTitle{
     text-align: center;
 }
 
-div.benefitsContainer{
+div#benefitsContainer{
     display: flex;
-    gap: 100px;
+    gap: 84px;
 
-    padding-left: 13.7%;
-    padding-right: 13.7%;
+    padding-left: 12.3%;
+    padding-right: 10.5%;
     padding-bottom: 3%;
 
     margin-top: 5%;
+    text-align: center;
 }
 
-div.benefitsContainerItems{
+div#benefitsContainerItem{
     align-items: center;
-  width: 90%;
-  text-align: center;
+    text-align: center;
+}
+
+p.allBenefitsSubtitle{
+    color: #3CEBF0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+}
+
+p.allbenefitsText{
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center !important;
+}
+
+img.allBenefitsImage{
+    text-align: center;
 }
