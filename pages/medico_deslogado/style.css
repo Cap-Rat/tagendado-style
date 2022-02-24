@@ -187,3 +187,49 @@ p.allbenefitsText{
 img.allBenefitsImage{
     text-align: center;
 }
+
+p#marketingLeftTitle{
+    font-size: 41px;
+    line-height: 50px;
+    color: #1560A0;
+    font-weight: bold;
+}
+
+p#marketingLeftSubtitle{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 90%;
+    color: black;
+}
+
+p#marketingLeftText{
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+button#marketingLeftButton{
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1em 3em;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #9BD30F;
+}
+
+
+div#marketingLeft{
+    padding-left: 24.5%;
+    width: 80%;
+    
+}
+
+section#marketing{
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+}
+
