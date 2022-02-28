@@ -271,6 +271,12 @@ span.listText{
 
 section#freeRegister{
     padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+div#freeRegisterContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 p#freeRegisterTitle{
@@ -305,7 +311,7 @@ p#freeRegisterSubtitle{
     border: #525252 solid 1px;
     border-radius: 6px;
     
-    width: 30vw;
+    width: 37vw;
   
     font-size: 1.4rem;
     padding: 1.5rem 1rem;
@@ -321,15 +327,30 @@ p#freeRegisterSubtitle{
   
     display: flex;
     justify-content: center;
-    align-self: flex-end;
+    width: 96%;
+
+    margin-top: 2%;
   
     padding: 1em 1.5em;
   
     cursor: pointer;
     color: #FFF;
-    background-color: #2B8E91;
+    background-color: #9BD30F;
   }
 
   #telefone{
     display: flex;
+  }
+
+  div#freeRegisterLeft{
+      padding-left: 22.5%;
+  }
+
+  div#freeRegisterRight{
+    margin-left: 22.5%;
+    padding-top: 10%;
+}
+
+  div.checkbox-container{
+      display: flex;
   }
