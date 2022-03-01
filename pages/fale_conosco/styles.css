@@ -195,44 +195,46 @@
 
 /* ============= FOOTER ============= */
 
-div.options{
+footer .options{
   background-color: #525252;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 260px;
-  padding-right: 135px;
+  padding-left: 13.5%;
+  padding-right: 7%;
   line-height: 25px;
   font-size: var(--fs-15);
 }
 
-div.copyright{
-  background-color: #363636;
-  color: #ADADAD;
-  font-size: var(--fs-14);
-  padding: 16px;
-  text-align: center;
-}
-
-p{
-  color: #ffffff;
+footer .copyright{
+    background-color: #363636;
+    color: #ADADAD;
+    font-size: var(--fs-14);
+    padding: 16px;
+    text-align: center;
 }
 
 footer p.listTitle{
-  font-weight: bold;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-footer a{
-  text-decoration: none;
+footer p {
   color: #ffffff;
 }
 
-a#seeAll{
-  color: #86B9FF;
-  font-style: italic;
+footer .options a{
+    text-decoration: none;
+    color: #ffffff;
 }
+
+a#seeAll{
+    color: #86B9FF;
+    font-style: italic;
+}
+
 img#imgGooglePlay{
-  height: 35px;
-  width: 117px;
+    height: 46px;
+    width: 156px;
 }
