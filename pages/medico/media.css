@@ -86,11 +86,7 @@
         margin-bottom: 2%;
     }
 
-    .rating-star{
-        width: 20px;
-    }
-
-    .rating-star-empty{
+    .rating-star-empty,.rating-star{
         width: 20px;
     }
 
@@ -103,21 +99,9 @@
         font-size: 9px;
     }
 
-    .doctor-experience-description{
-        font-size: 12px;
-    }
-
-    .doctor-address-content{
-        font-size: 12px;
-    }
-
     .main{
         padding: 1% 2% 3% 2%;
         justify-content: space-evenly;
-    }
-
-    .day-title-weekday{
-        font-size: 12px;
     }
 
     .time-available{
@@ -125,11 +109,7 @@
         font-size: 10px;
     }
 
-    .doctor-experience-description{
-        font-size: 12px;
-    }
-
-    .comment-content{
+    .doctor-experience-description, .comment-content, .day-title-weekday, .doctor-address-content, .doctor-experience-description{
         font-size: 12px;
     }
 
