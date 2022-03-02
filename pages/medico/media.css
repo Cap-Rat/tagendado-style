@@ -132,4 +132,8 @@
     .comment-content{
         font-size: 12px;
     }
+
+    .page-identifier-container {
+        padding: 0 2%;
+    }
 }
