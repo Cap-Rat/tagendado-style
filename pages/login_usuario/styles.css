@@ -288,6 +288,9 @@
   cursor: pointer;
 
   margin: 0 1rem;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .facebook-btn {
