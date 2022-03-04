@@ -4,6 +4,25 @@
 
 }
 
+@media (max-width: 1730px) {
+    .doctor-header-buttons-container{
+        display: flex;
+    }
+
+    .schedule-container {
+        max-width: 35%;
+    }
+
+    .schedule-appointment-btn{
+        font-size: 13px;
+    }
+
+    .see-phone-btn{
+        font-size: 13px;
+    }
+
+}
+
 @media (max-width: 1600px) {
     .doctor-header-buttons-container{
         display: flex;
@@ -61,15 +80,151 @@
 }
 
 @media (max-width: 1360px) {
+    #doctor-image{
+        width: 120px;
+    }
 
+    .doctor-name{
+        font-size: 24px;
+    }
+
+    .doctor-specialties{
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+
+    .rating-star-empty,.rating-star{
+        width: 20px;
+    }
+
+    .schedule-appointment-btn{
+        margin-left: 4%;
+        font-size: 8px;
+    }
+
+    .see-phone-btn{
+        font-size: 9px;
+    }
+
+    .main{
+        padding: 1% 2% 3% 2%;
+        justify-content: space-evenly;
+    }
+
+    .time-available{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .doctor-experience-description, .comment-content, .day-title-weekday, .doctor-address-content, .doctor-experience-description{
+        font-size: 12px;
+    }
+
+    .page-identifier-container {
+        padding: 0 2%;
+    }
+}
+
+@media (max-width: 1330px) {
+    .time-available{    
+        padding: 0.6rem;
+    }
+
+    .time-unavailable-container {
+        padding: 1.2rem;
+    }
 }
 
 @media (max-width: 1140px) {
+    #doctor-image{
+        width: 120px;
+    }
 
+    .doctor-name{
+        font-size: 24px;
+    }
+
+    .doctor-specialties{
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+
+    .rating-star-empty,.rating-star{
+        width: 20px;
+    }
+
+    .schedule-appointment-btn{
+        margin-left: 4%;
+        font-size: 8px;
+    }
+
+    .see-phone-btn{
+        font-size: 9px;
+    }
+
+    .main{
+        padding: 1% 2% 3% 2%;
+        justify-content: space-evenly;
+    }
+
+    .time-available{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .doctor-experience-description, .comment-content, .day-title-weekday, .doctor-address-content, .doctor-experience-description{
+        font-size: 12px;
+    }
+
+    .page-identifier-container {
+        padding: 0 2%;
+    }
 }
 
 @media (max-width: 1100px) {
+    #doctor-image{
+        width: 120px;
+    }
 
+    .doctor-name{
+        font-size: 24px;
+    }
+
+    .doctor-specialties{
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+
+    .rating-star-empty,.rating-star{
+        width: 20px;
+    }
+
+    .schedule-appointment-btn{
+        margin-left: 4%;
+        font-size: 8px;
+    }
+
+    .see-phone-btn{
+        font-size: 9px;
+    }
+
+    .main{
+        padding: 1% 2% 3% 2%;
+        justify-content: space-evenly;
+    }
+
+    .time-available{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .doctor-experience-description, .comment-content, .day-title-weekday, .doctor-address-content, .doctor-experience-description{
+        font-size: 12px;
+    }
+
+    .page-identifier-container {
+        padding: 0 2%;
+    }
 }
 
 @media (max-width: 1024px) {
