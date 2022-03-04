@@ -84,12 +84,15 @@ section#sectionSearch h2{
     color: #C4FDFF;
 }
 
-section#sectionSearch ul li{
+section#sectionSearch ul li {
+  display: inline-block;
+  
+  margin-right: 30px;
+}
+
+.searchList{
     font-size: var(--fs-21);
     color: #ffffff;
-    display: inline-block;
-
-    margin-right: 30px;
 }
 
 section#sectionSearch ul{
@@ -175,11 +178,11 @@ button.buttonSpecialties{
   background-color: #16688D;
   border-radius: 10px;
   color: #ffffff;
-  height: 63px;
   font-size: var(--fs-18);
   margin-left: 2%;
   margin-bottom: 1%;
   border: 0;
+  padding: 1.2em 1em;
 }
 
 div.specialties p{
@@ -250,14 +253,14 @@ p.schedulingTutorialText{
 }
 
 button.schedulingButton{
-  max-width: 50%;
-  height: 54px;
+  max-width: 220px;
   border-radius: 10px;
   background-color: #9BD30F;
   color: white;
   font-size: var(--fs-14);
   font-weight: bold;
   border: 0;
+  padding: 1em 1em;
 }
 
 section#specialtiesDetails{
@@ -274,6 +277,7 @@ div.selectedSpecialties{
   align-items: center;
   justify-content: space-between;
   flex: 1;
+  gap: 20px;
 
   border: 1px solid #1560A0;
   border-radius: 10px;
@@ -288,6 +292,7 @@ div.selectedSpecialties{
 
 .selectedSpecialties img {
   max-width: 280px;
+  height: 230px;
 }
 
 .selectedTitle{
@@ -442,14 +447,13 @@ h2#newProfessionalsTitle{
 }
 
 .NewProfessionalsButton{
-  height: 56px;
   background-color: #FFFFFF;
-  width: 37.7%;
   border-radius: 10px;
   color: #2B8E91;
   font-size: var(--fs-16);
   font-weight: bold;
   border: none;
+  padding: 1em 1em;
 }
 
 #testimonial{

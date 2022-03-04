@@ -1,14 +1,7 @@
 /* ============= MEDIA QUERIES ============= */
 
 @media (max-width: 1800px) {
-  body {
-    --fs-40: 2rem;
-    --fs-21: 1.2rem;
-  }
 
-  #medicalGroup {
-    max-width: 570px;
-  }
 
   .search {
     max-width: 70%;
@@ -23,7 +16,21 @@
   }
 }
 
+@media (max-width: 1640px) {
+  #medicalGroup {
+    max-width: 550px;
+  }
+}
+
 @media (max-width: 1440px) {
+  body {
+    --fs-40: 3.5rem;
+    --fs-38: 3.2rem;
+    --fs-21: 2rem;
+    --fs-24: 2.1rem;
+    --fs-18: 1.6rem;
+  }
+
   header {
     padding: 20px 1% 15px 1%;
   }
@@ -39,7 +46,6 @@
   }
 
   section#sectionSearch ul li{
-    font-size: 21px;
     color: #ffffff;
     display: block;
   }
@@ -59,14 +65,18 @@
     padding: 0 10%;
   }
 
-  .selectedSpecialties h3, .selectedSpecialties img, .selectedSpecialties p, .selectedSpecialties button{
-    margin-bottom: 15px;
-  }
-
   /* ============= SCHEDULING TUTORIAL ============= */
-
+  
   section#schedulingTutorial{
     padding: 0 10%;
+  }
+  
+  .schedulingTutorialTitle {
+    margin-bottom: 10px;
+  }
+
+  .schedulingImage img {
+    width: 500px;
   }
 
   /* ============= SPECIALTIES DETAILS ============= */
@@ -76,6 +86,10 @@
     padding: 0 10%;
     padding-bottom: 5%;
     flex-wrap: wrap;
+  }
+
+  .selectedSpecialties img {
+    width: 250px;
   }
 
   /* ============= SOME SPECIALTIES ============= */
@@ -104,6 +118,7 @@
     max-width: 40%;
   }
 
+
   /* ============= TESTIMONIAL ============= */
 
   .hide {
@@ -111,33 +126,79 @@
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1366px) {
+  body {
+    --fs-40: 3.2rem;
+    --fs-38: 2.9rem;
+    --fs-28: 2.4rem;
+    --fs-24: 1.9rem;
+    --fs-21: 1.7rem;
+    --fs-19: 1.7rem;
+    --fs-18: 1.6rem;
+    --fs-16: 1.5rem;
+    --fs-14: 1.3rem;
+  }
+
   .search {
-    max-width: 60%;
+    max-width: 70%;
+  }
+
+  #medicalGroup {
+    position: absolute;
+    right: 30px;
+    width: 480px;
+  }
+
+  .benefits img {
+    width: 140px;
   }
 
   section#schedulingTutorial{
     padding: 2% 10%;
   }
 
+  section#schedulingTutorial img {
+    width: 450px;
+  }
+
   #specialtiesList {
     gap: 3%;
+  }
+
+  div.selectedSpecialties {
+    padding: 15px 20px;
+    gap: 10px
+  }
+
+  .selectedSpecialties img {
+    width: 225px;
+    height: 225px;
   }
 
   #specialtiesListLeft {
     width: 55%;
   }
+
   #specialtiesListRight {
     width: 45%;
   }
 
-  #newProfessionals {
-    padding-top: 0;
+  #someSpecialties img {
+    width: 490px;
   }
 
+  #appPicture img {
+    width: 500px;
+  }
+  
   #newProfessionals {
+    padding-top: 0;
     flex-direction: column;
     align-items: center;
+  }
+
+  #newProfessionalsPic {
+    width: 620px;
   }
 
   h2#newProfessionalsTitle{
@@ -157,9 +218,17 @@
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   #medicalGroup {
     width: 450px;
+  }
+
+  .benefits img {
+    width: 125px;
+  }
+
+  #newProfessionalsPic {
+    width: 590px;
   }
 }
 
@@ -204,10 +273,6 @@
 @media (max-width: 1024px) {
   .logotype img {
     width: 200px;
-  }
-
-  div.options {
-    font-size: 1.2rem;
   }
 
   div.specialties{
