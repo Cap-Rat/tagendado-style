@@ -109,11 +109,10 @@ section#sectionSearch form .search-input {
     border: none;
     border-radius: 10px;
   
-    width: 442px;
-    height: 56px;
+    width: 23vw;
   
     font-size: var(--fs-14);
-    padding: 0 20px;
+    padding: 18px 20px;
     margin: 0 10px
   }
   

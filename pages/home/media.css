@@ -232,9 +232,19 @@
   }
 }
 
-@media (max-width: 1100px) {
-  .radio-label {
-    text-shadow: 1px 1px 5px #000;
+@media (max-width: 1120px) {
+  body {
+    --fs-40: 2.8rem;
+    --fs-21: 1.5rem;
+    --fs-15: 1.4rem;
+  }
+
+  section#sectionSearch form .search-input {
+    padding: 15px 15px;
+  }
+
+  .search h2 {
+    width: 90%;
   }
 
   .buttonZone {
@@ -257,6 +267,10 @@
     margin-bottom: 10px;
   }
 
+  div.selectedSpecialties {
+    max-width: 320px;
+  }
+
   #schedulingTutorial {
     align-items: center;
   }
@@ -268,6 +282,28 @@
   #someSpecialties img {
     width: 450px;
   }
+
+  div#medicalGroup2 {
+    display: flex;
+    align-items: center;
+  }
+
+  div#medicalGroup2 img {
+    width: 430px;
+  }
+
+  div#appPicture {
+    display: flex;
+    align-items: center;
+  }
+
+  div#appPicture img {
+    width: 400px;
+  }
+
+  #newProfessionalsPic {
+    width: 565px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -277,5 +313,9 @@
 
   div.specialties{
     padding: 0 7%;
+  }
+
+  #newProfessionalsPic {
+    width: 540px;
   }
 }
