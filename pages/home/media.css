@@ -263,6 +263,11 @@
     max-width: 450px;
   }
 
+  .appDownloadButton {
+    width: 135px;
+    height: 40px;
+  }
+
   .onlineSchedulingP {
     margin-bottom: 10px;
   }
@@ -309,6 +314,10 @@
 @media (max-width: 1024px) {
   .logotype img {
     width: 200px;
+  }
+
+  #medicalGroup {
+    width: 420px;
   }
 
   div.specialties{
