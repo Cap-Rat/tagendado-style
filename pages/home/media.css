@@ -1,8 +1,6 @@
 /* ============= MEDIA QUERIES ============= */
 
 @media (max-width: 1800px) {
-
-
   .search {
     max-width: 70%;
   }
@@ -22,6 +20,20 @@
   }
 }
 
+@media (max-width: 1600px) {
+  div.options {
+    font-size: 1.4rem;
+  }
+
+  header {
+    padding: 15px 3% 15px 3%;
+  }
+
+  .logotype img {
+    width: 230px;
+  }
+}
+
 @media (max-width: 1440px) {
   body {
     --fs-40: 3.5rem;
@@ -29,10 +41,6 @@
     --fs-21: 2rem;
     --fs-24: 2.1rem;
     --fs-18: 1.6rem;
-  }
-
-  header {
-    padding: 20px 1% 15px 1%;
   }
 
   #medicalGroup {
@@ -139,6 +147,18 @@
     --fs-14: 1.3rem;
   }
 
+  div.options {
+    font-size: 1.3rem;
+  }
+
+  header {
+    padding: 10px 3% 10px 3%;
+  }
+
+  .logotype img {
+    width: 200px;
+  }
+
   .search {
     max-width: 70%;
   }
@@ -218,6 +238,16 @@
   }
 }
 
+@media (max-width: 1200px) {
+  div.options {
+    font-size: 1.2rem;
+  }
+
+  .logotype img {
+    width: 170px;
+  }
+}
+
 @media (max-width: 1240px) {
   #medicalGroup {
     width: 450px;
@@ -239,6 +269,10 @@
     --fs-15: 1.4rem;
   }
 
+  .logotype img {
+    width: 150px;
+  }
+
   section#sectionSearch form .search-input {
     padding: 15px 15px;
   }
@@ -253,6 +287,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 0
+  }
+
+  #medicalGroup {
+    width: 400px;
   }
 
   .buttonSpecialties {
@@ -314,10 +352,6 @@
 @media (max-width: 1024px) {
   .logotype img {
     width: 200px;
-  }
-
-  #medicalGroup {
-    width: 420px;
   }
 
   div.specialties{

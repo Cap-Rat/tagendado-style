@@ -1,16 +1,16 @@
 /* ============= HEADER ============= */
 
-header .options {
+div.options {
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-  font-size: var(--fs-15);
+  font-size: 1.5rem;
 
   text-align: center;
 }
 
-header .options a {
+div.options a {
   margin: 0 20px;
 
   text-decoration: none;
