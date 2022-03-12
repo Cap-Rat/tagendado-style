@@ -93,7 +93,6 @@ div#createAccountForm{
     font-size: var(--fs-14);
     line-height: 41px;
     padding-top: 3%;
-    padding-left: 5%;
 }
 
 p#createAccountTitle{
@@ -187,4 +186,9 @@ a#seeAll{
 img#imgGooglePlay{
     height: 35px;
     width: 117px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,7 +1,9 @@
 /* ============= MEDIA QUERIES ============= */
 
-@media (max-width: 1800px) {
-
+@media (max-width: 1890px) {
+    .class{
+        margin-left: 5%;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -21,12 +23,8 @@
 }
 
 @media (max-width: 1100px) {
-
-}
-
-@media (max-width: 1024px) {
     .formInputs{
-        width: 372.38px;
+        width: 430px;
     }
 
     .password{
@@ -34,7 +32,7 @@
     }
 
     #genero{
-        width: 162px;
+        width: 220px;
     }
 
     #dataNascimento{
@@ -47,7 +45,54 @@
     }
 
     #estado{
-        width: 55px !important;
+        width: 68px !important;
+    }
+
+    #cidade{
+        width: 335px !important;
+    }
+
+    .endereco{
+        margin-left: 61px !important;
+    }
+
+    .estadoSigla{
+        margin-left: 28px;
+    }
+
+    #telefone{
+        width: 305px !important;
+    }
+
+    .estadoExtenso{
+        width: 430px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .formInputs{
+        width: 410px;
+    }
+
+    .password{
+        width: 187px;
+    }
+
+    #genero{
+        width: 200px;
+    }
+
+    #dataNascimento{
+        width: 200px !important;
+        margin-left: 9px !important; 
+    }
+
+    div#createAccountForm {
+        padding-right: 6%;
+    }
+
+    #estado{
+        width: 68px !important;
     }
 
     #cidade{
@@ -55,6 +100,18 @@
     }
 
     .endereco{
-        margin-left: 109px !important;
+        margin-left: 40px !important;
+    }
+
+    .estadoSigla{
+        margin-left: 28px;
+    }
+
+    #telefone{
+        width: 285px !important;
+    }
+
+    .estadoExtenso{
+        width: 409px !important;
     }
 }
