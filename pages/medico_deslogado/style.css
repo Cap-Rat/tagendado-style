@@ -1,43 +1,52 @@
 /********HEADER***********/
 
-div.optionsHeader{
-    font-size: var(--fs-15);
-    justify-content: center;
-    display: grid;
-    grid-template-columns:  2fr 1.5fr 1fr 1fr 1fr;
+header div.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 1.5rem;
+
     text-align: center;
-    margin-top: 30px;
 }
-  
-div.optionsHeader a {
+
+header div.options a {
+    margin: 0 20px;
+
     text-decoration: none;
     color: #000000;
 }
-  
+
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 33px;
-    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 32px 3.6% 24px 3.6%;
 }
 
 /********FOOTER*******/
-div.options{
+footer div.options{
     background-color: #525252;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 260px;
-    padding-right: 135px;
+    padding-left: 13.5%;
+    padding-right: 7%;
     line-height: 25px;
-    font-size: var(--fs-15);
+    font-size: 15px;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
 }
 
 div.copyright{
     background-color: #363636;
     color: #ADADAD;
-    font-size: var(--fs-14);
+    font-size: 14px;
     padding: 16px;
     text-align: center;
 }
@@ -59,10 +68,12 @@ a#seeAll{
     color: #86B9FF;
     font-style: italic;
 }
+
 img#imgGooglePlay{
-    height: 35px;
-    width: 117px;
+    height: 46px;
+    width: 156px;
 }
+
 
 /******PAGE******/
 #benefitsTitle{

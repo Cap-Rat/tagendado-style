@@ -1,0 +1,43 @@
+@media (max-width: 1600px) {
+  div.options {
+    font-size: 1.4rem;
+  }
+
+  header {
+    padding: 15px 3% 15px 3%;
+  }
+
+  .logotype img {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1370px) {
+  div.options {
+    font-size: 1.3rem;
+  }
+
+  header {
+    padding: 10px 3% 10px 3%;
+  }
+
+  .logotype img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  div.options {
+    font-size: 1.2rem;
+  }
+
+  .logotype img {
+    width: 170px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .logotype img {
+    width: 150px;
+  }
+}

@@ -1,4 +1,4 @@
-div.options {
+header div.options {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -8,7 +8,7 @@ div.options {
   text-align: center;
 }
 
-div.options a {
+header div.options a {
   margin: 0 20px;
 
   text-decoration: none;
@@ -23,18 +23,3 @@ header {
   padding: 32px 3.6% 24px 3.6%;
 }
 
-@media (max-width: 1370px) {
-  header {
-    padding: 20px 1% 15px 1%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .logotype img {
-    width: 200px;
-  }
-
-  div.options {
-    font-size: 1.2rem;
-  }
-}
