@@ -6,6 +6,15 @@
     }
 }
 
+@media (max-width: 1890px) {
+    section#createAccount{
+        padding-right: 250px;
+    }
+    .second-item{
+        margin-left: 30px;
+    }
+}
+
 @media (max-width: 1600px) {
 
 }
@@ -18,7 +27,7 @@
 
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1160px) {
 
 }
 
