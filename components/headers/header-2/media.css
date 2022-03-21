@@ -24,9 +24,22 @@
   }
 }
 
-/* inputs passar a ser escondidos */
+/* user-options passa a ser dropdown escondido no icone de usuario */
 @media (max-width: 1235px) {
+  .header {
+    position: relative;
+  }
 
+  .user-options {
+    position: absolute;
+    bottom: -25px;
+    right: 30px;
+
+    padding: 5px 5px;
+    border-radius: 5px;
+
+    background-color: #1560A0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -50,6 +63,23 @@
   
   .user-container p {
     font-size: var(--fs-14);
+  }
+}
+
+/* search-form passa a ser dropdown escondido no icone de pesquisa */
+@media (max-width: 1000px) {
+  .search-form {
+    position: absolute;
+    bottom: -50px;
+
+    min-width: 650px;
+    left: 50%;
+    transform: translate(-50%);
+
+    padding: 8px 0px;
+    border-radius: 5px;
+
+    background-color: #1560A0;
   }
 }
 

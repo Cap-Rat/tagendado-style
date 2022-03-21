@@ -87,9 +87,6 @@
       if (screen.width <= 1000) {
         const searchIcon = document.getElementById('searchIcon')
         searchIcon.classList.remove('dont-show')
-        
-        const searchForm = document.getElementById('searchForm')
-        searchForm.classList.add('dont-show')
       } else {
         const searchIcon = document.getElementById('searchIcon')
         searchIcon.classList.add('dont-show')
@@ -101,6 +98,9 @@
 
     const toogleSearch = () => {
       if (screen.width <= 1000) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+
         const searchForm = document.getElementById('searchForm')
         searchForm.classList.toggle('dont-show')
       }
@@ -108,6 +108,11 @@
 
     const toogleUser = () => {
       if (screen.width <= 1235) {
+        if (screen.width <= 1000) {
+          const searchForm = document.getElementById('searchForm')
+          searchForm.classList.add('dont-show')
+        }
+
         const userOptions = document.getElementById('userOptions')
         userOptions.classList.toggle('dont-show')
       }
