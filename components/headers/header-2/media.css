@@ -1,0 +1,60 @@
+/* ============= HEADER ============= */
+
+@media (max-width: 1460px) {
+  .logo {
+    width: 200px;
+  }
+
+  .header {
+    padding: 15px 6%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .logo {
+    width: 180px;
+  }
+
+  .search-input {
+    padding: 1.4rem 1.4rem;
+  }
+
+  .btn-search {
+    padding: 1em 1.5em;
+  }
+}
+
+/* inputs passar a ser escondidos */
+@media (max-width: 1235px) {
+
+}
+
+@media (max-width: 1100px) {
+  .header {
+    --fs-14: 1.2rem;
+    --fs-15: 1.2rem;
+    padding: 10px 6%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  
+  .search-input {
+    padding: 12px;
+  }
+
+  .radio-input-container {
+    min-width: 80px;
+  }
+  
+  .user-container p {
+    font-size: var(--fs-14);
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 120px;
+  }
+}
