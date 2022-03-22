@@ -1,4 +1,4 @@
-footer div.options{
+footer div.options {
     background-color: #525252;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,11 +11,11 @@ footer div.options{
     width: 100%;
 }
 
-footer{
+footer {
     width: 100%;
 }
 
-div.copyright{
+div.copyright {
     background-color: #363636;
     color: #ADADAD;
     font-size: 14px;
@@ -23,24 +23,45 @@ div.copyright{
     text-align: center;
 }
 
-p{
+p {
     color: #ffffff;
 }
 
-footer p.listTitle{
+footer p.listTitle {
     font-weight: bold;
 }
 
-footer a{
-    text-decoration: none;
-    color: #ffffff;
+footer p.mb-30 {
+    margin-bottom: 30px;
 }
 
-a#seeAll{
+footer a {
+    text-decoration: none;
+    color:#ffffff;
+    display: block;
+}
+
+.contactInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInfos img {
+    width: 200px;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a#seeAll {
     color: #86B9FF;
     font-style: italic;
 }
-img#imgGooglePlay{
+img#imgGooglePlay {
     height: 46px;
     width: 156px;
 }

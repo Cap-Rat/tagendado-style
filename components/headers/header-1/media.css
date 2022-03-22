@@ -1,6 +1,6 @@
 @media (max-width: 1600px) {
-  div.options {
-    font-size: 1.4rem;
+  header {
+    --fs-15: 1.4rem;
   }
 
   header {
@@ -13,8 +13,8 @@
 }
 
 @media (max-width: 1370px) {
-  div.options {
-    font-size: 1.3rem;
+  header {
+    --fs-15: 1.3rem;
   }
 
   header {
@@ -27,8 +27,8 @@
 }
 
 @media (max-width: 1200px) {
-  div.options {
-    font-size: 1.2rem;
+  header {
+    --fs-15: 1.2rem;
   }
 
   .logotype img {
