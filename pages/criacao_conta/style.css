@@ -144,6 +144,16 @@ p#createAccountTitle{
   border: 0;
 }
 
+.class{
+  margin-left: 5%;
+}
+#cidade{
+  width: 537px;
+}
+.endereco{
+  flex: inherit !important;
+}
+
 /** =========== FOOTER ===========**/
 
 div.options{
