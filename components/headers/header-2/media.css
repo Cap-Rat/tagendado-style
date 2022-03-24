@@ -44,8 +44,6 @@
 
 @media (max-width: 1100px) {
   .header {
-    --fs-14: 1.2rem;
-    --fs-15: 1.2rem;
     padding: 10px 6%;
   }
 
@@ -60,9 +58,21 @@
   .radio-input-container {
     min-width: 80px;
   }
-  
+
   .user-container p {
-    font-size: var(--fs-14);
+    font-size: 1.2rem;
+  }
+
+  .user-container .user-auth-button {
+    font-size: 1.2rem;
+  }
+
+  .btn-search {
+    font-size: 1.2rem;
+  }
+
+  .search-form .radio-label {
+    font-size: 1.2rem;
   }
 }
 
