@@ -1,0 +1,41 @@
+@media (max-width: 1650px) {
+  img#imgAppStore {
+    width: 130px;
+  }
+  
+  img#imgGooglePlay {
+    height: 38px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .aboutUsImgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img#imgAppStore {
+    margin-top: 5px;
+  }
+  
+  img#imgGooglePlay {
+    margin-top: 5px;
+  }
+
+  .contactInfos img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1150px) {
+  footer div.options {
+    gap: 10px;
+
+    padding-left: 10%;
+  }
+
+  .contactInfos img {
+    width: 170px;
+  }
+}
