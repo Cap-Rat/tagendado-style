@@ -62,7 +62,7 @@
 
               <div class="form-group" >
 
-                <div class="input-subgroup" style="max-width: 664px; flex: none; width: 100%;">
+                <div class="input-subgroup" id="subLabel" style="max-width: 664px; flex: none; width: 100%;">
 
                   <label for="genero" class="form-label">Gênero*:<br>
                     <select name="genero" id="genero" style="height: 51px;" class="border">
@@ -74,12 +74,12 @@
                   </label>
 
                   <label for="dataNascimento" class="form-label">Data de Nascimento*:<br>
-                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" style="height: 47px; width: 190%; margin-left: 20px;" class="border"/>
+                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" class="border"/>
                   </label> 
 
                 </div>
 
-                <label for="cep" class="form-label second-item">CEP*:<br>
+                <label for="cep" id="cepLabel" class="form-label second-item">CEP*:<br>
                   <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs border"/>
                 </label>
 
@@ -152,8 +152,8 @@
                 
                 <label for="telefone" class="form-label second-item">Telefone para contato*:<br>
                   <div style="display: flex;">
-                  <input type="text" placeholder="DDD" class="formInputs border telefone" style="width: 100px;"/>
-                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs border" style="width: 538px; margin-left: 20px;" ;/>
+                  <input type="text" placeholder="DDD" class="formInputs border telefone" style="width: 100px !important; "/>
+                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs border"  ;/>
                   </div>
                 </label>
 
@@ -170,7 +170,7 @@
                     <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs border"/>
                   </label>
 
-                  <div class="input-subgroup" style="margin-left: 59px;">
+                  <div class="input-subgroup" id="passConfirm" style="margin-left: 59px;">
 
                     <label for="senha" class="form-label">Senha*:<br>
                       <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs border password"/>

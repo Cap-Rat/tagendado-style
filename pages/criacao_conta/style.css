@@ -103,7 +103,7 @@ p#createAccountTitle{
 }
 
 .formInputs{
-    width: 662px;
+    width: 662px!important;
     height: 51px;
 }
 
@@ -131,8 +131,14 @@ p#createAccountTitle{
 }
 
 .password{
-  width: 320px;
+  width: 315px !important;
   margin-right: 27px;
+}
+
+
+
+#passConfirm{
+  margin-left: 150px !important;
 }
 
 #registerButton{
@@ -148,12 +154,25 @@ p#createAccountTitle{
   margin-left: 5%;
 }
 #cidade{
-  width: 537px;
+  width: 568px;
 }
 .endereco{
   flex: inherit !important;
 }
+.second-item{
+  margin-left: 150px;
+}
 
+#telefone{
+  width: 538px !important; 
+  margin-left: 20px;
+}
+
+#dataNascimento{
+  height: 47px;
+   width: 190% !important; 
+   margin-left: 20px;
+}
 /** =========== FOOTER ===========**/
 
 div.options{
