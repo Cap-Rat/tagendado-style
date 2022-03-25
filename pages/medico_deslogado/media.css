@@ -1,3 +1,19 @@
+@media (max-width: 1880px){
+  img#responsiveImage{
+    width: 650px;
+  }
+  section#scheduling{
+    margin-bottom: 5%;
+  }
+  section#benefits{
+    padding-top: 4%;
+    padding-bottom: 2%;
+  }
+  div#responsiveWebsite{
+    padding-top: 7%;
+  }
+}
+
 @media (max-width: 1660px){
   img#responsiveImage{
     width: 650px;
