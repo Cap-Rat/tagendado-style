@@ -24,6 +24,83 @@
   .logotype img {
     width: 200px;
   }
+  #responsiveImage{
+    width: 500px;
+    margin-top: 50px;
+  }
+  div#responsiveWebsite{
+    padding-top: 5%;
+  }
+  section#scheduling{
+    margin-bottom: 0%;
+  }
+  p#benefitsTitle{
+    font-size: 35px;
+  }
+  p#benefitsSubtitle{
+    font-size: 28px;
+  }
+  p#benefitsText{
+    font-size: 18px;
+  }
+  p.allbenefitsText{
+    font-size: 12px;
+  }
+  img#fluxImg{
+    height: 450px;
+  }
+  p#marketingLeftTitle{
+    font-size: 35px;
+  }
+  p#marketingLeftSubtitle{
+    font-size: 16px;
+  }
+  p#marketingLeftText{
+    font-size: 12px;
+  }
+  button#marketingLeftButton{
+    font-size: 14px;
+  }
+  div#marketingRight{
+    display: flex;
+    align-items: center;
+  }
+  img#medicalImg{
+    width: 800px;
+  }
+  #WinWinSituationSubtitle{
+    font-size: 20px;
+  }
+  #WinWinSituationList{
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 8%;
+  }
+  p#freeRegisterTitle{
+    font-size: 35px;
+  }
+  p#freeRegisterSubtitle{
+    font-size: 16px;
+  }
+  .form-label{
+     font-size: 14px;
+  }
+  .costumer-service-input{
+    font-size: 12px;
+  }
+  .costumer-service-btn{
+    font-size: 14px;
+  }
+  #freeMedical{
+    width: 450px;
+  }
+  div#freeRegisterRight{
+    display: flex;
+    align-items: center;
+  }
+  .costumer-service-form {
+    margin-top: 8%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -40,4 +117,29 @@
   .logotype img {
     width: 150px;
   }
+
 }
+
+
+/*  font-size: 62.5%;
+  --fs-41: 4.1rem;
+  --fs-40: 4rem;
+  --fs-39: 3.9rem;
+  --fs-38: 3.8rem;
+  --fs-35: 3.5rem;
+  --fs-30: 3rem;
+  --fs-28: 2.8rem;
+  --fs-26: 2.6rem;
+  --fs-24: 2.4rem;
+  --fs-23: 2.3rem;
+  --fs-22: 2.2rem;
+  --fs-21: 2.1rem;
+  --fs-20: 2rem;
+  --fs-19: 1.9rem;
+  --fs-18: 1.8rem;
+  --fs-17: 1.7rem;
+  --fs-16: 1.6rem;
+  --fs-15: 1.5rem;
+  --fs-14: 1.4rem;
+  --fs-13: 1.3rem;
+  --fs-12: 1.2rem;*/
