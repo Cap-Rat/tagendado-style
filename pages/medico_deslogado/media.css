@@ -1,3 +1,16 @@
+@media (max-width: 1660px){
+  img#responsiveImage{
+    width: 650px;
+  }
+  section#scheduling{
+    margin-bottom: 5%;
+  }
+  section#benefits{
+    padding-top: 4%;
+    padding-bottom: 2%;
+  }
+}
+
 @media (max-width: 1600px) {
   header div.options {
     font-size: 1.4rem;
