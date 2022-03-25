@@ -134,6 +134,10 @@
     padding: 10px 3% 10px 3%;
   }
 
+  div#marketingLeft{
+    width: 100%;
+  }
+
   .logotype img {
     width: 200px;
   }
@@ -168,10 +172,11 @@
     font-size: 12px;
   }
   img#fluxImg{
-    height: 450px;
+    height: 340px;
   }
   p#marketingLeftTitle{
-    font-size: 35px;
+    font-size: 30px;
+    line-height: 40px;
   }
   p#marketingLeftSubtitle{
     font-size: 16px;
@@ -187,15 +192,20 @@
     align-items: center;
   }
   img#medicalImg{
-    width: 800px;
+    width: 645px;
   }
+
+  #WinWinSituationTitle{
+    font-size: 25px;
+  }
+
   #WinWinSituationSubtitle{
     font-size: 20px;
+    line-height: 23px;
   }
-  #WinWinSituationList{
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 8%;
+  ul#WinWinSituationList{
+    font-size: 12px;
+    line-height: 22px;
   }
   p#freeRegisterTitle{
     font-size: 35px;
@@ -225,7 +235,14 @@
     margin-top: 8%;
   }
   div#benefitsContainer{
-    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .benefitsContainerItem {
+    width: 30%;
   }
 }
 
