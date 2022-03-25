@@ -24,7 +24,7 @@
   .logotype img {
     width: 200px;
   }
-  #responsiveImage{
+  img#responsiveImage{
     width: 500px;
     margin-top: 50px;
   }
@@ -123,6 +123,110 @@
     width: 150px;
   }
 
+}
+
+@media (max-width: 1024px){
+  header div.options {
+    font-size: 1.3rem;
+  }
+
+  header {
+    padding: 10px 3% 10px 3%;
+  }
+
+  .logotype img {
+    width: 200px;
+  }
+  img#responsiveImage{
+    width: 420px;
+  }
+  div#responsiveWebsite{
+    padding-top: 5%;
+    padding-left: 15%;
+  }
+  p#responsiveWebsiteTitle{
+    font-size: 30px;
+  }
+  p#responsiveWebsiteText{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  section#scheduling{
+    margin-bottom: 0%;
+    height: 550px;
+  }
+  p#benefitsTitle{
+    font-size: 35px;
+  }
+  p#benefitsSubtitle{
+    font-size: 28px;
+  }
+  p#benefitsText{
+    font-size: 18px;
+  }
+  p.allbenefitsText{
+    font-size: 12px;
+  }
+  img#fluxImg{
+    height: 450px;
+  }
+  p#marketingLeftTitle{
+    font-size: 35px;
+  }
+  p#marketingLeftSubtitle{
+    font-size: 16px;
+  }
+  p#marketingLeftText{
+    font-size: 12px;
+  }
+  button#marketingLeftButton{
+    font-size: 14px;
+  }
+  div#marketingRight{
+    display: flex;
+    align-items: center;
+  }
+  img#medicalImg{
+    width: 800px;
+  }
+  #WinWinSituationSubtitle{
+    font-size: 20px;
+  }
+  #WinWinSituationList{
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 8%;
+  }
+  p#freeRegisterTitle{
+    font-size: 35px;
+  }
+  p#freeRegisterSubtitle{
+    font-size: 16px;
+  }
+  .form-label{
+     font-size: 14px;
+  }
+  .costumer-service-input{
+    font-size: 12px;
+  }
+  .costumer-service-btn{
+    font-size: 14px;
+  }
+  #freeMedical{
+    width: 450px;
+  }
+  div#freeRegisterRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .costumer-service-form {
+    margin-top: 8%;
+  }
+  div#benefitsContainer{
+    gap: 25px;
+  }
 }
 
 
