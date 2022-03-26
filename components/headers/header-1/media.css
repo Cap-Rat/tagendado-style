@@ -1,10 +1,10 @@
 @media (max-width: 1600px) {
   header {
-    --fs-15: 1.4rem;
+    padding: 15px 3% 15px 3%;
   }
 
-  header {
-    padding: 15px 3% 15px 3%;
+  header .header-options {
+    font-size: 1.4rem;
   }
 
   .logotype img {
@@ -13,8 +13,8 @@
 }
 
 @media (max-width: 1370px) {
-  header {
-    --fs-15: 1.3rem;
+  header .header-options {
+    font-size: 1.3rem;
   }
 
   header {
@@ -27,8 +27,8 @@
 }
 
 @media (max-width: 1200px) {
-  header {
-    --fs-15: 1.2rem;
+  header .header-options {
+    font-size: 1.2rem;
   }
 
   .logotype img {
