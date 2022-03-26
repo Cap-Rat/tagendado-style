@@ -8,7 +8,7 @@
     <!--Links para a fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./media.css" />
@@ -19,7 +19,7 @@
             <div class="logotype">
                 <img src="img/logo.svg" alt="Logo tá agendado"/>
             </div>
-            <div class="options">
+            <div class="header-options">
                 <a href="#">PERGUNTE AO ESPECIALISTA</a>
                 <a href="#">SEGURANÇA DE DADOS</a>
                 <a href="#">CONTATO</a>
@@ -106,9 +106,10 @@
                 <img src="./img/MedicalMenu.png" alt="MedicalMenu" id="medicalImg">
             </div>
             <div id="WinWinSituationRight">
-                <p id="WinWinSituationTitle">VOCÊ SÓ TEM A GANHAR</p>
-                <br>
-                <p id="WinWinSituationSubtitle">Com o Tagendado você só tem a ganhar</p>
+                <div>
+                    <p id="WinWinSituationTitle">VOCÊ SÓ TEM A GANHAR</p>
+                    <p id="WinWinSituationSubtitle">Com o Tagendado você só tem a ganhar</p>
+                </div>
                 
                 <ul id="WinWinSituationList">
                     <li class="listIcon"><span class="listText">Agenda 24 horas online!</span></li>
@@ -162,74 +163,57 @@
         </section>
     </body>
     <footer>
-        <div class="options">
+        <div class="footer-options">
             <div class="pacientOptions">
-                <p class="listTitle">Pacientes</p>
-                <br/>
+                <p class="listTitle mb-30">Pacientes</p>
                 <a href="#">Especialistas</a>
-                <br/>
                 <a href="#">Clínicas e Hospitais</a>
-                <br/>
                 <a href="#">Pergunte ao especialista</a>
-                <br/>
                 <a href="#">Medicamentos</a>
-                <br/>
                 <a href="#">Serviços</a>
-                <br/>
                 <a href="#">Perguntas frequentes</a>
-                <br/>
                 <a href="#">Aplicações móveis</a>
-                <br/>
                 <a href="#">Diagnósticos por imagem</a>
-                <br/>
-
             </div>
             <div class="specialistOptions">
-                <p class="listTitle">Especialistas da saúde</p>
-                <br/>
+                <p class="listTitle mb-30">Especialistas da saúde</p>
                 <a href="#">Ginecologista</a>
-                <br/>
                 <a href="#">Psiquiatria</a>
-                <br/>
                 <a href="#">Clínico Geral</a>
-                <br/>
                 <a href="#">Endoscopista</a>
-                <br/>
                 <a href="#">Oftalmologista</a>
-                <br/>
                 <a href="#">Dentista</a>
-                <br/>
                 <a href="#">Cirurgião</a>
-                <br/>
                 <a href="#" id="seeAll">+ Veja todos</a>
-
             </div>
             <div class="aboutUs">
-                <p class="listTitle">Sobre nós</p>
-                <br/>
-                <a href="#">Quem somos</a>
-                <br/>
-                <a href="#">Privacidade e Cookies</a>
-                <br/>
-                <a href="#">Termos e condições</a>
-                <br/>
-                <br/>
-                <p class="listTitle">Baixe o app</p>
-                <img src="img/DownloadAppStore.png" alt="Download via AppStore"/>
-                <img src="img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+                <div>
+                    <p class="listTitle mb-30">Sobre nós</p>
+                    <a href="#">Quem somos</a>
+                    <a href="#">Privacidade e Cookies</a>
+                    <a href="#">Termos e condições</a>
+                </div>
+                <div class="aboutUsImgs">
+                    <p class="listTitle">Baixe o app</p>
+                    <img src="img/DownloadAppStore.png" alt="Download via AppStore" id="imgAppStore"/>
+                    <img src="img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+                </div>
             </div>
             <div class="contactInfos">
                 <img src="img/Logo_footer.svg" alt="Logo tagendado">
-                <br/>
-                <p>Telefone</p>
-                <p>+55 (11) 98273-1096</p>
-                <br/>
-                <p>Email:</p>
-                <p>contato@tagendado.com</p>
-                <br>
-                <p>Endereço</p>
-                <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
-                <p>São Paulo/SP - CEP 01311-200</p>                
+                <div>
+                    <p>Telefone</p>
+                    <p>+55 (11) 98273-1096</p>
+                </div>
+                <div>
+                    <p>Email:</p>
+                    <p>contato@tagendado.com</p>
+                </div>
+                <div>
+                    <p>Endereço</p>
+                    <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+                    <p>São Paulo/SP - CEP 01311-200</p>                
+                </div>
             </div>
         </div>
         <div class="copyright">

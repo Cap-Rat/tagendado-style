@@ -1,6 +1,5 @@
-/********HEADER***********/
-
-header div.options {
+/******** HEADER *******/
+header .header-options {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -10,7 +9,7 @@ header div.options {
     text-align: center;
 }
 
-header div.options a {
+header .header-options a {
     margin: 0 20px;
 
     text-decoration: none;
@@ -26,7 +25,8 @@ header {
 }
 
 /********FOOTER*******/
-footer div.options{
+
+footer div.footer-options {
     background-color: #525252;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -35,45 +35,68 @@ footer div.options{
     padding-left: 13.5%;
     padding-right: 7%;
     line-height: 25px;
-    font-size: 15px;
     width: 100%;
 }
 
-footer{
+footer div.footer-options {
+    font-size: 1.5rem;
+}
+
+footer {
     width: 100%;
 }
 
-div.copyright{
+div.copyright {
     background-color: #363636;
     color: #ADADAD;
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 16px;
     text-align: center;
 }
 
-p{
+p {
     color: #ffffff;
 }
 
-footer p.listTitle{
+footer p.listTitle {
     font-weight: bold;
 }
 
-footer a{
-    text-decoration: none;
-    color: #ffffff;
+footer p.mb-30 {
+    margin-bottom: 30px;
 }
 
-a#seeAll{
+footer a {
+    text-decoration: none;
+    color:#ffffff;
+    display: block;
+}
+
+.contactInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInfos img {
+    width: 200px;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a#seeAll {
     color: #86B9FF;
     font-style: italic;
 }
 
-img#imgGooglePlay{
+img#imgGooglePlay {
     height: 46px;
     width: 156px;
 }
-
 
 /******PAGE******/
 #benefitsTitle{
@@ -85,7 +108,8 @@ img#imgGooglePlay{
 }
 
 section#benefits{
-    background: transparent url('img/Group 579.png') 0% 0% no-repeat padding-box;
+    background: transparent url('img/Group 579.png') 0% 0% no-repeat border-box;
+    background-position: center;
     padding-left: 8.6%;
     padding-top: 6.5%;
 }
@@ -94,7 +118,6 @@ p#benefitsSubtitle{
     font-size: var(--fs-26);
     line-height: 32px;
     color: #FFFFFF;
-    
 }
 
 p#benefitsText{
@@ -200,21 +223,21 @@ img.allBenefitsImage{
 }
 
 p#marketingLeftTitle{
-    font-size: 41px;
+    font-size: var(--fs-41);
     line-height: 50px;
     color: #1560A0;
     font-weight: bold;
 }
 
 p#marketingLeftSubtitle{
-    font-size: 18px;
+    font-size: var(--fs-18);
     line-height: 26px;
     opacity: 90%;
     color: black;
 }
 
 p#marketingLeftText{
-    font-size: 14px;
+    font-size: var(--fs-14);
     line-height: 18px;
     color: black;
 }
@@ -222,7 +245,7 @@ p#marketingLeftText{
 button#marketingLeftButton{
     border: none;
     border-radius: 10px;
-    font-size: 1.6rem;
+    font-size: var(--fs-16);
     font-weight: bold;
     padding: 1em 3em;
     cursor: pointer;
@@ -237,6 +260,10 @@ div#marketingLeft{
     
 }
 
+#marketingRight {
+    padding-right: 24.5%;
+}
+
 section#marketing{
     display: grid;
     padding-top: 5%;
@@ -249,9 +276,15 @@ section#WinWinSituation{
     grid-template-columns: 1fr 1fr;
 }
 
+#WinWinSituationRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 p#WinWinSituationTitle{
     padding-top: 5%;
-    font-size: 35px;
+    font-size: var(--fs-35);
     line-height: 43px;
     align-items: center;
     font-weight: bold;
@@ -259,16 +292,15 @@ p#WinWinSituationTitle{
 }
 
 p#WinWinSituationSubtitle{
-    font-size: 23px;
+    font-size: var(--fs-23);
     line-height: 28px;
     color: #525252;
 }
 
 ul#WinWinSituationList{
-    font-size: 16px;
+    font-size: var(--fs-16);
     line-height: 32px;
     color: #525252;
-    margin-top: 10%;
     margin-left: 3%;
 }
 
@@ -292,13 +324,14 @@ div#freeRegisterContent{
 
 p#freeRegisterTitle{
     color: #1560A0;
-    font-size: 41px;
+    font-size: var(--fs-41);
     line-height: 50px;
     text-align: center;
+    font-weight: bold;
 }
 
 p#freeRegisterSubtitle{
-    font-size: 19px;
+    font-size: var(--fs-19);
     text-align: center;
     color: #525252;
     line-height: 32px;
@@ -307,7 +340,7 @@ p#freeRegisterSubtitle{
 
 /*FORMULARIO*/
 .form-label {
-    font-size: 1.6rem;
+    font-size: var(--fs-16);
     margin-bottom: 1rem;
 }
 
@@ -324,7 +357,7 @@ p#freeRegisterSubtitle{
     
     width: 37vw;
   
-    font-size: 1.4rem;
+    font-size: var(--fs-14);
     padding: 1.5rem 1rem;
     margin-bottom: 2rem;
   }
@@ -333,7 +366,7 @@ p#freeRegisterSubtitle{
     border: none;
     border-radius: 1rem;
   
-    font-size: 1.6rem;
+    font-size: var(--fs-16);
     font-weight: bold;
   
     display: flex;

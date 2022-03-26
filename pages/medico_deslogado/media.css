@@ -15,21 +15,55 @@
 }
 
 @media (max-width: 1660px){
+  body {
+    --fs-41: 3.9rem;
+    --fs-40: 3.9rem;
+    --fs-26: 2.5rem;
+    --fs-23: 2.2rem;
+    --fs-22: 2.1rem;
+    --fs-19: 1.8rem;
+    --fs-18: 1.7rem;
+    --fs-16: 1.5rem;
+    --fs-14: 1.3rem;
+  }
+
   img#responsiveImage{
     width: 650px;
   }
+
   section#scheduling{
     margin-bottom: 5%;
   }
+
   section#benefits{
     padding-top: 4%;
     padding-bottom: 2%;
   }
+
+  div#marketingRight{
+    display: flex;
+    align-items: center;
+  }
+
+  img#fluxImg{
+    height: 500px;
+  }
+
+  /* ====== Footer ====== */
+
+  img#imgAppStore {
+    width: 130px;
+  }
+  
+  img#imgGooglePlay {
+    height: 38px;
+    width: 130px;
+  }
 }
 
 @media (max-width: 1600px) {
-  header div.options {
-    font-size: 1.4rem;
+  header {
+    --fs-15: 1.4rem;
   }
 
   header {
@@ -41,219 +75,172 @@
   }
 }
 
-@media (max-width: 1370px) {
-  header div.options {
-    font-size: 1.3rem;
+@media (max-width: 1440px) {
+  body {
+    --fs-41: 3.8rem;
+    --fs-40: 3.8rem;
+    --fs-26: 2.5rem;
+    --fs-23: 2.1rem;
+    --fs-22: 2rem;
+    --fs-19: 1.7rem;
+    --fs-18: 1.6rem;
+    --fs-16: 1.5rem;
+    --fs-14: 1.3rem;
   }
-
-  header {
-    padding: 10px 3% 10px 3%;
-  }
-
-  .logotype img {
-    width: 200px;
-  }
-  img#responsiveImage{
+  
+  img#responsiveImage {
+    margin-top: 10%;
     width: 500px;
-    margin-top: 50px;
   }
-  div#responsiveWebsite{
-    padding-top: 5%;
-  }
-  section#scheduling{
-    margin-bottom: 0%;
-  }
-  p#benefitsTitle{
-    font-size: 35px;
-  }
-  p#benefitsSubtitle{
-    font-size: 28px;
-  }
-  p#benefitsText{
-    font-size: 18px;
-  }
-  p.allbenefitsText{
-    font-size: 12px;
-  }
-  img#fluxImg{
-    height: 450px;
-  }
-  p#marketingLeftTitle{
-    font-size: 35px;
-  }
-  p#marketingLeftSubtitle{
-    font-size: 16px;
-  }
-  p#marketingLeftText{
-    font-size: 12px;
-  }
-  button#marketingLeftButton{
-    font-size: 14px;
-  }
+
   div#marketingRight{
     display: flex;
     align-items: center;
   }
+  
+  img#fluxImg{
+    height: 400px;
+  }
+
   img#medicalImg{
     width: 800px;
   }
-  #WinWinSituationSubtitle{
-    font-size: 20px;
-  }
-  #WinWinSituationList{
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 8%;
-  }
-  p#freeRegisterTitle{
-    font-size: 35px;
-  }
-  p#freeRegisterSubtitle{
-    font-size: 16px;
-  }
-  .form-label{
-     font-size: 14px;
-  }
-  .costumer-service-input{
-    font-size: 12px;
-  }
-  .costumer-service-btn{
-    font-size: 14px;
-  }
-  #freeMedical{
-    width: 450px;
-  }
+
   div#freeRegisterRight{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 0;
   }
-  .costumer-service-form {
-    margin-top: 8%;
+
+  #freeMedical{
+    width: 450px;
   }
-  div#benefitsContainer{
-    gap: 25px;
+
+  /* ====== Footer ====== */
+
+  .aboutUsImgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img#imgAppStore {
+    margin-top: 5px;
+  }
+  
+  img#imgGooglePlay {
+    margin-top: 5px;
+  }
+
+  .contactInfos img {
+    width: 180px;
   }
 }
 
-@media (max-width: 1200px) {
-  header div.options {
-    font-size: 1.2rem;
-  }
-
-  .logotype img {
-    width: 170px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .logotype img {
-    width: 150px;
-  }
-
-}
-
-@media (max-width: 1024px){
-  header div.options {
-    font-size: 1.3rem;
+@media (max-width: 1370px) {
+  header {
+    --fs-15: 1.3rem;
   }
 
   header {
     padding: 10px 3% 10px 3%;
   }
 
+  .logotype img {
+    width: 200px;
+  }
+
+  body {
+    --fs-41: 3.5rem;
+    --fs-40: 3.5rem;
+    --fs-26: 2.4rem;
+    --fs-23: 2rem;
+    --fs-22: 1.8rem;
+    --fs-19: 1.6rem;
+    --fs-18: 1.6rem;
+    --fs-16: 1.4rem;
+    --fs-14: 1.2rem;
+  }
+
+  div#responsiveWebsite{
+    padding-top: 5%;
+  }
+  section#scheduling{
+    margin-bottom: 0%;
+  }
+  
+  .costumer-service-form {
+    margin-top: 8%;
+  }
+
+  div#benefitsContainer{
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1200px){
+  header .header-options {
+    font-size: 1.2rem;
+  }
+
+  .logotype img {
+    width: 170px;
+  }
+
   div#marketingLeft{
     width: 100%;
   }
 
-  .logotype img {
-    width: 200px;
+  body {
+    --fs-41: 3.3rem;
+    --fs-40: 3.3rem;
+    --fs-35: 2.8rem;
+    --fs-23: 1.9rem;
+    --fs-22: 1.9rem;
+    --fs-20: 1.8rem;
+    --fs-19: 1.6rem;
+    --fs-18: 1.6rem;
+    --fs-16: 1.4rem;
+    --fs-14: 1.3rem;
   }
+
   img#responsiveImage{
     width: 420px;
+    margin-top: 12%;
   }
+
   div#responsiveWebsite{
     padding-top: 5%;
     padding-left: 15%;
   }
-  p#responsiveWebsiteTitle{
-    font-size: 30px;
-  }
-  p#responsiveWebsiteText{
-    font-size: 18px;
-    line-height: 22px;
-  }
+
   section#scheduling{
     margin-bottom: 0%;
     height: 550px;
   }
-  p#benefitsTitle{
-    font-size: 35px;
-  }
-  p#benefitsSubtitle{
-    font-size: 28px;
-  }
-  p#benefitsText{
-    font-size: 18px;
-  }
-  p.allbenefitsText{
-    font-size: 12px;
-  }
+
   img#fluxImg{
+    margin-left: 10px;
     height: 340px;
   }
-  p#marketingLeftTitle{
-    font-size: 30px;
-    line-height: 40px;
-  }
-  p#marketingLeftSubtitle{
-    font-size: 16px;
-  }
-  p#marketingLeftText{
-    font-size: 12px;
-  }
-  button#marketingLeftButton{
-    font-size: 14px;
-  }
+
   div#marketingRight{
     display: flex;
     align-items: center;
   }
+
+  p#WinWinSituationTitle{
+    padding-top: 10px;
+  }
+
   img#medicalImg{
-    width: 645px;
+    width: 60vw;
   }
 
-  #WinWinSituationTitle{
-    font-size: 25px;
-  }
-
-  #WinWinSituationSubtitle{
-    font-size: 20px;
-    line-height: 23px;
-  }
-  ul#WinWinSituationList{
-    font-size: 12px;
-    line-height: 22px;
-  }
-  p#freeRegisterTitle{
-    font-size: 35px;
-  }
-  p#freeRegisterSubtitle{
-    font-size: 16px;
-  }
-  .form-label{
-     font-size: 14px;
-  }
-  .costumer-service-input{
-    font-size: 12px;
-  }
-  .costumer-service-btn{
-    font-size: 14px;
-  }
   #freeMedical{
     width: 450px;
   }
+
   div#freeRegisterRight{
     display: flex;
     align-items: center;
@@ -273,8 +260,25 @@
   .benefitsContainerItem {
     width: 30%;
   }
+
+  /* ====== FOOTER ====== */
+
+  footer div.footer-options {
+    gap: 10px;
+
+    padding-left: 10%;
+  }
+
+  .contactInfos img {
+    width: 170px;
+  }
 }
 
+@media (max-width: 1100px) {
+  .logotype img {
+    width: 150px;
+  }
+}
 
 /*  font-size: 62.5%;
   --fs-41: 4.1rem;
