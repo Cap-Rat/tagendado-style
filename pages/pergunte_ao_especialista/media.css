@@ -11,6 +11,17 @@
     }
 }
 
+@media (max-width: 1550px){
+    .main-info-image{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    #doctors{
+        width: 400px;
+    }
+}
+
 @media (max-width: 1480px) {
     /* ====== HEADER ======*/
 
@@ -29,6 +40,9 @@
     .ask-form-container {
         padding-right: 6%;
     }
+
+    /*-------*/
+    
 }
 
 @media (max-width: 1440px) {
