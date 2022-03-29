@@ -8,17 +8,20 @@
     <!--Links para a fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons script -->
+    <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./media.css" />
-    <link rel="stylesheet" type="text/css" href="../../global.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/global.css" />
   </head>
   <body>
     <header class="header">
       <img src="./img/logo.png" class="logo" alt="Logo" />
       
-      <form class="search-form">
+      <form class="search-form" id="searchForm">
         <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
         <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
 
@@ -37,241 +40,273 @@
       </form>
 
       <div class="user-container">
-        <img src="./img/person_outline_black_24dp.png" alt="Cadastro/Login">
-        <a href="#" class="user-auth-button">CADASTRE-SE</a>
-        <p>/</p>
-        <a href="#" class="user-auth-button">LOGIN</a>
+        <div>
+          <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon" onclick="toogleSearch()"></i>
+          <i class="fa-regular fa-user person-icon" id="userIcon" onclick="toogleUser()"></i>
+        </div>
+        <div class="user-options" id="userOptions">
+          <a href="#" class="user-auth-button">CADASTRE-SE</a>
+          <p>/</p>
+          <a href="#" class="user-auth-button">LOGIN</a>
+        </div>
       </div>
     </header>
-    <section id="createAccount">
-        <div id="createAccountForm">
-            <p id="createAccountLocation">Home > Crie sua conta</p>
-            <br><br>
-            <p id="createAccountTitle">Crie sua conta</p>
-            <br>
-            <form action="" >
+    
+    <main class="main">
+      <section class="form-section">
+        <div class="page-identifier-container">
+          <small class="page-identifier">Home > Crie sua conta</small>
+        </div>
 
-              <div class="form-group">
-                <label for="name" class="form-label">Nome Completo*:<br>
-                  <input type="text" placeholder="Digite seu nome" id="name" class="formInputs border"/>
-                </label>
-                <label for="cpf" class="form-label second-item">CPF*:<br>
-                  <input type="text" placeholder="Digite seu CPF" id="cpf" class="formInputs border"/>
-                </label>
-              </div>
+        <h1 class="profile-title">Crie sua conta</h1>
 
-              <div class="form-group" >
+        <form class="professional-form">
+          <div class="form-group">
+            <label class="form-label">
+              Nome Completo*:
+              <input type="text" class="form-input" placeholder="Digite seu nome">
+            </label>
 
-                <div class="input-subgroup" id="subLabel" style="max-width: 664px; flex: none; width: 100%;">
+            <label class="form-label" >
+              CPF*:
+              <input type="text" class="form-input" placeholder="Digite seu CPF">
+            </label>
+          </div>
 
-                  <label for="genero" class="form-label">Gênero*:<br>
-                    <select name="genero" id="genero" style="height: 51px;" class="border">
-                      <option value="selecione" disabled selected style="color: #A8A8A8;">Selecione</option>
-                      <option value="masculino">Masculino</option>
-                      <option value="feminino">Feminino</option>
-                      <option value="outro">Outro</option>
-                    </select>
-                  </label>
+          <div class="form-group">
+            <div class="input-subgroup">
+              <label class="form-label" style="min-width: 152px; max-width: 15vw; margin-right: 20px;">
+                Gênero*:
+                <input list="conselhos" class="form-input dropdown-input" placeholder="Selecione">
+                <datalist id="conselhos">
+                  <option value="Opção 01">
+                  <option value="Opção 02">
+                  <option value="Opção 03">
+                </datalist>
+              </label>
 
-                  <label for="dataNascimento" class="form-label">Data de Nascimento*:<br>
-                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" class="border"/>
-                  </label> 
+              <label class="form-label">
+                Data de Nascimento*:
+                <input type="text" class="form-input" placeholder="DD/MM/AA">
+              </label>
+            </div>
 
-                </div>
+            <label class="form-label" >
+              CEP*:
+              <input type="text" class="form-input" placeholder="Digite seu CEP">
+            </label>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-subgroup" >
+              <label class="form-label">
+                Endereço*:
+                <input type="text" class="form-input" placeholder="Digite seu endereço">
+              </label>
+  
+              <label class="form-label" style="margin-left: 10px; max-width: 100px;">
+                Estado*:
+                <input list="ufs" class="form-input dropdown-input" placeholder="Selecione">
+                <datalist id="ufs">
+                  <option value="PB">
+                  <option value="RJ">
+                  <option value="SP">
+                </datalist>
+              </label>
+            </div>
 
-                <label for="cep" id="cepLabel" class="form-label second-item">CEP*:<br>
-                  <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs border"/>
-                </label>
+            <div class="input-subgroup" >
+              <label class="form-label" style="margin-right: 10px;">
+                Numero*:
+                <input type="text" class="form-input">
+              </label>
 
-              </div>
+              <label class="form-label" style="margin-left: 10px;">
+                Complemento*:
+                <input type="text" class="form-input" placeholder="Apto, casa, fundos, etc.">
+              </label>
+            </div>
+          </div>
 
-              <div class="form-group"> 
+          <div class="form-group">
+            <div class="input-subgroup" >
+              <label class="form-label" style="margin-right: 10px;">
+                Cidade*:
+                <input type="text" class="form-input" placeholder="Digite sua cidade">
+              </label>
 
-                <label for="endereco" class="form-label">Endereço*:<br>
-                  <input type="text" placeholder="Digite seu endereço" id="endereco" class="formInputs border"/>
-                </label>  
-                
-                <label for="complemento" class="form-label second-item">Complemento*:<br>
-                  <input type="text" placeholder="Apto, casa, fundos, etc." id="complemento" class="formInputs border"/>
-                </label>
+              <label class="form-label">
+                Bairro*:
+                <input type="text" class="form-input" placeholder="Bairro">
+              </label>
+            </div>
 
-              </div> 
-
-              <div class="form-group"> 
-              
-                <label for="bairro" class="form-label">Bairro*:
-                  <input type="text" placeholder="Bairro" id="bairro" class="formInputs border"/>
-                </label>
-
-                <div class="input-subgroup endereco" style="flex: none;">
-
-                  <label for="cidade" class="form-label second-item" >Cidade*:
-                    <input type="text" style="max-width: 568px;" placeholder="Digite sua cidade" id="cidade" class="formInputs border" />
-                  </label>
-
-                  <label for="estado" style="margin-left: 28px; " class="estadoSigla form-label" >Estado*:
-                    <select name="estado" id="estado" style="max-width: 98px; height: 51px;" class="border">
-                        <option value="AC">AC</option>
-                        <option value="AL">AL</option>
-                        <option value="AP">AP</option>
-                        <option value="AM">AM</option>
-                        <option value="BA">BA</option>
-                        <option value="CE">CE</option>
-                        <option value="DF">DF</option>
-                        <option value="ES">ES</option>
-                        <option value="GO">GO</option>
-                        <option value="MA">MA</option>
-                        <option value="MT">MT</option>
-                        <option value="MS">MS</option>
-                        <option value="MG">MG</option>
-                        <option value="PA">PA</option>
-                        <option value="PB">PB</option>
-                        <option value="PR">PR</option>
-                        <option value="PE">PE</option>
-                        <option value="PI">PI</option>
-                        <option value="RJ">RJ</option>
-                        <option value="RN">RN</option>
-                        <option value="RS">RS</option>
-                        <option value="RO">RO</option>
-                        <option value="RR">RR</option>
-                        <option value="SC">SC</option>
-                        <option value="SP">SP</option>
-                        <option value="SE">SE</option>
-                        <option value="TO">TO</option>
-                    </select>
-                  </label>
-                </div>
-              </div>  
-
-              <div class="form-group"> 
-                
-                <label for="estado" class="form-label">Estado*:<br>
-                  <input type="text" placeholder="Digite seu estado" id="estadoExtenso" class="formInputs border estadoExtenso"/>
-                </label>
-
-                
-                <label for="telefone" class="form-label second-item">Telefone para contato*:<br>
-                  <div style="display: flex;">
-                  <input type="text" placeholder="DDD" class="formInputs border telefone" style="width: 100px !important; "/>
-                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs border"  ;/>
+            <div class="input-subgroup">
+              <label class="form-label">
+                Telefone para contato*:
+                <div class="input-subgroup">
+                  <input type="text" style="max-height: 50px; max-width: 100px; margin-right: 20px;" class="form-input" placeholder="DDD">
+                  <div style="display: flex; flex-direction: column; flex: 1 1;">
+                    <input type="text" style="flex: 1 1;" class="form-input" placeholder="Digite seu telefone">
                   </div>
-                </label>
-
-              </div>  
-
-                <br><br><br>
-
-                <p id="createAccountTitle">Dados para login</p>
-                <br><br>
-
-                <div class="form-group">
-
-                  <label for="email" class="form-label">E-mail*:<br>
-                    <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs border"/>
-                  </label>
-
-                  <div class="input-subgroup" id="passConfirm" style="margin-left: 59px;">
-
-                    <label for="senha" class="form-label">Senha*:<br>
-                      <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs border password"/>
-                    </label>  
-
-                    <label for="senhaConfirma" class="form-label">Confirme sua senha*:<br>
-                      <input type="password" placeholder="Confirme sua senha" id="senhaConfirma" class="formInputs border password"/>
-                    </label>
-
-                  </div>
-                
                 </div>
-                
-                <br><br>
+              </label>
+            </div>
+          </div>
 
-                <label for="terms">
-                  <input type="checkbox" name="checkboxTerm" id="checkboxTerm" style="font-size: 16px;"/> Aceito os 
-                  <a href="#" style="text-decoration: underline; color: #000000;">Termos e condições de Uso</a> 
-                </label>
+          <h2 class="login-title">Dados para login</h2>
+          
+          <div class="form-group">
+            <label class="form-label">
+              E-mail*:
+              <input type="text" class="form-input" placeholder="Digite o e-mail da secretária">
+            </label>
 
-                <br><br>
+            <div class="input-subgroup">
+              <label class="form-label" style="margin-right: 20px;">
+                Senha do consultório*:
+                <input type="password" class="form-input" placeholder="Digite sua senha">
+              </label>
 
-              <input type="button" value="FAZER CADASTRO" id="registerButton">
-              <br><br><br><br>
-              </form>
-        </div>  
-    </section>
+              <label class="form-label">
+                Confirme sua senha*:
+                <input type="password" class="form-input" placeholder="Confirme sua senha">
+              </label>
+            </div>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox">
+            <span class="checkbox-text">Aceito os<a href="#" class="checkbox-text">Termos e condições de Uso</a></span>
+          </div>
+
+          <button class="form-btn">FAZER CADASTRO</button>
+        </form>
+      </section>
+    </main>
+
     <footer>
-        <div class="options">
-            <div class="pacientOptions">
-                <p class="listTitle">Pacientes</p>
-                <br/>
-                <a href="#">Especialistas</a>
-                <br/>
-                <a href="#">Clínicas e Hospitais</a>
-                <br/>
-                <a href="#">Pergunte ao especialista</a>
-                <br/>
-                <a href="#">Medicamentos</a>
-                <br/>
-                <a href="#">Serviços</a>
-                <br/>
-                <a href="#">Perguntas frequentes</a>
-                <br/>
-                <a href="#">Aplicações móveis</a>
-                <br/>
-                <a href="#">Diagnósticos por imagem</a>
-                <br/>
-
-            </div>
-            <div class="specialistOptions">
-                <p class="listTitle">Especialistas da saúde</p>
-                <br/>
-                <a href="#">Ginecologista</a>
-                <br/>
-                <a href="#">Psiquiatria</a>
-                <br/>
-                <a href="#">Clínico Geral</a>
-                <br/>
-                <a href="#">Endoscopista</a>
-                <br/>
-                <a href="#">Oftalmologista</a>
-                <br/>
-                <a href="#">Dentista</a>
-                <br/>
-                <a href="#">Cirurgião</a>
-                <br/>
-                <a href="#" id="seeAll">+ Veja todos</a>
-
-            </div>
-            <div class="aboutUs">
-                <p class="listTitle">Sobre nós</p>
-                <br/>
-                <a href="#">Quem somos</a>
-                <br/>
-                <a href="#">Privacidade e Cookies</a>
-                <br/>
-                <a href="#">Termos e condições</a>
-                <br/>
-                <br/>
-                <p class="listTitle">Baixe o app</p>
-                <img src="img/DownloadAppStore.png" alt="Download via AppStore"/>
-                <img src="img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
-            </div>
-            <div class="contactInfos">
-                <img src="img/Logo.svg" alt="Logo tagendado">
-                <br/>
-                <p>Telefone</p>
-                <p>+55 (11) 98273-1096</p>
-                <br/>
-                <p>Email:</p>
-                <p>contato@tagendado.com</p>
-                <br>
-                <p>Endereço</p>
-                <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
-                <p>São Paulo/SP - CEP 01311-200</p>                
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Tagendado © 2021 - Todos os direitos reservados</p>
-        </div>
+      <div class="footer-options">
+          <div class="pacientOptions">
+              <p class="listTitle mb-30">Pacientes</p>
+              <a href="#">Especialistas</a>
+              <a href="#">Clínicas e Hospitais</a>
+              <a href="#">Pergunte ao especialista</a>
+              <a href="#">Medicamentos</a>
+              <a href="#">Serviços</a>
+              <a href="#">Perguntas frequentes</a>
+              <a href="#">Aplicações móveis</a>
+              <a href="#">Diagnósticos por imagem</a>
+          </div>
+          <div class="specialistOptions">
+              <p class="listTitle mb-30">Especialistas da saúde</p>
+              <a href="#">Ginecologista</a>
+              <a href="#">Psiquiatria</a>
+              <a href="#">Clínico Geral</a>
+              <a href="#">Endoscopista</a>
+              <a href="#">Oftalmologista</a>
+              <a href="#">Dentista</a>
+              <a href="#">Cirurgião</a>
+              <a href="#" id="seeAll">+ Veja todos</a>
+          </div>
+          <div class="aboutUs">
+              <div>
+                  <p class="listTitle mb-30">Sobre nós</p>
+                  <a href="#">Quem somos</a>
+                  <a href="#">Privacidade e Cookies</a>
+                  <a href="#">Termos e condições</a>
+              </div>
+              <div class="aboutUsImgs">
+                  <p class="listTitle">Baixe o app</p>
+                  <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore" id="imgAppStore"/>
+                  <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+              </div>
+          </div>
+          <div class="contactInfos">
+              <img src="../../components/footers/footer-1/img/Logo_footer.svg" alt="Logo tagendado">
+              <div>
+                  <p>Telefone</p>
+                  <p>+55 (11) 98273-1096</p>
+              </div>
+              <div>
+                  <p>Email:</p>
+                  <p>contato@tagendado.com</p>
+              </div>
+              <div>
+                  <p>Endereço</p>
+                  <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+                  <p>São Paulo/SP - CEP 01311-200</p>                
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Tagendado © 2021 - Todos os direitos reservados</p>
+      </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+      if (screen.width <= 1235) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+      }
+      
+      if (screen.width >= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.remove('dont-show')
+      } else if (screen.width <= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.remove('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.add('dont-show')
+      }
+    });
+
+    window.addEventListener('resize', function(e) {
+      if (screen.width <= 1235) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+      } else {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.remove('dont-show')
+      }
+
+      if (screen.width <= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.remove('dont-show')
+      } else {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.remove('dont-show')
+      }
+    })
+
+    const toogleSearch = () => {
+      if (screen.width <= 1000) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.toggle('dont-show')
+      }
+    }
+
+    const toogleUser = () => {
+      if (screen.width <= 1235) {
+        if (screen.width <= 1000) {
+          const searchForm = document.getElementById('searchForm')
+          searchForm.classList.add('dont-show')
+        }
+
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.toggle('dont-show')
+      }
+    }
+  </script>
 </html>
