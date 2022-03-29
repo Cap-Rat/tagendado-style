@@ -186,6 +186,15 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .professional-form{
+    margin: 0 5%;
+  }
+  .clinic-info-section{
+    margin: 0 5%;
+  }
+}
+
 /*HEADER*/
 @media (max-width: 1000px) {
   .search-form {
