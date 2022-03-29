@@ -21,7 +21,7 @@
     img#imgAppStore {
       width: 130px;
     }
-    
+
     img#imgGooglePlay {
       height: 38px;
       width: 130px;
@@ -132,8 +132,15 @@
   
       background-color: #1560A0;
     }
+
+    
   }
 /*-----*/
+@media (max-width: 1200px) {
+  .signup-container{
+    text-align: right !important;
+  }
+}
 
 /*FOOTER*/
 @media (max-width: 1150px) {
@@ -145,6 +152,7 @@
     .contactInfos img {
       width: 170px;
     }
+
   }
 /*------*/
 
