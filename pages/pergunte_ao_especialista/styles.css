@@ -78,6 +78,8 @@
   height: 25px;
   color: #FFF;
 
+  margin: 0 5px;
+
   cursor: pointer;
 }
 
@@ -231,9 +233,7 @@
   padding: 1em 1.4em;
 }
 
-/* ============= FOOTER ============= */
-
-footer div.options {
+.footer-options {
   background-color: #525252;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -296,7 +296,6 @@ a#seeAll {
   color: #86B9FF;
   font-style: italic;
 }
-
 img#imgGooglePlay {
   height: 46px;
   width: 156px;

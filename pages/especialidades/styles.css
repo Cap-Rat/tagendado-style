@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   padding: 20px 10.5%;
 
@@ -25,13 +26,13 @@
   border-radius: 10px;
   flex: 1;
 
-  font-size: var(--fs-14);
+  font-size: 1.4rem;
   padding: 1.6rem 2rem;
   margin: 0 8px;
 }
 
 .search-form .radio-label {
-  font-size: var(--fs-15);
+  font-size: 1.5rem;
 }
 
 .radio-input-container {
@@ -46,7 +47,7 @@
   border: none;
   border-radius: 10px;
 
-  font-size: var(--fs-14);
+  font-size: 1.4rem;
   font-weight: bold;
 
   padding: 1em 2em;
@@ -62,16 +63,24 @@
   align-items: center;
 }
 
-.mag-glass-icon {
-  width: 22px;
-  height: 22px;
+.search-icon {
+  width: 25px;
+  height: 25px;
   color: #FFF;
+
+  margin: 0 5px;
+  
+  cursor: pointer;
 }
 
 .person-icon {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   color: #FFF;
+
+  margin: 0 5px;
+
+  cursor: pointer;
 }
 
 .user-options {
@@ -82,11 +91,11 @@
 .user-container .user-auth-button {
   text-decoration: none;
   color: #FFF;
-  font-size: var(--fs-14);
+  font-size: 1.4rem;
 }
 
 .user-container p {
-  font-size: var(--fs-14);
+  font-size: 1.4rem;
   margin: 0 0.5rem
 }
 
@@ -416,7 +425,8 @@
   color: #484848;
 }
 
-div.options{
+/*FOOTER*/
+.footer-options {
   background-color: #525252;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -425,35 +435,61 @@ div.options{
   padding-left: 13.5%;
   padding-right: 7%;
   line-height: 25px;
-  font-size: var(--fs-15);
+  font-size: 15px;
+  width: 100%;
 }
 
-div.copyright{
+footer {
+  width: 100%;
+}
+
+div.copyright {
   background-color: #363636;
   color: #ADADAD;
-  font-size: var(--fs-14);
+  font-size: 14px;
   padding: 16px;
   text-align: center;
 }
 
-p{
+p {
   color: #ffffff;
 }
 
-footer p.listTitle{
+footer p.listTitle {
   font-weight: bold;
 }
 
-footer a{
-  text-decoration: none;
-  color: #ffffff;
+footer p.mb-30 {
+  margin-bottom: 30px;
 }
 
-a#seeAll{
+footer a {
+  text-decoration: none;
+  color:#ffffff;
+  display: block;
+}
+
+.contactInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactInfos img {
+  width: 200px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a#seeAll {
   color: #86B9FF;
   font-style: italic;
 }
-img#imgGooglePlay{
+img#imgGooglePlay {
   height: 46px;
   width: 156px;
 }

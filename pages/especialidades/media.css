@@ -1,5 +1,19 @@
 /* ============= MEDIA QUERIES ============= */
 
+/*FOOTER*/
+@media (max-width: 1650px) {
+  img#imgAppStore {
+    width: 130px;
+  }
+  
+  img#imgGooglePlay {
+    height: 38px;
+    width: 130px;
+  }
+}
+
+/*------*/
+
 @media (max-width: 1460px) {
   .logo {
     width: 200px;
@@ -18,6 +32,30 @@
     padding-top: 2.5%;
   }
 }
+
+/*HEADER*/
+
+@media (max-width: 1440px) {
+  .aboutUsImgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img#imgAppStore {
+    margin-top: 5px;
+  }
+  
+  img#imgGooglePlay {
+    margin-top: 5px;
+  }
+
+  .contactInfos img {
+    width: 180px;
+  }
+}
+
+/*------*/
+
 
 @media (max-width: 1350px) {
   .header {
@@ -48,6 +86,22 @@
   }
 }
 
+/*HEADER*/
+@media (max-width: 1300px) {
+  .logo {
+    width: 180px;
+  }
+
+  .search-input {
+    padding: 1.4rem 1.4rem;
+  }
+
+  .btn-search {
+    padding: 1em 1.5em;
+  }
+}
+/*----*/
+
 @media (max-width: 1290px) {
   .header {
     padding: 10px 1%;
@@ -75,12 +129,29 @@
   }
 }
 
-/* inputs passar a ser escondidos */
-@media (max-width: 1220px) {
-  .user-options {
-    display: none;
+/*HEADER*/
+
+/* user-options passa a ser dropdown escondido no icone de usuario */
+@media (max-width: 1235px) {
+  .header {
+    position: relative;
   }
 
+  .user-options {
+    position: absolute;
+    bottom: -25px;
+    right: 30px;
+
+    padding: 5px 5px;
+    border-radius: 5px;
+
+    background-color: #1560A0;
+  }
+}
+/*------*/
+
+/* inputs passar a ser escondidos */
+@media (max-width: 1220px) {
   .user-container .header-icon {
     cursor: pointer;
   }
@@ -186,12 +257,22 @@
   }
 }
 
+/*FOOTER*/
+@media (max-width: 1150px) {
+  footer div.footer-options{
+    gap: 10px;
+    padding-left: 10%;
+  }
+
+  .contactInfos img {
+    width: 170px;
+  }
+}
+/*------*/
+
 @media (max-width: 1100px) {
   .header {
-    --fs-14: 1.2rem;
-    --fs-15: 1.2rem;
     padding: 10px 6%;
-    min-height: 60px;
   }
 
   .logo {
@@ -212,7 +293,11 @@
   }
   
   .user-container p {
-    font-size: var(--fs-14);
+    font-size: 1.2rem;
+  }
+
+  .user-container .user-auth-button {
+    font-size: 1.2rem;
   }
 
   .doctor-cards-section {
@@ -225,6 +310,10 @@
 
   .doctor-rating i {
     width: 20px;
+  }
+
+  .btn-search {
+    font-size: 1.2rem;
   }
 
   .doctor-schedule-container {
@@ -250,4 +339,33 @@
   button.time-available {
     font-size: 1.1rem;
   }
+
+  .search-form .radio-label {
+    font-size: 1.2rem;
+  }
 }
+
+/*HEADER*/
+/* search-form passa a ser dropdown escondido no icone de pesquisa */
+@media (max-width: 1000px) {
+  .search-form {
+    position: absolute;
+    bottom: -50px;
+
+    min-width: 650px;
+    left: 50%;
+    transform: translate(-50%);
+
+    padding: 8px 0px;
+    border-radius: 5px;
+
+    background-color: #1560A0;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 120px;
+  }
+}
+/*------*/

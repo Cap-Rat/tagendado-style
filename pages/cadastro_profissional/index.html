@@ -10,14 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Icons script -->
+    <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./media.css" />
     <link rel="stylesheet" type="text/css" href="../../components/global.css" />
+    
   </head>
   <body>
     <header class="header">
-      <img src="../../components/headers/header-2/img/logo.png" class="logo" alt="Logo" />
+      <img src="./img/logo.png" class="logo" alt="Logo" />
       
-      <form class="search-form">
+      <form class="search-form" id="searchForm">
         <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
         <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
 
@@ -36,10 +41,15 @@
       </form>
 
       <div class="user-container">
-        <img src="../../components/headers/header-2/img/person_outline_black_24dp.png" alt="Cadastro/Login">
-        <a href="#" class="user-auth-button">CADASTRE-SE</a>
-        <p>/</p>
-        <a href="#" class="user-auth-button">LOGIN</a>
+        <div>
+          <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon" onclick="toogleSearch()"></i>
+          <i class="fa-regular fa-user person-icon" id="userIcon" onclick="toogleUser()"></i>
+        </div>
+        <div class="user-options" id="userOptions">
+          <a href="#" class="user-auth-button">CADASTRE-SE</a>
+          <p>/</p>
+          <a href="#" class="user-auth-button">LOGIN</a>
+        </div>
       </div>
     </header>
 
@@ -237,79 +247,127 @@
     </main>
 
     <footer>
-        <div class="options">
-            <div class="pacientOptions">
-                <p class="listTitle">Pacientes</p>
-                <br/>
-                <a href="#">Especialistas</a>
-                <br/>
-                <a href="#">Clínicas e Hospitais</a>
-                <br/>
-                <a href="#">Pergunte ao especialista</a>
-                <br/>
-                <a href="#">Medicamentos</a>
-                <br/>
-                <a href="#">Serviços</a>
-                <br/>
-                <a href="#">Perguntas frequentes</a>
-                <br/>
-                <a href="#">Aplicações móveis</a>
-                <br/>
-                <a href="#">Diagnósticos por imagem</a>
-                <br/>
-
-            </div>
-            <div class="specialistOptions">
-                <p class="listTitle">Especialistas da saúde</p>
-                <br/>
-                <a href="#">Ginecologista</a>
-                <br/>
-                <a href="#">Psiquiatria</a>
-                <br/>
-                <a href="#">Clínico Geral</a>
-                <br/>
-                <a href="#">Endoscopista</a>
-                <br/>
-                <a href="#">Oftalmologista</a>
-                <br/>
-                <a href="#">Dentista</a>
-                <br/>
-                <a href="#">Cirurgião</a>
-                <br/>
-                <a href="#" id="seeAll">+ Veja todos</a>
-
-            </div>
-            <div class="aboutUs">
-                <p class="listTitle">Sobre nós</p>
-                <br/>
-                <a href="#">Quem somos</a>
-                <br/>
-                <a href="#">Privacidade e Cookies</a>
-                <br/>
-                <a href="#">Termos e condições</a>
-                <br/>
-                <br/>
-                <p class="listTitle">Baixe o app</p>
-                <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
-                <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
-            </div>
-            <div class="contactInfos">
-                <img src="../../components/footers/footer-1/img/Logo.svg" alt="Logo tagendado">
-                <br/>
-                <p>Telefone</p>
-                <p>+55 (11) 98273-1096</p>
-                <br/>
-                <p>Email:</p>
-                <p>contato@tagendado.com</p>
-                <br>
-                <p>Endereço</p>
-                <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
-                <p>São Paulo/SP - CEP 01311-200</p>                
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Tagendado © 2021 - Todos os direitos reservados</p>
-        </div>
-    </footer>
+      <div class="footer-options">
+          <div class="pacientOptions">
+              <p class="listTitle mb-30">Pacientes</p>
+              <a href="#">Especialistas</a>
+              <a href="#">Clínicas e Hospitais</a>
+              <a href="#">Pergunte ao especialista</a>
+              <a href="#">Medicamentos</a>
+              <a href="#">Serviços</a>
+              <a href="#">Perguntas frequentes</a>
+              <a href="#">Aplicações móveis</a>
+              <a href="#">Diagnósticos por imagem</a>
+          </div>
+          <div class="specialistOptions">
+              <p class="listTitle mb-30">Especialistas da saúde</p>
+              <a href="#">Ginecologista</a>
+              <a href="#">Psiquiatria</a>
+              <a href="#">Clínico Geral</a>
+              <a href="#">Endoscopista</a>
+              <a href="#">Oftalmologista</a>
+              <a href="#">Dentista</a>
+              <a href="#">Cirurgião</a>
+              <a href="#" id="seeAll">+ Veja todos</a>
+          </div>
+          <div class="aboutUs">
+              <div>
+                  <p class="listTitle mb-30">Sobre nós</p>
+                  <a href="#">Quem somos</a>
+                  <a href="#">Privacidade e Cookies</a>
+                  <a href="#">Termos e condições</a>
+              </div>
+              <div class="aboutUsImgs">
+                  <p class="listTitle">Baixe o app</p>
+                  <img src="img/DownloadAppStore.png" alt="Download via AppStore" id="imgAppStore"/>
+                  <img src="img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+              </div>
+          </div>
+          <div class="contactInfos">
+              <img src="img/Logo_footer.svg" alt="Logo tagendado">
+              <div>
+                  <p>Telefone</p>
+                  <p>+55 (11) 98273-1096</p>
+              </div>
+              <div>
+                  <p>Email:</p>
+                  <p>contato@tagendado.com</p>
+              </div>
+              <div>
+                  <p>Endereço</p>
+                  <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+                  <p>São Paulo/SP - CEP 01311-200</p>                
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Tagendado © 2021 - Todos os direitos reservados</p>
+      </div>
+  </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+      if (screen.width <= 1235) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+      }
+      
+      if (screen.width >= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.remove('dont-show')
+      } else if (screen.width <= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.remove('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.add('dont-show')
+      }
+    });
+
+    window.addEventListener('resize', function(e) {
+      if (screen.width <= 1235) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+      } else {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.remove('dont-show')
+      }
+
+      if (screen.width <= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.remove('dont-show')
+      } else {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.remove('dont-show')
+      }
+    })
+
+    const toogleSearch = () => {
+      if (screen.width <= 1000) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.toggle('dont-show')
+      }
+    }
+
+    const toogleUser = () => {
+      if (screen.width <= 1235) {
+        if (screen.width <= 1000) {
+          const searchForm = document.getElementById('searchForm')
+          searchForm.classList.add('dont-show')
+        }
+
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.toggle('dont-show')
+      }
+    }
+  </script>
 </html>
