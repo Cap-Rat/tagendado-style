@@ -29,9 +29,8 @@
 }
 
 @media (max-width: 1150px) {
-  footer div.footer-options {
+  footer div.footer-options{
     gap: 10px;
-
     padding-left: 10%;
   }
 

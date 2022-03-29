@@ -1,6 +1,5 @@
-/* ============= HEADER ============= */
-
-div.options {
+/******** HEADER *******/
+header .header-options {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -10,7 +9,7 @@ div.options {
   text-align: center;
 }
 
-div.options a {
+header .header-options a {
   margin: 0 20px;
 
   text-decoration: none;
@@ -27,7 +26,7 @@ header {
 
 /* ============= FOOTER ============= */
 
-footer .options{
+.footer-options {
   background-color: #525252;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -36,40 +35,65 @@ footer .options{
   padding-left: 13.5%;
   padding-right: 7%;
   line-height: 25px;
-  font-size: var(--fs-15);
+  font-size: 15px;
+  width: 100%;
 }
 
-footer .copyright{
-    background-color: #363636;
-    color: #ADADAD;
-    font-size: var(--fs-14);
-    padding: 16px;
-    text-align: center;
+footer {
+  width: 100%;
 }
 
-footer p.listTitle{
-    font-weight: bold;
-    color: #ffffff;
+div.copyright {
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
 }
 
-footer p {
+p {
   color: #ffffff;
 }
 
-footer .options a{
-    text-decoration: none;
-    color: #ffffff;
+footer p.listTitle {
+  font-weight: bold;
 }
 
-a#seeAll{
-    color: #86B9FF;
-    font-style: italic;
+footer p.mb-30 {
+  margin-bottom: 30px;
 }
 
-img#imgGooglePlay{
-    height: 46px;
-    width: 156px;
+footer a {
+  text-decoration: none;
+  color:#ffffff;
+  display: block;
 }
+
+.contactInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactInfos img {
+  width: 200px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a#seeAll {
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay {
+  height: 46px;
+  width: 156px;
+}
+
 
 /* ============= MAIN ============= */
 section#sectionSearch{
@@ -508,6 +532,7 @@ h2#newProfessionalsTitle{
 .testimonial-text {
   font-size: var(--fs-16);
   font-style: italic;
+  color: black;
 }
 
 .testimonial-picture {

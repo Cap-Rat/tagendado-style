@@ -16,6 +16,31 @@
 
 }
 
+/*FOOTER*/
+@media (max-width: 1650px) {
+    img#imgAppStore {
+      width: 130px;
+    }
+    
+    img#imgGooglePlay {
+      height: 38px;
+      width: 130px;
+    }
+}
+/*-----*/
+
+/*HEADER*/
+@media (max-width: 1460px) {
+    .logo {
+      width: 200px;
+    }
+  
+    .header {
+      padding: 15px 6%;
+    }
+  }
+/*----*/
+
 @media (max-width: 1440px) {
     .auth-btn{
         padding-top: 2%;
@@ -39,6 +64,25 @@
     .forgot-password{
         font-size: 14px;
     }
+
+    /*FOOTER*/
+    .aboutUsImgs {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      img#imgAppStore {
+        margin-top: 5px;
+      }
+      
+      img#imgGooglePlay {
+        margin-top: 5px;
+      }
+    
+      .contactInfos img {
+        width: 180px;
+      }
+      /*-----*/
 }
 
 @media (max-width: 1360px) {
@@ -55,6 +99,52 @@
     }
 }
 
+/*HEADER*/
+@media (max-width: 1300px) {
+    .logo {
+      width: 180px;
+    }
+  
+    .search-input {
+      padding: 1.4rem 1.4rem;
+    }
+  
+    .btn-search {
+      padding: 1em 1.5em;
+    }
+  }
+  /* user-options passa a ser dropdown escondido no icone de usuario */
+@media (max-width: 1235px) {
+    .header {
+      position: relative;
+    }
+  
+    .user-options {
+      position: absolute;
+      bottom: -25px;
+      right: 30px;
+  
+      padding: 5px 5px;
+      border-radius: 5px;
+  
+      background-color: #1560A0;
+    }
+  }
+/*------*/
+
+/*FOOTER*/
+@media (max-width: 1150px) {
+    footer div.footer-options{
+      gap: 10px;
+      padding-left: 10%;
+    }
+  
+    .contactInfos img {
+      width: 170px;
+    }
+  }
+/*-------*/
+
 @media (max-width: 1140px) {
     .signup-container{
         width: 61%;
@@ -70,6 +160,40 @@
         margin-left: 40%;
         text-align: right;
     }
+
+    /*HEADER*/
+    .header {
+        padding: 10px 6%;
+      }
+    
+      .logo {
+        width: 150px;
+      }
+      
+      .search-input {
+        padding: 12px;
+      }
+    
+      .radio-input-container {
+        min-width: 80px;
+      }
+    
+      .user-container p {
+        font-size: 1.2rem;
+      }
+    
+      .user-container .user-auth-button {
+        font-size: 1.2rem;
+      }
+    
+      .btn-search {
+        font-size: 1.2rem;
+      }
+    
+      .search-form .radio-label {
+        font-size: 1.2rem;
+      }
+      /*-------*/
 }
 
 @media (max-width: 1024px) {
@@ -106,3 +230,26 @@
         text-align: right;
     }
 }
+/*HEADER*/
+/* search-form passa a ser dropdown escondido no icone de pesquisa */
+@media (max-width: 1000px) {
+    .search-form {
+      position: absolute;
+      bottom: -50px;
+  
+      min-width: 650px;
+      left: 50%;
+      transform: translate(-50%);
+  
+      padding: 8px 0px;
+      border-radius: 5px;
+  
+      background-color: #1560A0;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .logo {
+      width: 120px;
+    }
+  }

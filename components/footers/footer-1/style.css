@@ -1,4 +1,4 @@
-footer div.footer-options {
+.footer-options {
     background-color: #525252;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
