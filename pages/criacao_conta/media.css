@@ -77,13 +77,6 @@
         padding: 10px 7px;
         margin-top: 5px;
     }
-
-    /* .form-group {
-        flex-direction: column;
-        gap: 0px;
-
-        margin-bottom: 0px;
-    } */
 }
 
 @media (max-width: 1235px) {
@@ -166,6 +159,19 @@
         border-radius: 5px;
     
         background-color: #1560A0;
+    }
+}
+
+@media (max-width: 900px) {
+    .form-group {
+        flex-direction: column;
+        gap: 0px;
+
+        margin-bottom: 0px;
+    } 
+    
+    .form-label {
+        margin-top: 10px;
     }
 }
 
