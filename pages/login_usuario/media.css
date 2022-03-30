@@ -6,22 +6,23 @@
         margin-bottom: 1%;
     }
 
-    .login-info-container{
-        padding: 2.2% 7%;
-    }
-
     .info-stamps-container{
         margin-top: 15%;
     }
 
 }
 
-/*FOOTER*/
 @media (max-width: 1650px) {
+  .stamp-image {
+      width: 140px;
+      height: 140px;
+    }
+    
     img#imgAppStore {
       width: 130px;
     }
-
+    
+    /*FOOTER*/
     img#imgGooglePlay {
       height: 38px;
       width: 130px;
@@ -29,25 +30,41 @@
   }
 /*------*/
 
-/* ============= HEADER ============= */
 
 @media (max-width: 1460px) {
-    .logo {
-      width: 200px;
-    }
-  
-    .header {
-      padding: 15px 6%;
-    }
+  /* ============= HEADER ============= */
+  .logo {
+    width: 200px;
   }
+  
+  .header {
+    padding: 15px 6%;
+  }
+  
+  /* ============= MAIN ============= */
+  .login-info-container {
+    padding: 2.2% 6%;
+  }
+
+  .login-form-container {
+    padding-right: 6%;
+  }
+}
 
 /*---------*/
 
 @media (max-width: 1440px) {
+  body {
+    --fs-39: 3.3rem;
+    --fs-35: 3rem;
+    --fs-23: 2rem;
+    --fs-20: 1.6rem;
+    --fs-16: 1.4rem;
+  }
+
     .auth-btn{
         padding-top: 2%;
         padding-bottom: 2%;
-        font-size: 14px;
     }
 
     .info-stamps-container{
@@ -59,46 +76,24 @@
         height: 140px;
     }
 
-    .checkbox-text{
-        font-size: 14px;
-    }
-
-    .forgot-password{
-        font-size: 14px;
-    }
-
     /*FOOTER*/
     .aboutUsImgs {
         display: flex;
         flex-direction: column;
-      }
+    }
     
-      img#imgAppStore {
+    img#imgAppStore {
         margin-top: 5px;
-      }
+    }
       
-      img#imgGooglePlay {
+    img#imgGooglePlay {
         margin-top: 5px;
-      }
+    }
     
-      .contactInfos img {
+    .contactInfos img {
         width: 180px;
-      }
+    }
     /*-------*/
-}
-
-@media (max-width: 1360px) {
-    .auth-btn{
-        font-size: 10px;
-    }
-
-    .checkbox-text{
-        text-align: center;
-    }
-
-    .forgot-password{
-        text-align: center;
-    }
 }
 
 /*HEADER*/
@@ -114,6 +109,29 @@
     .btn-search {
       padding: 1em 1.5em;
     }
+}
+
+@media (max-width: 1250px) {
+  .auth-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-btn {
+    margin-bottom: 10px;
+    min-width: 215px;
+    max-width: 300px;
+    min-height: 40  px;
+
+    /* padding: 10px 10px */
+  }
+
+
+  .google-icon {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+  }
 }
 
 /* user-options passa a ser dropdown escondido no icone de usuario */
@@ -136,11 +154,6 @@
     
   }
 /*-----*/
-@media (max-width: 1200px) {
-  .signup-container{
-    text-align: right !important;
-  }
-}
 
 /*FOOTER*/
 @media (max-width: 1150px) {
@@ -189,33 +202,33 @@
     .search-form .radio-label {
       font-size: 1.2rem;
     }
+
+    /* ===== MAIN ===== */
+    body {
+      --fs-39: 3.2rem;
+      --fs-35: 2.9rem;
+      --fs-23: 1.9rem;
+      --fs-20: 1.5rem;
+    }
+
+    .stamp-image{
+          height: 130px;
+          width: 130px;
+      }
   }
   /*----*/
 
 @media (max-width: 1024px) {
+    body {
+      --fs-39: 3rem;
+      --fs-35: 2.8rem;
+      --fs-23: 1.8rem;
+      --fs-20: 1.4rem;
+    }
+
     .stamp-image{
         height: 120px;
         width: 120px;
-    }
-
-    .stamp-text{
-        font-size: 16px;
-    }
-
-    .info-sub-text{
-        font-size: 20px;
-    }
-
-    .info-main-text{
-        font-size: 35px;
-    }
-
-    .form-title-container{
-        margin-top: 6vh;
-    }
-
-    .login-info-container {
-        padding: 5% 7%;
     }
 }
 

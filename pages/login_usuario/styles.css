@@ -312,8 +312,6 @@
   flex: 1;
   border: none;
   border-radius: 3px;
-  font-size: var(--fs-16);
-  font-weight: 500;
   color: #FFFFFF;
   cursor: pointer;
 
@@ -323,8 +321,17 @@
   padding-bottom: 1%;
 }
 
+.auth-btn-text {
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
 .facebook-btn {
   background-color: #3F51B5;
+}
+
+.fb-icon {
+  font-size: 20px;
 }
 
 .google-btn {
