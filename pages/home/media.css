@@ -427,3 +427,52 @@
     width: 540px;
   }
 }
+
+/*MOBILE - DEUS ABENÇOE*/
+@media (max-width: 801px){
+  div.benefitsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  div.benefits {
+    width: 100%;
+  }
+  section#schedulingTutorial{
+    flex-direction: column-reverse;
+  }
+  div.schedulingTutorialContent{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    align-items: center;
+  }
+  p.schedulingTutorialText{
+    margin-bottom: 30px;
+  }
+  button.schedulingButton{
+    margin-bottom: 20px;
+  }
+  section#someSpecialties{
+    flex-direction: column;
+    align-items: center;
+  }
+  div#medicalGroup2 img{
+    width: 300px;
+  }
+  section#schedulingTutorial img{
+    width: 300px;
+  }
+  div#allSpecialtiesTitleAndSub{
+    text-align: center;
+  }
+  .mobileHide{
+    display: none;
+  }
+  #medicalGroup{
+    bottom: 80px;
+    width: 300px;
+  }
+}
