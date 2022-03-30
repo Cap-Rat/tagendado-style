@@ -16,75 +16,6 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <link rel="stylesheet" type="text/css" href="./media.css" />
     <link rel="stylesheet" type="text/css" href="../../components/global.css" />
-  
-    <script>
-      document.addEventListener("DOMContentLoaded", function(e) {
-        if (screen.width <= 1235) {
-          const userOptions = document.getElementById('userOptions')
-          userOptions.classList.add('dont-show')
-        }
-        
-        if (screen.width >= 1000) {
-          const searchIcon = document.getElementById('searchIcon')
-          searchIcon.classList.add('dont-show')
-  
-          const searchForm = document.getElementById('searchForm')
-          searchForm.classList.remove('dont-show')
-        } else if (screen.width <= 1000) {
-          const searchIcon = document.getElementById('searchIcon')
-          searchIcon.classList.remove('dont-show')
-  
-          const searchForm = document.getElementById('searchForm')
-          searchForm.classList.add('dont-show')
-        }
-      });
-  
-      window.addEventListener('resize', function(e) {
-        if (screen.width <= 1235) {
-          const userOptions = document.getElementById('userOptions')
-          userOptions.classList.add('dont-show')
-        } else {
-          const userOptions = document.getElementById('userOptions')
-          userOptions.classList.remove('dont-show')
-        }
-  
-        if (screen.width <= 1000) {
-          const searchIcon = document.getElementById('searchIcon')
-          searchIcon.classList.remove('dont-show')
-        } else {
-          const searchIcon = document.getElementById('searchIcon')
-          searchIcon.classList.add('dont-show')
-  
-          const searchForm = document.getElementById('searchForm')
-          searchForm.classList.remove('dont-show')
-        }
-      })
-  
-      const toogleSearch = () => {
-        if (screen.width <= 1000) {
-          const userOptions = document.getElementById('userOptions')
-          userOptions.classList.add('dont-show')
-  
-          const searchForm = document.getElementById('searchForm')
-          searchForm.classList.toggle('dont-show')
-        }
-      }
-  
-      const toogleUser = () => {
-        
-        if (screen.width <= 1235) {
-          
-          if (screen.width <= 1000) {
-            
-            const searchForm = document.getElementById('searchForm')
-            searchForm.classList.add('dont-show')
-          }
-  
-          const userOptions = document.getElementById('userOptions')
-          userOptions.classList.toggle('dont-show')
-        }
-      }
-    </script>
   </head>
   <body>
     <header class="header">
@@ -658,9 +589,76 @@
       <div class="copyright">
           <p>Tagendado © 2021 - Todos os direitos reservados</p>
       </div>
-  </footer>
+    </footer>
   
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+      if (screen.width <= 1235) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+      }
+      
+      if (screen.width >= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.add('dont-show')
 
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.remove('dont-show')
+      } else if (screen.width <= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.remove('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.add('dont-show')
+      }
+    });
+
+    window.addEventListener('resize', function(e) {
+      if (screen.width <= 1235) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+      } else {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.remove('dont-show')
+      }
+
+      if (screen.width <= 1000) {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.remove('dont-show')
+      } else {
+        const searchIcon = document.getElementById('searchIcon')
+        searchIcon.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.remove('dont-show')
+      }
+    })
+
+    const toogleSearch = () => {
+      if (screen.width <= 1000) {
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.add('dont-show')
+
+        const searchForm = document.getElementById('searchForm')
+        searchForm.classList.toggle('dont-show')
+      }
+    }
+
+    const toogleUser = () => {
+      
+      if (screen.width <= 1235) {
+        
+        if (screen.width <= 1000) {
+          
+          const searchForm = document.getElementById('searchForm')
+          searchForm.classList.add('dont-show')
+        }
+
+        const userOptions = document.getElementById('userOptions')
+        userOptions.classList.toggle('dont-show')
+      }
+    }
+  </script>
 
 </html>
