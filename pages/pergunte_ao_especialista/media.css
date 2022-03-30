@@ -1,17 +1,6 @@
 /* ============= MEDIA QUERIES ============= */
 
 @media (max-width: 1650px) {
-    img#imgAppStore {
-        width: 130px;
-    }
-
-    img#imgGooglePlay {
-        height: 38px;
-        width: 130px;
-    }
-}
-
-@media (max-width: 1550px){
     .main-info-image{
         justify-content: center;
         align-items: center;
@@ -19,6 +8,21 @@
     }
     #doctors{
         width: 400px;
+    }
+
+    .ask-form-container {
+        padding-bottom: 2.2%;
+    }
+
+    /*FOOTER*/
+
+    img#imgAppStore {
+        width: 130px;
+    }
+
+    img#imgGooglePlay {
+        height: 38px;
+        width: 130px;
     }
 }
 
@@ -87,6 +91,18 @@
     .btn-search {
         padding: 1em 1.5em;
     }
+
+    /* === MAIN ===*/
+    body {
+        --fs-35: 3.2rem;
+        --fs-26: 2.4rem;
+        --fs-16: 1.5rem;
+    }
+
+    img#doctors{
+        width: 350px;
+        /* margin-top: 50px; */
+    }
 }
 
 @media (max-width: 1235px) {
@@ -107,10 +123,24 @@
 }
 
 @media (max-width: 1140px) {
-    img#doctors{
-        width: 300px;
-        margin-top: 50px;
+    body {
+        --fs-35: 3rem;
+        --fs-26: 2.2rem;
+        --fs-16: 1.4rem;
     }
+
+    .main-info-container {
+        flex-direction: column;
+    }
+
+    .info-text-subtitle {
+        margin: 10px 0;
+    }
+
+    .ask-info-container {
+        padding-bottom: 5%;
+    }
+
 
     /* ====== FOOTER ====== */
 
@@ -127,8 +157,7 @@
 
 @media (max-width: 1024px) {
     img#doctors{
-        width: 265px;
-        margin-top: 80px;
+        width: 320px;
     }
 }
 

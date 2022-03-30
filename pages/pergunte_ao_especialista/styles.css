@@ -112,7 +112,7 @@
 
 .page-identifier {
   color: #8D8D8D;
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   font-weight: 500;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .ask-info-title {
-  font-size: 3.5rem;
+  font-size: var(--fs-35);
   font-weight: bold;
   color: #000000;
 
@@ -145,7 +145,7 @@
 }
 
 .info-text-subtitle {
-  font-size: 2.6rem;
+  font-size: var(--fs-26);
   font-weight: bold;
   color: #2B8E91;
 
@@ -154,7 +154,7 @@
 }
 
 .info-text {
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   color: #000000;
 }
@@ -183,13 +183,13 @@
 }
 
 .ask-input-label {
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   color: #000000;
 }
 
 .ask-form-input {
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   padding: 2.5% 1.5%;
   margin-top: 5px;
   width: 100%;
@@ -214,7 +214,7 @@
 }
 
 .checkbox-text {
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   color: #000000;
 
@@ -224,7 +224,7 @@
 .ask-form-btn {
   border: none;
   border-radius: 1rem;
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: bold;
   color: #FFF;
   background-color: #2B8E91;
@@ -232,6 +232,8 @@
 
   padding: 1em 1.4em;
 }
+
+/* ==== FOOTER ==== */
 
 .footer-options {
   background-color: #525252;
