@@ -234,4 +234,80 @@
     }
   }
     /*----*/
+    
+}
+
+@media only screen and (max-width: 769px){
+    .main{
+        display: grid;
+    }
+    .ask-info-container {
+        max-width: 100%;
+    }
+    .ask-info-title {
+        text-align: center;
+    }
+    img#doctors {
+        margin-top: 0;
+    }
+    .info-text-subtitle {
+        margin-top: 0;
+    }
+    .page-identifier-container {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .main-info-image{
+        text-align: center;
+    }
+    .main-info-container{
+        display: grid;
+        padding-bottom: 5%;
+    }
+    .info-text-subtitle {
+        margin-top: 12%;
+        margin-bottom: 2%;
+    }
+    .info-text-container {
+        margin-left: 0;
+    }
+    img#doctors {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    img#doctors{
+        width: 261px;
+    }
+}
+
+@media only screen and (max-width: 801px){
+  .left-main-content{
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  img.img-attendant{
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 601px){
+  .left-main-content{
+    flex-direction: column;
+    margin-top: 2%;
+  }
+  .left-container{
+    max-width: 100%;
+  }
+  .right-container{
+    width: 100%;
+  }
+  .costumer-service-form{
+    margin-top: 5%;
+  }
 }
