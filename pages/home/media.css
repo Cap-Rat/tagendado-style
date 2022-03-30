@@ -476,3 +476,53 @@
     width: 300px;
   }
 }
+
+@media (max-width: 601px){
+  #onlineScheduling{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  div#appPicture img{
+    width: 300px;
+  }
+  div.appButtonsContainer{
+    justify-content: center;
+  }
+  #onlineSchedulingText{
+    margin: 5% 0;
+    padding: 0;
+  }
+
+  /*Primeira parte*/
+  #medicalGroup {
+    bottom: 120px;
+    width: 300px;
+    right: 10px;
+  }
+  .search {
+    max-width: 100%;
+  }
+  .search h2 {
+    width: 60%;
+  }
+  section#sectionSearch form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section#sectionSearch form .radio-input-container {
+    margin-top: 5%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  section#sectionSearch form .search-input {
+    padding: 15px 15px;
+    width: 90%;
+
+  }
+  #submitButton{
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
