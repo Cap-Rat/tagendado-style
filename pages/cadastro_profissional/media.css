@@ -15,11 +15,11 @@
 
 @media (max-width: 1460px) {
   .professional-info-section {
-    padding: 2.2% 10% 2.2% 6%;
+    padding: 2.2% 6% 2.2% 6%;
   }
 
   .clinic-info-section {
-    padding: 2.2% 10% 2.2% 6%;
+    padding: 2.2% 6% 2.2% 6%;
   }
 
   /* HEADER */
@@ -54,57 +54,36 @@
 /*-------*/
 
 @media (max-width: 1300px) {
-  .header {
-    padding: 15px 5%;
-  }
-
-  .professional-info-section {
-    padding: 2.2% 5% 2.2% 5%;
-  }
-  
-  .clinic-info-section {
-    padding: 2.2% 5% 2.2% 5%;
-  }
-
   /* ============= HEADER ============= */
-
+  
   .logo {
     width: 180px;
   }
-
-  .search-input {
-    padding: 1.4rem 1.4rem;
-  }
-
-  .btn-search {
-    padding: 1em 1.5em;
-  }
-
-}
-
-@media (max-width: 1270px) {
-  .header {
-    padding: 10px 1%;
-  }
-
-  .logo {
-    max-height: 45px;
-  }
-
-  .search-input {
-    padding: 1.4rem 1.4rem;
-  }
-
-  .btn-search {
-    padding: 1em 1.5em;
-  }
-
-  .professional-info-section {
-    padding: 2.2% 3% 2.2% 3%;
-  }
   
-  .clinic-info-section {
-    padding: 2.2% 3% 2.2% 3%;
+  .search-input {
+    padding: 1.4rem 1.4rem;
+  }
+
+  .btn-search {
+    padding: 1em 1.5em;
+  }
+
+  /* ====== BODY ====== */
+
+  body {
+    --fs-35: 3rem;
+    --fs-24: 2.1rem;
+    --fs-16: 1.4rem;
+    --fs-14: 1.3rem;
+  }
+
+  .form-input {
+    padding: 10px 7px;
+    margin-top: 5px;
+  }
+
+  .ddd-input {
+    max-height: 38px;
   }
 }
 
@@ -144,14 +123,6 @@
 
 @media (max-width: 1100px) {
 
-  .professional-info-section {
-    padding: 2.2% 1% 2.2% 1%;
-  }
-  
-  .clinic-info-section {
-    padding: 2.2% 1% 2.2% 1%;
-  }
-
   /*HEADER*/
   .header {
     padding: 10px 6%;
@@ -187,13 +158,18 @@
 }
 
 @media (max-width: 1024px) {
-  .professional-form{
-    margin: 0 5%;
+  /* .form-group {
+    flex-direction: column;
+    gap: 0px;
+
+    margin-bottom: 0px;
   }
-  .clinic-info-section{
-    margin: 0 5%;
-  }
+
+  .form-label {
+    margin-top: 10px;
+  } */
 }
+
 
 /*HEADER*/
 @media (max-width: 1000px) {
