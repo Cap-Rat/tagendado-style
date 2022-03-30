@@ -526,3 +526,18 @@
     margin-top: 2%;
   }
 }
+
+@media (max-width: 481px){
+  #medicalGroup{
+    bottom: 198px;
+    width: 250px;
+  }
+  .buttonSpecialties{
+    width: 175px;
+  }
+  div.benefitsContainer{
+    margin-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
