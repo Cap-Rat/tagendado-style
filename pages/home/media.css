@@ -34,12 +34,12 @@
 /*-----*/
 
 @media (max-width: 1600px) {
-  header .header-options {
-    font-size: 1.4rem;
-  }
-
   header {
     padding: 15px 3% 15px 3%;
+  }
+
+  header .header-options {
+    font-size: 1.4rem;
   }
 
   .logotype img {
@@ -287,7 +287,7 @@
 }
 
 @media (max-width: 1200px) {
-  div.options {
+  header .header-options {
     font-size: 1.2rem;
   }
 
@@ -419,10 +419,6 @@
 /*------*/
 
 @media (max-width: 1024px) {
-  .logotype img {
-    width: 200px;
-  }
-
   div.specialties{
     padding: 0 7%;
   }
