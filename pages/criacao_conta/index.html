@@ -75,7 +75,7 @@
 
           <div class="form-group">
             <div class="input-subgroup">
-              <label class="form-label" style="min-width: 152px; max-width: 15vw; margin-right: 20px;">
+              <label class="form-label" style="min-width: 152px; max-width: 15vw; margin-right: 20px;" id="gender">
                 Gênero*:
                 <input list="conselhos" class="form-input dropdown-input" placeholder="Selecione">
                 <datalist id="conselhos">
@@ -87,7 +87,7 @@
 
               <label class="form-label">
                 Data de Nascimento*:
-                <input type="text" class="form-input" placeholder="DD/MM/AA">
+                <input type="text" class="form-input" placeholder="DD/MM/AA" id="dataNascimento">
               </label>
             </div>
 
@@ -101,10 +101,10 @@
             <div class="input-subgroup" >
               <label class="form-label">
                 Endereço*:
-                <input type="text" class="form-input" placeholder="Digite seu endereço">
+                <input type="text" class="form-input" placeholder="Digite seu endereço" id="endereco">
               </label>
   
-              <label class="form-label" style="margin-left: 10px; max-width: 100px;">
+              <label class="form-label" style="margin-left: 10px; max-width: 100px;" id="state">
                 Estado*:
                 <input list="ufs" class="form-input dropdown-input" placeholder="Selecione">
                 <datalist id="ufs">
@@ -116,12 +116,12 @@
             </div>
 
             <div class="input-subgroup" >
-              <label class="form-label" style="margin-right: 10px;">
+              <label class="form-label" style="margin-right: 10px;" id="houseNumber">
                 Numero*:
                 <input type="text" class="form-input">
               </label>
 
-              <label class="form-label" style="margin-left: 10px;">
+              <label class="form-label" style="margin-left: 10px;" id="complemento">
                 Complemento*:
                 <input type="text" class="form-input" placeholder="Apto, casa, fundos, etc.">
               </label>
@@ -130,12 +130,12 @@
 
           <div class="form-group">
             <div class="input-subgroup" >
-              <label class="form-label" style="margin-right: 10px;">
+              <label class="form-label place" style="margin-right: 10px;">
                 Cidade*:
                 <input type="text" class="form-input" placeholder="Digite sua cidade">
               </label>
 
-              <label class="form-label">
+              <label class="form-label place">
                 Bairro*:
                 <input type="text" class="form-input" placeholder="Bairro">
               </label>
@@ -145,7 +145,7 @@
               <label class="form-label">
                 Telefone para contato*:
                 <div class="input-subgroup">
-                  <input type="text" style="max-height: 50px; max-width: 100px; margin-right: 20px;" class="form-input" placeholder="DDD">
+                  <input type="text" style="max-height: 50px; max-width: 100px; margin-right: 20px;" class="form-input" placeholder="DDD" id="ddd">
                   <div style="display: flex; flex-direction: column; flex: 1 1;">
                     <input type="text" style="flex: 1 1;" class="form-input" placeholder="Digite seu telefone">
                   </div>
@@ -162,15 +162,15 @@
               <input type="text" class="form-input" placeholder="Digite o e-mail da secretária">
             </label>
 
-            <div class="input-subgroup">
-              <label class="form-label" style="margin-right: 20px;">
+            <div class="input-subgroup passDiv">
+              <label class="form-label pass" style="margin-right: 20px;">
                 Senha do consultório*:
                 <input type="password" class="form-input" placeholder="Digite sua senha">
               </label>
 
               <label class="form-label">
                 Confirme sua senha*:
-                <input type="password" class="form-input" placeholder="Confirme sua senha">
+                <input type="password" class="form-input pass" placeholder="Confirme sua senha">
               </label>
             </div>
           </div>
@@ -179,8 +179,9 @@
             <input type="checkbox">
             <span class="checkbox-text">Aceito os<a href="#" class="checkbox-text">Termos e condições de Uso</a></span>
           </div>
-
+          <div id="buttonDiv">
           <button class="form-btn">FAZER CADASTRO</button>
+          </div>
         </form>
       </section>
     </main>

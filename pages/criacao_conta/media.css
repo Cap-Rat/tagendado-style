@@ -180,3 +180,46 @@
         width: 120px;
     }
 }
+
+@media (max-width: 320px) {
+    #dataNascimento{
+        width: 160px;
+    }
+
+    #gender{
+        min-width: 100px !important;
+    }
+    #state{
+        max-width: 76px;
+    }
+    #complemento{
+        width: 130px;
+    }
+    #houseNumber{
+        width: 130px;
+    }
+    .place{
+        width: 131px;
+    }
+    #endereco{
+        width: 170px;
+    }
+    #ddd{
+        max-width: 50px !important;
+    }
+    .pass{
+        width: 100%;
+    }
+    .passDiv{
+        flex-direction: column;
+    }
+    .form-btn {
+        padding: 1em 0.5em;
+        width: 60%;
+        text-align: center;
+    }
+    #buttonDiv{
+        display: flex;
+        justify-content: center;
+    }
+}
