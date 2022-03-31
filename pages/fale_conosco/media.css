@@ -303,11 +303,15 @@
   }
   .left-container{
     max-width: 100%;
+    padding-left: 4%;
   }
   .right-container{
     width: 100%;
   }
   .costumer-service-form{
     margin-top: 5%;
+  }
+  .right-container {
+    padding-right: 4%;
   }
 }
