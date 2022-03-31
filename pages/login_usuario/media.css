@@ -256,3 +256,24 @@
     }
   }
 /*---------*/
+/*RESPONSIVO MOBILE*/
+@media only screen and (max-width: 601px){
+  .main{
+    flex-direction: column;
+  }
+  .login-info-container {
+    max-width: 100%;
+  }
+  .login-form-container {
+    width: 100%;
+  }
+  .auth-button-container {
+    flex-direction: row;
+  }
+  .facebook-btn{
+    height: 47.35px;
+  }
+  .info-stamps-container{
+    margin-top: 10%;
+  }
+}
