@@ -192,7 +192,33 @@
   .logo {
     width: 120px;
   }
+  #conselhoAfiliado{
+    min-width: 142px;
+  }
+  #numeroConselho{
+    margin-right: 41px;
+    max-width: 155px;
+  }
+  .conselho{
+    gap: 20px;
+  }
+  #houseNumber{
+    max-width: 110px !important;
+  }
+  #clinicUF{
+    max-width: 110px !important;
+  }
+  #clinicComplement{
+    max-width: 165px !important;
+  }
+  #clinicDistrict{
+    max-width: 141px;
+  }
+  #emailAndPass{
+    gap: 20px;
+  }
 }
+
 
 @media (max-width: 700px) {
   /*==== FOOTER ====*/
