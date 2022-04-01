@@ -265,8 +265,7 @@
 
   footer div.footer-options {
     gap: 10px;
-
-    padding-left: 10%;
+    padding-left: 7%;
   }
 
   .contactInfos img {
@@ -290,6 +289,92 @@
   div#WinWinSituationRight{
     justify-content: flex-start;
   }
+}
+
+@media (max-width: 700px) {
+  /*==== FOOTER ====*/
+
+  footer div.footer-options {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .listTitle {
+    margin-bottom: 5px;
+  }
+
+  .aboutUs {
+    row-gap: 35px;
+  }
+
+  .aboutUsImgs {
+    display: inline;
+  }
+
+  img#imgAppStore {
+    margin-top: 0;
+  }
+  
+  img#imgGooglePlay {
+    margin-top: 0;
+  }
+  /*-------------*/
+}
+
+@media (max-width: 490px) {
+  /*==== FOOTER ====*/
+
+  footer div.footer-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 20px;
+  }
+
+  .listTitle {
+    font-size: 1.6rem;
+    display: block;
+  }
+
+  footer p.mb-30 {
+    margin-bottom: 0px;
+    row-gap: 20px;
+  }
+
+  .pacientOptions, .specialistOptions, .aboutUs, .contactInfos {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  /*-------------*/
+}
+
+@media (max-width: 340px) {
+  /*==== FOOTER ====*/
+
+  footer div.footer-options {
+    font-size: 1.2rem;
+  }
+  
+  .listTitle {
+    font-size: 1.4rem;
+  }
+
+  img#imgAppStore {
+    width: 110px;
+  }
+  
+  img#imgGooglePlay {
+    height: 32px;
+    width: 110px;
+  }
+
+  .contactInfos img {
+    width: 150px;
+  }
+  /*-------------*/
 }
 
 /*  font-size: 62.5%;

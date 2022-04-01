@@ -124,7 +124,7 @@
 @media (max-width: 1150px) {
     footer div.footer-options{
       gap: 10px;
-      padding-left: 10%;
+      padding-left: 7%;
     }
   
     .contactInfos img {
@@ -227,73 +227,76 @@
       background-color: #1560A0;
     }
   }
-  
-  @media (max-width: 800px) {
-    .logo {
-      width: 120px;
-    }
-  }
-    /*----*/
-    
-}
-
-@media only screen and (max-width: 769px){
-    .main{
-        display: grid;
-    }
-    .ask-info-container {
-        max-width: 100%;
-    }
-    .ask-info-title {
-        text-align: center;
-    }
-    img#doctors {
-        margin-top: 0;
-    }
-    .info-text-subtitle {
-        margin-top: 0;
-    }
-    .page-identifier-container {
-        margin-top: 40px;
-    }
-}
-
-@media only screen and (max-width: 480px){
-    .main-info-image{
-        text-align: center;
-    }
-    .main-info-container{
-        display: grid;
-        padding-bottom: 5%;
-    }
-    .info-text-subtitle {
-        margin-top: 12%;
-        margin-bottom: 2%;
-    }
-    .info-text-container {
-        margin-left: 0;
-    }
-    img#doctors {
-        width: 340px;
-    }
-}
-
-@media only screen and (max-width: 320px){
-    img#doctors{
-        width: 261px;
-    }
 }
 
 @media only screen and (max-width: 801px){
+  /* ==== FOOTERS ==== */
+  .logo {
+    width: 120px;
+  }
+  /*----*/
+
   .left-main-content{
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
   }
+
   img.img-attendant{
     width: 280px;
     height: 280px;
   }
+}
+
+@media only screen and (max-width: 769px){
+  .main{
+    display: grid;
+  }
+  .ask-info-container {
+    max-width: 100%;
+  }
+  .ask-info-title {
+    text-align: center;
+  }
+  img#doctors {
+    margin-top: 0;
+  }
+  .info-text-subtitle {
+    margin-top: 0;
+  }
+  .page-identifier-container {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  /*==== FOOTER ====*/
+
+  footer div.footer-options {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .listTitle {
+    margin-bottom: 5px;
+  }
+
+  .aboutUs {
+    row-gap: 35px;
+  }
+
+  .aboutUsImgs {
+    display: inline;
+  }
+
+  img#imgAppStore {
+    margin-top: 0;
+  }
+  
+  img#imgGooglePlay {
+    margin-top: 0;
+  }
+  /*-------------*/
 }
 
 @media only screen and (max-width: 601px){
@@ -316,6 +319,82 @@
   }
 }
 
+@media (max-width: 490px) {
+  /*==== FOOTER ====*/
+
+  footer div.footer-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 20px;
+  }
+
+  .listTitle {
+    font-size: 1.6rem;
+    display: block;
+  }
+
+  footer p.mb-30 {
+    margin-bottom: 0px;
+    row-gap: 20px;
+  }
+
+  .pacientOptions, .specialistOptions, .aboutUs, .contactInfos {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  /*-------------*/
+}
+
+@media only screen and (max-width: 480px){
+    .main-info-image{
+        text-align: center;
+    }
+    .main-info-container{
+        display: grid;
+        padding-bottom: 5%;
+    }
+    .info-text-subtitle {
+        margin-top: 12%;
+        margin-bottom: 2%;
+    }
+    .info-text-container {
+        margin-left: 0;
+    }
+    img#doctors {
+        width: 340px;
+    }
+}
+
+@media (max-width: 340px) {
+  /*==== FOOTER ====*/
+
+  footer div.footer-options {
+    font-size: 1.2rem;
+  }
+  
+  .listTitle {
+    font-size: 1.4rem;
+  }
+
+  img#imgAppStore {
+    width: 110px;
+  }
+  
+  img#imgGooglePlay {
+    height: 32px;
+    width: 110px;
+  }
+
+  .contactInfos img {
+    width: 150px;
+  }
+  /*-------------*/
+}
+
 @media only screen and (max-width: 321px){
   img.img-attendant {
     width: 240px;
@@ -330,4 +409,10 @@
   .text-content-container{
     gap: 10px;
   }
+}
+
+@media only screen and (max-width: 320px){
+    img#doctors{
+        width: 261px;
+    }
 }
