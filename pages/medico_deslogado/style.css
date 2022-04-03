@@ -3,26 +3,37 @@ header .header-options {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+  
     font-size: 1.5rem;
-
+  
     text-align: center;
-}
-
-header .header-options a {
+  }
+  
+  header .header-options a {
     margin: 0 20px;
-
+  
     text-decoration: none;
     color: #000000;
-}
-
-header {
+  }
+  
+  header .header-options .closebtn {
+    display: none;
+  }
+  
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+  
     padding: 32px 3.6% 24px 3.6%;
-}
+  }
+  
+  #nav-drawer {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #1560A0
+  }
 
 /********FOOTER*******/
 

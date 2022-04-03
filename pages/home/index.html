@@ -22,13 +22,15 @@
             <div class="logotype">
                 <img src="img/logo.svg" alt="Logo tá agendado"/>
             </div>
-            <div class="header-options">
+            <div class="header-options" id="nav-options">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
                 <a href="#">PERGUNTE AO ESPECIALISTA</a>
                 <a href="#">SEGURANÇA DE DADOS</a>
                 <a href="#">CONTATO</a>
                 <a href="#">CADASTRE-SE</a>
                 <a href="#">LOGIN</a>
             </div>
+            <span id="nav-drawer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </header>
 
         <section id="sectionSearch">
@@ -336,4 +338,17 @@
             </div>
         </footer>
     </body>
+    <script>
+        const openNav = () => {
+            if(screen.width <= 400) {
+                document.getElementById("nav-options").style.width = "100%";
+            } else {
+                document.getElementById("nav-options").style.width = "250px";
+            }
+        }
+
+        const closeNav = () => {
+            document.getElementById("nav-options").style.width = "0px";
+        }
+    </script>
 </html>

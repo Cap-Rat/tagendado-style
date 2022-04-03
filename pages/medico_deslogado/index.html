@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Icons script -->
+    <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./media.css" />
     <link rel="stylesheet" type="text/css" href="../../components/global.css" />
@@ -19,14 +22,17 @@
             <div class="logotype">
                 <img src="img/logo.svg" alt="Logo tá agendado"/>
             </div>
-            <div class="header-options">
+            <div class="header-options" id="nav-options">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
                 <a href="#">PERGUNTE AO ESPECIALISTA</a>
                 <a href="#">SEGURANÇA DE DADOS</a>
                 <a href="#">CONTATO</a>
                 <a href="#">CADASTRE-SE</a>
                 <a href="#">LOGIN</a>
             </div>
+            <span id="nav-drawer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </header>
+        
         <section id="benefits">
             <p id="benefitsTitle">QUE TAL SEU CONSULTÓRIO COM MUITO MAIS PACIENTES?</p>
             <br><br>
@@ -220,5 +226,18 @@
             <p>Tagendado © 2021 - Todos os direitos reservados</p>
         </div>
     </footer>
+    <script>
+        const openNav = () => {
+            if(screen.width <= 400) {
+                document.getElementById("nav-options").style.width = "100%";
+            } else {
+                document.getElementById("nav-options").style.width = "250px";
+            }
+        }
+    
+        const closeNav = () => {
+            document.getElementById("nav-options").style.width = "0px";
+        }
+    </script>
   </body>
 </html>

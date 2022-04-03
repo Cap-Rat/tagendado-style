@@ -1,4 +1,5 @@
 /******** HEADER *******/
+/******** HEADER *******/
 header .header-options {
   display: flex;
   align-items: center;
@@ -16,12 +17,23 @@ header .header-options a {
   color: #000000;
 }
 
+header .header-options .closebtn {
+  display: none;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 32px 3.6% 24px 3.6%;
+}
+
+#nav-drawer {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #1560A0
 }
 
 /* ============= FOOTER ============= */
