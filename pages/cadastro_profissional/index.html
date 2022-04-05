@@ -35,9 +35,8 @@
             <input type="radio" id="convenio" name="tipo-pagamento">
             <label for="convenio" class="radio-label">Convênio</label>
           </div>
-        </div>
-
-        <button class="btn-search">PESQUISAR</button>
+        </div> 
+          <button class="btn-search">PESQUISAR</button>
       </form>
 
       <div class="user-container">
@@ -113,13 +112,13 @@
                   <option value="Conselho 03">
                 </datalist>
               </label>
-
+              
               <label class="form-label" style=" margin-right: 20px; flex: 1 1;" id="numeroConselho">
                 Número do conselho:
                 <input type="text" class="form-input" placeholder="Digite o número">
               </label>
 
-              <label class="form-label" style="max-width: 5vw; min-width: 65px;">
+              <label class="form-label" style="max-width: 5vw; min-width: 65px;" id="ufs">
                 UF*:
                 <input list="ufs" class="form-input dropdown-input" placeholder="Selecione">
                 <datalist id="ufs">
@@ -240,8 +239,9 @@
             <input type="checkbox">
             <span class="checkbox-text">Aceito os<a href="#" class="checkbox-text">Termos e condições de Uso</a></span>
           </div>
-
-          <button class="form-btn">FAZER CADASTRO</button>
+          <div id="registerButton">
+            <button class="form-btn">FAZER CADASTRO</button>
+          </div>
         </form>
       </section>
     </main>

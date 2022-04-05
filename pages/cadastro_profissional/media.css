@@ -196,7 +196,7 @@
     min-width: 142px;
   }
   #numeroConselho{
-    margin-right: 41px;
+    margin-right: 50px;
     max-width: 155px;
   }
   .conselho{
@@ -250,6 +250,40 @@
   /*-----------*/
 }
 
+@media (max-width: 600px){
+  .form-group{
+    flex-direction: column;
+    gap: 25px;
+  }
+  #numeroConselho{
+    margin-right: 20px;
+  }
+  #conselhoAfiliado{
+    min-width: 188px !important;
+  }
+  #numeroConselho{
+    min-width: 188px !important;
+  }
+  #ufs{
+    min-width: 110px !important;
+  }
+  #clinicDistrict{
+    min-width: 345px;
+  }
+  .profile-title{
+    text-align: center;
+  }
+  .profile-btn-container {
+    justify-content: space-around;
+    max-width: none;
+  }
+  #registerButton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 @media (max-width: 490px) {
   /*==== FOOTER ====*/
 
@@ -278,6 +312,21 @@
     align-items: center;
   }
   /*-----------*/
+}
+
+@media (max-width: 480px){
+  #conselhoAfiliado {
+    min-width: 140px !important;
+  }
+  #numeroConselho {
+    min-width: 159px !important;
+  }
+  #ufs {
+    min-width: 79px !important;
+  }
+  #clinicDistrict {
+    min-width: 235px;
+  }
 }
 
 @media (max-width: 340px) {
