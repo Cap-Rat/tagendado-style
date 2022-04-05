@@ -375,16 +375,58 @@
 
 @media (max-width: 480px){
   #conselhoAfiliado {
-    min-width: 140px !important;
+    min-width: 282px !important;
   }
   #numeroConselho {
-    min-width: 159px !important;
+    min-width: 182px !important;
   }
   #ufs {
     min-width: 79px !important;
   }
   #clinicDistrict {
     min-width: 235px;
+  }
+  #conselhoInfo{
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .ddd-input{
+    max-width: 55px !important;
+  }
+  #addressNumber{
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  #district{
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  #houseNumber{
+    max-width: 280px !important;
+  }
+  #address{
+    margin-right: 0 !important;
+  }
+  #clinicComplement{
+    margin-right: 0 !important;
+    max-width: 280px !important;
+  }
+  #clinicDistrict {
+    min-width: 280px;
+  }
+  #clinicUF{
+    max-width: 85px !important;
+  }
+  #clinicCity{
+    max-width: 175px;
+  }
+  #passAndConfirm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  #firstPass{
+    margin-right: 0 !important;
   }
 }
 

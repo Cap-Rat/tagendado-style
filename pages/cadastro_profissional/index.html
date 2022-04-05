@@ -90,7 +90,7 @@
             <label class="form-label">
               Telefone para contato*:
               <div class="input-subgroup">
-                <input type="text" style="max-width: 100px; margin-right: 20px;" class="form-input" placeholder="DDD">
+                <input type="text" style="max-width: 100px; margin-right: 20px;" class="form-input ddd-input" placeholder="DDD">
                 <input type="text" style="flex: 1 1;" class="form-input" placeholder="Digite seu telefone">
               </div>
             </label>
@@ -102,7 +102,7 @@
           </div>
 
           <div class="form-group conselho">
-            <div class="input-subgroup">
+            <div class="input-subgroup" id="conselhoInfo">
               <label class="form-label" style="min-width: 152px; max-width: 11.5vw; margin-right: 20px;" id="conselhoAfiliado">
                 Conselho Afiliado*:
                 <input list="conselhos" class="form-input dropdown-input" placeholder="Selecione">
@@ -159,8 +159,8 @@
           </div>
 
           <div class="form-group">
-            <div class="input-subgroup">
-              <label class="form-label" style="flex: 1 1; margin-right: 20px;">
+            <div class="input-subgroup" id="addressNumber">
+              <label class="form-label" style="flex: 1 1; margin-right: 20px;" id="address">
                 Endereço*:
                 <input type="text" class="form-input" placeholder="Digite o endereço">
               </label>
@@ -171,7 +171,7 @@
               </label>
             </div>
 
-            <div class="input-subgroup">
+            <div class="input-subgroup" id="district">
               <label class="form-label" style="margin-right: 20px; max-width: 220px;" id="clinicComplement">
                 Complemento:
                 <input type="text" class="form-input" placeholder="Apto, casa, fundos, etc.">
@@ -186,7 +186,7 @@
 
           <div class="form-group">
             <div class="input-subgroup">
-              <label class="form-label" style="margin-right: 20px;">
+              <label class="form-label" style="margin-right: 20px;" id="clinicCity">
                 Cidade:
                 <input type="text" class="form-input">
               </label>
@@ -222,10 +222,10 @@
               <input type="text" class="form-input" placeholder="Digite o e-mail da secretária">
             </label>
 
-            <div class="input-subgroup">
-              <label class="form-label" style="margin-right: 20px;">
+            <div class="input-subgroup" id="passAndConfirm">
+              <label class="form-label" style="margin-right: 20px;" id="firstPass">
                 Senha do consultório*:
-                <input type="password" class="form-input" placeholder="Digite sua senha">
+                <input type="password" class="form-input" placeholder="Digite sua senha" >
               </label>
 
               <label class="form-label">
