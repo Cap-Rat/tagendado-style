@@ -273,6 +273,15 @@
   .profile-title{
     text-align: center;
   }
+  .profile-btn-container {
+    justify-content: space-around;
+    max-width: none;
+  }
+  #registerButton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 490px) {
@@ -303,6 +312,21 @@
     align-items: center;
   }
   /*-----------*/
+}
+
+@media (max-width: 480px){
+  #conselhoAfiliado {
+    min-width: 140px !important;
+  }
+  #numeroConselho {
+    min-width: 159px !important;
+  }
+  #ufs {
+    min-width: 79px !important;
+  }
+  #clinicDistrict {
+    min-width: 235px;
+  }
 }
 
 @media (max-width: 340px) {
