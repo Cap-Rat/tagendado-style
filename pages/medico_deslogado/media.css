@@ -330,6 +330,17 @@
   }
 }
 
+@media (max-width: 800px){
+  img#responsiveImage {
+    width: 325px;
+    margin-top: 20%;
+  }
+  div#benefitsContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 @media (max-width: 700px) {
   /*==== FOOTER ====*/
 
