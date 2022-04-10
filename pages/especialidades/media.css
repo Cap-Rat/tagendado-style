@@ -58,11 +58,11 @@
 
 @media (max-width: 1350px) {
   .filter-container {
-    padding: 2.5% 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
   }
 
   .main {
-    padding: 0 5%;
     padding-top: 2.5%;
   }
 }
@@ -260,6 +260,44 @@
   }
 }
 
+@media (max-width: 1040px) {
+  body {
+    --fs-15: 1.3rem
+  }
+
+  .filter-form-input {
+    padding: 0.8rem 0.8rem;
+  }
+  
+  .filter-form-btn {
+    padding: 0.6em 3em;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .doctor-cards-section {
+    align-items: center;
+  }
+
+  .doctor-card-container {
+    min-width: 650px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .map-container { 
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding: 120px;
+    height: 80vh;
+    min-width: 650px;
+    max-width: 70vw;
+  }
+}
+
 /*HEADER*/
 /* search-form passa a ser dropdown escondido no icone de pesquisa */
 @media (max-width: 1000px) {
@@ -279,6 +317,7 @@
 }
 
 @media (max-width: 800px) {
+  /* === HEADER === */
   .logo {
     width: 120px;
   }
@@ -313,6 +352,29 @@
   }
 }
 /*------*/
+
+@media (max-width: 740px) {
+  .filter-form {
+    flex-wrap: wrap;
+  }
+
+  .map-container { 
+    padding: 120px;
+    height: 80vh;
+    min-width: 0px;
+    max-width: 100vw;
+  }
+
+  .doctor-card-container {
+    flex-direction: column;
+    min-width: 400px;
+  }
+
+  .doctor-schedule-container {
+    border-top: solid 1px #D6D6D6;
+    border-left: none;
+  }
+}
 
 @media (max-width: 700px) {
   /* === Header === */
@@ -361,6 +423,17 @@
   }
 }
 
+@media (max-width: 620px) {
+  .filter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-form-input {
+    width: 100%;
+  }
+}
+
 @media (max-width: 550px) {
   .search-form {
     min-width: 350px;
@@ -394,6 +467,17 @@
   }
 }
 
+@media (max-width: 450px) {
+  .map-container { 
+    padding: 100px;
+  }
+
+  .doctor-card-container {
+    min-width: 0px;
+    width: 320px;
+  }
+}
+
 @media (max-width: 390px) {
   .search-form {
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -405,6 +489,16 @@
   .radio-input-container {
     flex-direction: row;
     gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .map-container { 
+    padding: 80px;
+  }
+
+  .doctor-card-container {
+    width: 285px;
   }
 }
 
