@@ -491,6 +491,22 @@
   header .header-options {
     font-size: 1.1rem;
   }
+
+  p#benefitsSubtitle{
+    line-height: 24px;
+    font-size: 20px;
+  }
+  p#benefitsText{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .benefitsContainerItem {
+    width: 40%;
+  }
+  p#benefitsTitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 400px) {
