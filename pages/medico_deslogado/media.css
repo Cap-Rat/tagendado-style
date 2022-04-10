@@ -405,6 +405,48 @@
   .logotype img {
     width: 130px;
   }
+  #benefitsTitle {
+    width: 100%;
+    text-align: center;
+  }
+  section#benefits {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #benefitsSubtitle{
+    text-align: center;
+  }
+  p#benefitsText{
+    text-align: center;
+    width: 100%;
+  }
+  div#responsiveWebsite{
+    width: 100%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+  }
+  img#responsiveImage {
+    margin-top: 0;
+  }
+  div#responsiveWebsiteImage {
+    float: none;
+    padding-right: 0%;
+    text-align: center;
+  }
+  section#scheduling {
+    margin-bottom: 5%;
+  }
+  p#WinWinSituationTitle {
+    font-size: 20px;
+  }
+  #freeMedical {
+    width: 270px;
+  }
+  #DDD{
+    width: 25% !important;
+  }
 }
 
 @media (max-width: 490px) {
