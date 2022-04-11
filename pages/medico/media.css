@@ -504,3 +504,41 @@
     }
     /*-------------*/
 }
+
+@media (max-width: 320px){
+  #doctor-map {
+    width: 280px;
+    margin-top: 5%;
+  }
+  .doctor-details-header, .doctor-address-container {
+    flex-direction: column;
+  }
+  .doctor-address-info{
+    width: 100%;
+  }
+
+  .doctor-details-header{
+    align-items: center;
+  }
+
+  .doctor-header-bottom-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .comment-rating {
+    margin-left: 10%;
+  }
+  .doctor-schedule-container {
+    padding: 2rem 0rem;
+  }
+  .doctor-schedule-grid {
+    gap: 2px;
+  }
+  .main {
+    padding: 1% 5% 3% 5%;
+  }
+  #setaDireita{
+    margin-left: 2px !important;
+    margin-right: 8px;
+  }
+}
