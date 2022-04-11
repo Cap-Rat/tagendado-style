@@ -697,5 +697,15 @@
   .contactInfos img {
     width: 150px;
   }
+  img#newProfessionalsPic{
+    width: 265px;
+  }
+  h2#newProfessionalsTitle {
+    text-align: center;
+  }
+  .testimonial-card {
+    display: flex;
+    flex-direction: column;
+  }
   /*-------------*/
 }
