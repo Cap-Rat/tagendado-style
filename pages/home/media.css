@@ -469,6 +469,87 @@
 }
 
 /*MOBILE - DEUS ABENÇOE*/
+@media (max-width: 960px){
+  body {
+    --fs-40: 2.5rem;
+    --fs-18: 1.5rem;
+    --fs-16: 1.3rem;
+  }
+
+  section#sectionSearch form .search-input {
+    padding: 10px 10px;
+  }
+
+  #medicalGroup {
+    width: 350px;
+  }
+
+  button.buttonSpecialties {
+    padding: 1em 0.8em;
+  }
+
+  div.specialties {
+    padding: 0% 5%
+  }
+
+  div.benefitsContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .benefits img {
+    width: 110px;
+  }
+
+  div#medicalGroup2 img{
+    width: 390px;
+  }
+
+  div#appPicture img{
+    width: 360px;
+  }
+
+  img#newProfessionalsPic{
+    width: 480px;
+  }
+
+  #testimonial {
+    padding: 4% 6%;
+  }
+}
+
+@media (max-width: 890px) {
+  section#sectionSearch form {
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+  }
+
+  section#sectionSearch form .radio-input-container {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+  }
+  
+  section#sectionSearch form .search-input {
+    width: 100%;
+    border: solid 1px rgb(194, 194, 194);
+    margin: 0;
+  }
+  
+  #submitButton{
+    width: 100%;
+    margin: 0;
+  }
+
+  #testimonials {
+    gap: 80px;
+  }
+}
+
 @media (max-width: 801px){
   div.benefitsContainer{
     display: grid;
@@ -499,9 +580,6 @@
     flex-direction: column;
     align-items: center;
   }
-  div#medicalGroup2 img{
-    width: 300px;
-  }
   section#schedulingTutorial img{
     width: 300px;
   }
@@ -511,9 +589,17 @@
   .mobileHide{
     display: none;
   }
-  #medicalGroup{
-    bottom: 80px;
-    width: 300px;
+
+  div#appPicture img{
+    width: 320px;
+  }
+
+  .testimonial-card {
+    max-width: 400px;
+  }
+
+  .testimonial-picture img {
+    max-height: 130px
   }
 }
 
@@ -560,10 +646,6 @@
     text-align: center;
   }
 
-  div#appPicture img{
-    width: 300px;
-  }
-
   div.appButtonsContainer{
     justify-content: center;
   }
@@ -575,34 +657,15 @@
 
   /*Primeira parte*/
   #medicalGroup {
-    bottom: 120px;
-    width: 300px;
-    right: 10px;
+    display: none
   }
+  
   .search {
     max-width: 100%;
   }
-  .search h2 {
-    width: 60%;
-  }
-  section#sectionSearch form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  section#sectionSearch form .radio-input-container {
-    margin-top: 5%;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-  section#sectionSearch form .search-input {
-    padding: 15px 15px;
-    width: 90%;
 
-  }
-  #submitButton{
-    width: 90%;
-    margin-left: 4%;
-    margin-top: 2%;
+  .search h2 {
+    width: 100%;
   }
 }
 
