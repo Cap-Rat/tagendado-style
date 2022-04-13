@@ -437,10 +437,6 @@
     text-align: center;
     line-height: 23px;
   }
-  .info-sub-text{
-    font-size: 14px;
-    text-align: center;
-  }
   .stamp-image {
     width: 64px;
     height: 64px;
@@ -450,5 +446,38 @@
   }
   .auth-button-container {
     flex-direction: column;
+  }
+  .form-sub-text, .info-sub-text{
+    font-size: 12px;
+    text-align: center;
+  }
+  .forgot-password, .checkbox-text{
+    text-align: center;
+    font-size: 12px;
+  }
+  .form-title-container{
+    margin-top: 3vh;
+  }
+  .form-main-text{
+    font-size: 16px;
+  }
+  .page-identifier{
+    font-size: 10px;
+  }
+  .login-form-label{
+    font-size: 12px;
+  }
+  .stamp-text {
+    font-size: 12px;
+  }
+  .login-info-container{
+    padding-top: 6%;
+  }
+  .signup-text{
+    font-size: 12px;
+  }
+  .stamp-image {
+    width: 75px;
+    height: 75px;
   }
 }
