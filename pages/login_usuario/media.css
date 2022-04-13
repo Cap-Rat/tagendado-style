@@ -413,7 +413,9 @@
     min-width: 200px;
   }
   
-
+  .auth-button-container{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 390px) {
