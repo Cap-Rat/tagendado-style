@@ -353,6 +353,14 @@
   .info-stamps-container{
     margin-top: 10%;
   }
+  .login-form-container {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 0;
+  }
+  .info-main-text, .info-sub-text{
+    text-align: center;
+  }
 }
 
 @media (max-width: 550px) {
@@ -389,20 +397,14 @@
     align-items: center;
   }
   /*-------------*/
-  .info-main-text, .info-sub-text{
-    text-align: center;
-  }
+  
   .login-info-container{
     padding-top: 6%;
   }
   .auth-btn {
     min-width: 200px;
   }
-  .login-form-container {
-    padding-right: 5%;
-    padding-left: 5%;
-    margin-left: 0;
-  }
+  
 
 }
 
