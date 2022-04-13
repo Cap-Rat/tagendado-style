@@ -389,6 +389,21 @@
     align-items: center;
   }
   /*-------------*/
+  .info-main-text, .info-sub-text{
+    text-align: center;
+  }
+  .login-info-container{
+    padding-top: 6%;
+  }
+  .auth-btn {
+    min-width: 200px;
+  }
+  .login-form-container {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 0;
+  }
+
 }
 
 @media (max-width: 390px) {
@@ -469,9 +484,6 @@
   }
   .stamp-text {
     font-size: 12px;
-  }
-  .login-info-container{
-    padding-top: 6%;
   }
   .signup-text{
     font-size: 12px;
