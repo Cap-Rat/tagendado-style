@@ -283,6 +283,14 @@
     .user-container .user-auth-button {
       font-size: 1.1rem;
     }
+
+    .stamp-image {
+      height: 100px;
+      width: 100px;
+    }
+    .form-sub-text{
+      text-align: center;
+    }
   }
 /*---------*/
 /*RESPONSIVO MOBILE*/
@@ -353,6 +361,14 @@
   .info-stamps-container{
     margin-top: 10%;
   }
+  .login-form-container {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 0;
+  }
+  .info-main-text, .info-sub-text{
+    text-align: center;
+  }
 }
 
 @media (max-width: 550px) {
@@ -389,6 +405,17 @@
     align-items: center;
   }
   /*-------------*/
+  
+  .login-info-container{
+    padding-top: 6%;
+  }
+  .auth-btn {
+    min-width: 200px;
+  }
+  
+  .auth-button-container{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 390px) {
@@ -437,10 +464,6 @@
     text-align: center;
     line-height: 23px;
   }
-  .info-sub-text{
-    font-size: 14px;
-    text-align: center;
-  }
   .stamp-image {
     width: 64px;
     height: 64px;
@@ -450,5 +473,35 @@
   }
   .auth-button-container {
     flex-direction: column;
+  }
+  .form-sub-text, .info-sub-text{
+    font-size: 12px;
+    text-align: center;
+  }
+  .forgot-password, .checkbox-text{
+    text-align: center;
+    font-size: 12px;
+  }
+  .form-title-container{
+    margin-top: 3vh;
+  }
+  .form-main-text{
+    font-size: 16px;
+  }
+  .page-identifier{
+    font-size: 10px;
+  }
+  .login-form-label{
+    font-size: 12px;
+  }
+  .stamp-text {
+    font-size: 12px;
+  }
+  .signup-text{
+    font-size: 12px;
+  }
+  .stamp-image {
+    width: 75px;
+    height: 75px;
   }
 }
