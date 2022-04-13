@@ -76,10 +76,6 @@
       margin: 10px 0 30px 10px;
   }
 
-  .search {
-    max-width: 70%;
-  }
-
   /* ============= MEDICAL SPECIALTIES ============= */
 
   div.specialties{
@@ -283,6 +279,10 @@
   #newProfessionalsText p {
     text-align: center;
     margin-left: 0;
+  }
+
+  #testimonials {
+    gap: 60px
   }
 }
 
@@ -544,10 +544,6 @@
     width: 100%;
     margin: 0;
   }
-
-  #testimonials {
-    gap: 80px;
-  }
 }
 
 @media (max-width: 801px){
@@ -604,8 +600,25 @@
 }
 
 @media (max-width: 700px) {
-  /*==== FOOTER ====*/
+  div#medicalGroup2 img{
+    width: 300px;
+  }
 
+  div#appPicture img{
+    width: 300px;
+  }
+
+  #onlineScheduling{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.appButtonsContainer{
+    justify-content: center;
+  }
+
+  /*==== FOOTER ====*/
   footer div.footer-options {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
@@ -640,19 +653,33 @@
   }
 
   /* === BODY === */
-  #onlineScheduling{
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
+  body {
+    --fs-40: 2.2rem;
+    --fs-38: 2.4rem;
+    --fs-28: 2rem;
+    --fs-21: 1.3rem;
+    --fs-18: 1.4rem;
+    --fs-15: 1.3rem;
   }
 
-  div.appButtonsContainer{
-    justify-content: center;
+  img#newProfessionalsPic{
+    width: 400px;
+  }
+
+  .selectedSpecialties img {
+    width: 200px;
+    height: 200px;
   }
 
   #onlineSchedulingText{
     margin: 5% 0;
     padding: 0;
+  }
+
+  h2#newProfessionalsTitle {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 30px;
   }
 
   /*Primeira parte*/
@@ -699,7 +726,7 @@
 }
 
 @media (max-width: 481px){
-  /* === BODY === */
+  /* === Header === */
   .logotype img {
     width: 115px;
   }
@@ -713,9 +740,35 @@
   }
 
   /* === BODY === */
-  #medicalGroup{
-    bottom: 198px;
-    width: 250px;
+  body {
+    --fs-40: 2rem;
+    --fs-38: 2rem;
+    --fs-28: 1.8rem;
+    --fs-24: 1.6rem;
+    --fs-21: 1.2rem;
+    --fs-20: 1.4rem;
+    --fs-19: 1.3rem;
+    --fs-18: 1.2rem;
+    --fs-17: 1.3rem;
+    --fs-16: 1.2rem;
+    --fs-14: 1.1rem;
+  }
+
+  section#sectionSearch form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  section#sectionSearch ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search {
+    width: 100%;
   }
 
   .buttonSpecialties{
@@ -726,6 +779,59 @@
     margin-bottom: 8%;
     padding-left: 5%;
     padding-right: 5%;
+    gap: 15px;
+  }
+
+  .benefits img {
+    width: 85px;
+  }
+
+  section#schedulingTutorial img{
+    width: 230px;
+  }
+
+  div.selectedSpecialties {
+    padding: 10px 15px;
+  }
+
+  .selectedSpecialties img {
+    width: 150px;
+    height: 150px;
+  }
+
+  section#schedulingTutorial img{
+    width: 230px;
+  }
+
+  div#medicalGroup2 img{
+    width: 250px;
+  }
+
+  div#appPicture img{
+    width: 250px;
+  }
+
+  .appDownloadButton {
+    width: 100px;
+    height: 30px;
+  }
+
+  img#newProfessionalsPic{
+    width: 300px;
+  }
+
+  .testimonial-card {
+    max-width: 330px;
+    max-height: 250px;
+  }
+
+  .testimonial-picture, .testimonial-picture img {
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  .rating-star {
+    width: 20px;
   }
 }
 
@@ -738,6 +844,12 @@
 }
 
 @media (max-width: 340px) {
+  /*==== BODY ====*/
+  .testimonial-card {
+    max-width: 300px;
+    max-height: 240px;
+  }
+  
   /*==== FOOTER ====*/
 
   footer div.footer-options {
@@ -759,16 +871,6 @@
 
   .contactInfos img {
     width: 150px;
-  }
-  img#newProfessionalsPic{
-    width: 265px;
-  }
-  h2#newProfessionalsTitle {
-    text-align: center;
-  }
-  .testimonial-card {
-    display: flex;
-    flex-direction: column;
   }
   /*-------------*/
 }
