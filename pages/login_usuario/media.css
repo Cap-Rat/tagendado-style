@@ -283,6 +283,14 @@
     .user-container .user-auth-button {
       font-size: 1.1rem;
     }
+
+    .stamp-image {
+      height: 100px;
+      width: 100px;
+    }
+    .form-sub-text{
+      text-align: center;
+    }
   }
 /*---------*/
 /*RESPONSIVO MOBILE*/
