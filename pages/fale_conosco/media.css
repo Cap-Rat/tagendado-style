@@ -498,6 +498,12 @@
   .text-content-container{
     gap: 10px;
   }
+  .costumer-service-btn{
+    margin: auto;
+  }
+  .page-title{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 320px){
