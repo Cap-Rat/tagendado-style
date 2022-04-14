@@ -12,6 +12,18 @@
   }
 }
 /*-------*/
+/*HEADER*/
+@media (max-width: 1520px) {
+  .search-input {
+    font-size: 1.3rem;
+  }  
+}
+@media (max-width: 1475px) {
+  .search-input {
+    font-size: 1.2rem;
+  }  
+}
+/*------*/
 
 @media (max-width: 1460px) {
   .professional-info-section {
@@ -52,6 +64,13 @@
   }
 }
 /*-------*/
+
+@media (max-width: 1350px){
+  /* ============= HEADER ============= */
+  .search-input {
+    font-size: 1.2rem;
+  }
+}
 
 @media (max-width: 1300px) {
   /* ============= HEADER ============= */
