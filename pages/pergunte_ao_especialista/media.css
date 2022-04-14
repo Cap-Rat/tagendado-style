@@ -265,6 +265,15 @@
       .user-container .user-auth-button {
         font-size: 1.1rem;
       }
+
+      .ask-info-title{
+        font-size: 26px;
+        text-align: center;
+      }
+
+      .info-text-subtitle{
+        font-size: 20px;
+      }
 }
 
 /* Responsivo Mobile */
@@ -336,6 +345,22 @@
       margin-top: 0;
     }
     /*-------------*/
+    .info-text-container{
+        text-align: center;
+    }
+    .page-identifier{
+        font-size: 12px;
+    }
+    .ask-form-btn{
+        margin: auto;
+    }
+    .ask-form {
+        margin-left: 7.5%;
+        margin-right: 2.5%;
+    }
+    .form-bottom-container{
+        align-items: baseline;
+    }
 }
 
 @media (max-width: 550px) {
