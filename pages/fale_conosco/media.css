@@ -442,6 +442,9 @@
     img#doctors {
         width: 340px;
     }
+    .page-title{
+      text-align: center;
+    }
 }
 
 @media (max-width: 390px) {
