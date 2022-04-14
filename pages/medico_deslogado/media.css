@@ -2,15 +2,10 @@
   img#responsiveImage{
     width: 650px;
   }
-  section#scheduling{
-    margin-bottom: 5%;
-  }
+
   section#benefits{
     padding-top: 4%;
     padding-bottom: 2%;
-  }
-  div#responsiveWebsite{
-    padding-top: 7%;
   }
 }
 
@@ -25,14 +20,6 @@
     --fs-18: 1.7rem;
     --fs-16: 1.5rem;
     --fs-14: 1.3rem;
-  }
-
-  img#responsiveImage{
-    width: 650px;
-  }
-
-  section#scheduling{
-    margin-bottom: 5%;
   }
 
   section#benefits{
@@ -89,7 +76,6 @@
   }
   
   img#responsiveImage {
-    margin-top: 10%;
     width: 500px;
   }
 
@@ -161,13 +147,6 @@
     --fs-16: 1.4rem;
     --fs-14: 1.2rem;
   }
-
-  div#responsiveWebsite{
-    padding-top: 5%;
-  }
-  section#scheduling{
-    margin-bottom: 0%;
-  }
   
   .costumer-service-form {
     margin-top: 8%;
@@ -175,6 +154,10 @@
 
   div#benefitsContainer{
     gap: 25px;
+  }
+
+  div#freeRegisterContent {
+    padding: 0 10.5%;
   }
 }
 
@@ -191,6 +174,8 @@
     width: 100%;
   }
 
+  /* Body */
+
   body {
     --fs-41: 3.3rem;
     --fs-40: 3.3rem;
@@ -206,17 +191,6 @@
 
   img#responsiveImage{
     width: 420px;
-    margin-top: 12%;
-  }
-
-  div#responsiveWebsite{
-    padding-top: 5%;
-    padding-left: 15%;
-  }
-
-  section#scheduling{
-    margin-bottom: 0%;
-    height: 550px;
   }
 
   img#fluxImg{
@@ -261,6 +235,14 @@
     width: 30%;
   }
 
+  div#freeRegisterContent{
+    gap: 30px;
+  }
+
+  #freeMedical {
+    width: 400px;
+  }
+
   /* ====== FOOTER ====== */
 
   footer div.footer-options {
@@ -292,6 +274,7 @@
 }
 
 @media (max-width: 1000px) {
+  /* HEADER */
   #nav-drawer {
     display: inline;
   }
@@ -328,16 +311,95 @@
     margin-right: 0px;
     margin-left: 15px;
   }
+
+  /* BODY */
+  body {
+    --fs-41: 3rem
+  }
+
+  img#medicalImg {
+    width: 50vw;
+    height: 100%;
+  }
+
+  section#marketing {
+    padding: 5% 7%;
+  }
+
+  div#benefitsContainer {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  div#responsiveWebsite{
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+  }
+
+  div#freeRegisterContent {
+    margin-top: 3%;
+  }
+
+  #freeMedical {
+    width: 375px;
+  }
+
+  .costumer-service-input {
+    padding: 1rem 0.6rem;
+  }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
+  body {
+    --fs-40: 3rem;
+    --fs-35: 2.7rem;
+    --fs-30: 2.5rem;
+    --fs-26: 2.1rem;
+    --fs-22: 1.7rem;
+    --fs-20: 1.6rem;
+    --fs-19: 1.5rem;
+    --fs-18: 1.4rem;
+    --fs-16: 1.3rem;
+    --fs-14: 1.2rem;
+  }
+
+  section#benefits {
+    padding: 2% 0 2% 4%;
+  }
+
+  p#benefitsText {
+    width: 50%;
+  }
+
+  img.allBenefitsImage{
+    width: 120px;
+  }
+
+  .benefitsContainerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div#freeRegisterContent {
+    padding: 0 7%
+  }
+
+  .costumer-service-btn {
+    padding: 0.8em 1em;
+  }
+
+  #DDD {
+    width: 20%;
+  }
+
+  #freeMedical {
+    width: 330px;
+  }
+
   img#responsiveImage {
     width: 325px;
-    margin-top: 20%;
-  }
-  div#benefitsContainer {
-    padding-left: 5%;
-    padding-right: 5%;
   }
   section#marketing{
     display: flex;
@@ -352,9 +414,6 @@
     margin-top: 5%;
     padding: 0 10%;
   }
-  #freeMedical {
-    width: 375px;
-  }
   img#medicalImg {
     width: 55vw;
     height: 100%;
@@ -368,6 +427,68 @@
   ul#WinWinSituationList{
     font-size: 12px;
     line-height: 22px;
+  }
+}
+
+@media (max-width: 750px) {
+  #responsiveWebsite {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mobile-online {
+    align-items: center;
+    gap: 15px;
+  }
+
+  section#WinWinSituation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1560A0;
+    padding: 0 7%;
+  }
+  
+  #medicalImg {
+    display: none;
+  }
+
+  #WinWinSituationRight {
+    width: 100%;
+    align-items: center;
+  }
+
+  ul#WinWinSituationList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 3% 0;
+  }
+
+  p#WinWinSituationTitle{
+    color: #86B9FF;
+  }
+
+  p#WinWinSituationSubtitle {
+    color: #86B9FF;
+  }
+
+  li.listIcon{
+    color: #86B9FF;
+  }
+
+  span.listText{
+    color: #FFF
+  }
+
+  #freeRegisterContent {
+    flex-direction: column-reverse;
+  }
+
+  .costumer-service-form {
+    margin-top: 2%;
+    width: 65vw;
   }
 }
 
@@ -421,22 +542,10 @@
     width: 100%;
   }
   div#responsiveWebsite{
-    width: 100%;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 0;
-  }
-  img#responsiveImage {
-    margin-top: 0;
   }
   div#responsiveWebsiteImage {
-    float: none;
-    padding-right: 0%;
-    text-align: center;
-  }
-  section#scheduling {
-    margin-bottom: 5%;
+
   }
   p#WinWinSituationTitle {
     font-size: 20px;
@@ -557,12 +666,6 @@
   div#freeRegisterLeft {
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .costumer-service-input{
-    width: 100%;
-  }
-  section#scheduling {
-    margin-bottom: 25%;
   }
   .benefitsContainerItem {
     width: 70%;

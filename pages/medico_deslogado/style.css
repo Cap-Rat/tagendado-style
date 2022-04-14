@@ -141,8 +141,6 @@ p#benefitsText{
 
 section#scheduling{
     padding-top: 4%;
-    height: 600px;
-    margin-bottom: 14%;
 }
 
 p#schedulingTitle{
@@ -162,10 +160,17 @@ p#schedulingSubtitle{
 }
 
 div#responsiveWebsite{
-    padding-left: 20%;
-    padding-top: 9%;
-    width: 43%;
-    float: left;
+    display: flex;
+    padding: 5% 19%;
+    padding-top: 0;
+}
+
+div#responsiveWebsiteImage{
+    flex: 1;
+}
+
+#responsiveImage {
+    width: 700px;
 }
 
 p#responsiveWebsiteTitle{
@@ -174,15 +179,31 @@ p#responsiveWebsiteTitle{
     font-size: var(--fs-35);
     line-height: 43px;
 }
-div#responsiveWebsiteImage{
-    float:right;
-    padding-right: 12%;
-}
 
 p#responsiveWebsiteText{
     font-size: var(--fs-20);
     line-height: 24px;
     color: #525252;
+}
+
+.mobile-online {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.scheduling-signup {
+    font-size: var(--fs-18);
+    font-weight: bold;
+    color: #ffffff;
+    
+    padding: 0.8em 0.8em;
+    background-color: #9BD30F;
+    border-radius: 10px;
+    border: none;
 }
 
 section#allBenefits{
@@ -264,22 +285,14 @@ button#marketingLeftButton{
     background-color: #9BD30F;
 }
 
-
 div#marketingLeft{
-    padding-left: 24.5%;
     width: 80%;
-    
-}
-
-#marketingRight {
-    padding-right: 24.5%;
 }
 
 section#marketing{
     display: grid;
-    padding-top: 5%;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 5%;
+    padding: 5% 10.5%
 }
 
 section#WinWinSituation{
@@ -329,8 +342,12 @@ section#freeRegister{
 }
 
 div#freeRegisterContent{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    padding: 0 17.5%;
+    margin-top: 5%;
 }
 
 p#freeRegisterTitle{
@@ -356,24 +373,27 @@ p#freeRegisterSubtitle{
 }
 
 .costumer-service-form {
-    margin-top: 12%;
-  
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .costumer-service-input {
+.costumer-service-input {
     border: #525252 solid 1px;
     border-radius: 6px;
     
-    width: 37vw;
+    width: 100%;
   
     font-size: var(--fs-14);
     padding: 1.5rem 1rem;
     margin-bottom: 2rem;
-  }
+}
 
-  .costumer-service-btn {
+#DDD {
+    width: 15%;
+    margin-right: 3%;
+}
+
+.costumer-service-btn {
     border: none;
     border-radius: 1rem;
   
@@ -382,30 +402,30 @@ p#freeRegisterSubtitle{
   
     display: flex;
     justify-content: center;
-    width: 96%;
 
-    margin-top: 2%;
+    margin-top: 4%;
   
     padding: 1em 1.5em;
   
     cursor: pointer;
     color: #FFF;
     background-color: #9BD30F;
-  }
-
-  #telefone{
-    display: flex;
-  }
-
-  div#freeRegisterLeft{
-      padding-left: 22.5%;
-  }
-
-  div#freeRegisterRight{
-    margin-left: 22.5%;
-    padding-top: 10%;
 }
 
-  div.checkbox-container{
-      display: flex;
-  }
+#telefone{
+    display: flex;
+}
+
+div#freeRegisterLeft {
+    flex: 1
+}
+
+div#freeRegisterRight {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+div.checkbox-container{
+    display: flex;
+}
