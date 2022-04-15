@@ -217,18 +217,24 @@
 }
 
 @media (max-width: 1000px) {
+    /* HEADER */
     .search-form {
         position: absolute;
         bottom: -50px;
-    
+        
         min-width: 650px;
         left: 50%;
         transform: translate(-50%);
-    
+        
         padding: 8px 0px;
         border-radius: 5px;
-    
+        
         background-color: #1560A0;
+    }
+    
+    /* BODY */
+    body {
+        --fs-14: 1.1rem;
     }
 }
 
@@ -284,9 +290,14 @@
     }
     .ask-info-container {
         max-width: 100%;
+        padding: 2.2% 6% 2.2% 6%
     }
     .ask-info-title {
         text-align: center;
+        margin-top: 20px;
+    }
+    .main-info-container {
+        margin-top: 20px;
     }
     img#doctors {
         margin-top: 0;
@@ -294,8 +305,19 @@
     .info-text-subtitle {
         margin-top: 0;
     }
-    .page-identifier-container {
-        margin-top: 40px;
+    .info-text-container {
+        margin-left: 0;
+    }
+    section.ask-form-container {
+        padding-top: 5%;
+    }
+
+    .ask-form {
+        margin-left: 6%;
+    }
+
+    .ask-form-input {
+        padding: 1.5% 1%;
     }
 }
 
@@ -345,6 +367,11 @@
       margin-top: 0;
     }
     /*-------------*/
+
+    body {
+        --fs-16: 1.3rem;
+    }
+
     .info-text-container{
         text-align: center;
     }
@@ -356,7 +383,6 @@
     }
     .ask-form {
         margin-left: 7.5%;
-        margin-right: 2.5%;
     }
     .form-bottom-container{
         align-items: baseline;
@@ -400,6 +426,18 @@
 }
 
 @media only screen and (max-width: 480px){
+    body {
+        --fs-16: 1.2rem
+    }
+    .page-identifier {
+        font-size: 1rem;
+    }
+    .ask-info-title {
+        font-size: 2.2rem;
+    }
+    .info-text-subtitle {
+        font-size: 1.8rem;
+    }
     .main-info-image{
         text-align: center;
     }
@@ -415,7 +453,7 @@
         margin-left: 0;
     }
     img#doctors {
-        width: 340px;
+        width: 300px;
     }
 }
 
@@ -462,5 +500,13 @@
 @media only screen and (max-width: 320px){
     img#doctors{
         width: 261px;
+    }
+
+    .ask-info-title {
+        font-size: 2rem;
+    }
+
+    .info-text-subtitle {
+        font-size: 1.7rem;
     }
 }
