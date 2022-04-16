@@ -88,11 +88,7 @@
 }
 /*-----*/
 
-@media (max-width: 1440px) {
-    body {
-        --fs-14: 1rem
-    }
-
+@media (max-width: 1440px) { */
     .schedule-container {
         max-width: 40%;
         margin-left: 3%;
@@ -104,12 +100,12 @@
 
     .schedule-appointment-btn{
         margin-left: 4%;
+        font-size: var(--fs-12);
     }
     /* NÃO REMOVER */
     .time-available {
         font-size: 1.4rem;
     }
-    
 
     #doctor-map{
         width: 375px;
@@ -139,7 +135,6 @@
     body {
         --fs-28: 2.4rem;
         --fs-16: 1.4rem;
-        --fs-14: 0.9rem;
     }
 
     #doctor-image{
@@ -285,6 +280,18 @@
         font-size: 12px;
     }
 
+    .doctor-schedule-container {
+      padding: 10px;
+    }
+
+    .doctor-schedule-grid {
+      gap: 0.5rem
+    }
+
+    .open-schedule-container {
+      padding-top: 10px;
+    }
+
     /*HEADER*/
     .header {
         padding: 10px 6%;
@@ -330,21 +337,50 @@
 
 /* search-form passa a ser dropdown escondido no icone de pesquisa */
 @media (max-width: 1000px) {
-    .search-form {
-      position: absolute;
-      bottom: -50px;
-  
-      min-width: 650px;
-      left: 50%;
-      transform: translate(-50%);
-  
-      padding: 8px 0px;
-      border-radius: 5px;
-  
-      background-color: #1560A0;
-    }
+  .search-form {
+    position: absolute;
+    bottom: -50px;
+
+    min-width: 650px;
+    left: 50%;
+    transform: translate(-50%);
+
+    padding: 8px 0px;
+    border-radius: 5px;
+
+    background-color: #1560A0;
   }
+}
   
+@media (max-width: 950px) {
+  main.main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule-container {
+    margin-left: 0;
+    max-width: 60%;
+  }
+
+  .doctor-schedule-container {
+    margin-top: 0;
+  }
+
+  .doctor-details-header {
+    padding: 30px 0;
+  }
+
+  .doctor-details-container {
+    max-width: 100%;
+  }
+
+  .doctor-image-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media (max-width: 800px) {
   .logo {
     width: 120px;
@@ -377,17 +413,6 @@
 
   .user-container .user-auth-button {
     font-size: 1.1rem;
-  }
-  /*Page*/
-  main.main{
-    flex-direction: column;
-  }
-  .schedule-container {
-    margin-left: 0;
-    max-width: 100%;
-  }
-  .doctor-details-container {
-    max-width: 100%;
   }
 }
 /*-----*/
@@ -440,9 +465,74 @@
     /*-------------*/
 }
 
+@media (max-width: 650px) {
+  body {
+    --fs-12: 1rem;
+    --fs-14: 1rem;
+    --fs-15: 1.3rem;
+    --fs-16: 1.3rem;
+    --fs-18: 1.5rem;
+    --fs-19: 1.6rem;
+    --fs-28: 2.2rem;
+  }
+
+  .schedule-container {
+    max-width: 80%;
+  }
+
+  .see-phone-btn {
+    font-size: var(--fs-12);
+  }
+
+  .doctor-header-bottom-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doctor-header-buttons-container {
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .see-phone-btn {
+    margin-top: 0;
+  }
+
+  .rating-star, .rating-star-empty {
+    width: 15px;
+  }
+
+  #doctor-map {
+    width: 250px;
+  }
+
+  .doctor-details-header, .doctor-experience-container, .doctor-address-container, .doctor-education-container, .doctor-feedback-container {
+    padding: 15px 0;
+  }
+}
+
 @media (max-width: 550px) {
   .search-form {
     min-width: 350px;
+  }
+
+  /* BODY */
+  .doctor-address-container {
+    flex-direction: column;
+  }
+
+  .doctor-address-info {
+    align-self: flex-start;
+  }
+
+  .doctor-address-map {
+    align-self: flex-end;
+  }
+
+  .schedule-container {
+    max-width: 100%;
   }
 }
 
@@ -474,6 +564,34 @@
       align-items: center;
     }
     /*-------------*/
+}
+
+@media (max-width: 450px) {
+  body {
+    --fs-18: 1.2rem;
+    --fs-16: 1.2rem;
+    --fs-15: 1.2rem;
+  }
+
+  .doctor-details-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctor-header-info-container {
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .feedback-comment-container {
+    margin-top: 15px;
+    padding: 15px 10px;
+  }
+
+  .comment-username {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 390px) {
@@ -534,6 +652,10 @@
 
   .doctor-header-bottom-container{
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .doctor-header-buttons-container {
     gap: 10px;
   }
   .comment-rating {
