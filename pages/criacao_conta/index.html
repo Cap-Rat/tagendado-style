@@ -12,6 +12,8 @@
 
     <!-- Icons script -->
     <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
+    <!-- Jquery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <link rel="stylesheet" type="text/css" href="./media.css" />
@@ -246,19 +248,19 @@
     </footer>
   </body>
   <script>
-    document.addEventListener("DOMContentLoaded", function(e) {
-      if (screen.width <= 1235) {
+    $(document).ready(function(e) {
+      if (window.innerWidth <= 1235) {
         const userOptions = document.getElementById('userOptions')
         userOptions.classList.add('dont-show')
       }
       
-      if (screen.width >= 1000) {
+      if (window.innerWidth >= 1000) {
         const searchIcon = document.getElementById('searchIcon')
         searchIcon.classList.add('dont-show')
 
         const searchForm = document.getElementById('searchForm')
         searchForm.classList.remove('dont-show')
-      } else if (screen.width <= 1000) {
+      } else if (window.innerWidth <= 1000) {
         const searchIcon = document.getElementById('searchIcon')
         searchIcon.classList.remove('dont-show')
 
@@ -268,7 +270,7 @@
     });
 
     window.addEventListener('resize', function(e) {
-      if (screen.width <= 1235) {
+      if (window.innerWidth <= 1235) {
         const userOptions = document.getElementById('userOptions')
         userOptions.classList.add('dont-show')
       } else {
@@ -276,7 +278,7 @@
         userOptions.classList.remove('dont-show')
       }
 
-      if (screen.width <= 1000) {
+      if (window.innerWidth <= 1000) {
         const searchIcon = document.getElementById('searchIcon')
         searchIcon.classList.remove('dont-show')
       } else {
@@ -289,7 +291,7 @@
     })
 
     const toogleSearch = () => {
-      if (screen.width <= 1000) {
+      if (window.innerWidth <= 1000) {
         const userOptions = document.getElementById('userOptions')
         userOptions.classList.add('dont-show')
 
@@ -299,8 +301,9 @@
     }
 
     const toogleUser = () => {
-      if (screen.width <= 1235) {
-        if (screen.width <= 1000) {
+      if (window.innerWidth <= 1235) {
+        console.log('oi')
+        if (window.innerWidth <= 1000) {
           const searchForm = document.getElementById('searchForm')
           searchForm.classList.add('dont-show')
         }
