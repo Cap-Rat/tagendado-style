@@ -114,21 +114,30 @@ img#imgGooglePlay {
     color: #86B9FF;
     font-size: var(--fs-40);
     line-height: 45px;
-    width: 37%;
+    width: 40%;
     font-weight: bold;
 }
 
 section#benefits{
     background: transparent url('img/Group 579.png') 0% 0% no-repeat border-box;
     background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+
     padding-left: 8.6%;
-    padding-top: 6.5%;
+    padding-top: 5%;
+    padding-bottom: 4%;
 }
 
 p#benefitsSubtitle{
     font-size: var(--fs-26);
     line-height: 32px;
     color: #FFFFFF;
+    width: 40%;
 }
 
 p#benefitsText{
@@ -136,7 +145,7 @@ p#benefitsText{
     font-size: var(--fs-22);
     line-height: 27px;
     font-weight: bold;
-    width: 35%;
+    width: 40%;
 }
 
 section#scheduling{
@@ -428,4 +437,9 @@ div#freeRegisterRight {
 
 div.checkbox-container{
     display: flex;
+    align-items: center;
+}
+
+.checkbox-text {
+    margin-left: 5px;
 }
