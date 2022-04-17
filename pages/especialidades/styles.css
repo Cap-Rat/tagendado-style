@@ -353,6 +353,16 @@
   color: #16688D;
 }
 
+.fa-chevron-left {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.fa-chevron-right {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
 .open-schedule-container {
   display: flex;
   align-items: center;

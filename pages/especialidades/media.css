@@ -351,6 +351,10 @@
     background-color: #eee;
   }
 
+  .filter-form {
+    flex-wrap: wrap;
+  }
+
   .search-input {
     padding: 10px;
     font-size: 1.2rem;
@@ -373,10 +377,6 @@
 /*------*/
 
 @media (max-width: 740px) {
-  .filter-form {
-    flex-wrap: wrap;
-  }
-
   .map-container { 
     padding: 120px;
     height: 80vh;
@@ -491,9 +491,48 @@
     padding: 100px;
   }
 
+  .main {
+    margin-bottom: 50px;
+  }
+
+  .text-filtered-by {
+    margin-bottom: 20px;
+  }
+
+  .doctor-info {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .doctor-rating {
+    justify-content: center;
+  }
+
+  .doctor-image-container {
+    margin: 0;
+  }
+
+  .rating-counter {
+    margin-left: 5px;
+  }
+
+  .rating-star, .rating-star-empty {
+    width: 18px;
+  }
+
   .doctor-card-container {
     min-width: 0px;
     width: 320px;
+  }
+
+  .address-title {
+    gap: 5px;
+  }
+
+  .address-title-btn {
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -516,8 +555,39 @@
     padding: 80px;
   }
 
+  .time-available {
+    padding: 6px;
+  }
+
+  .time-unavailable-container {
+    padding: 12px;
+  }
+
+  .arrow-icon {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .fa-chevron-left {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .fa-chevron-right {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
   .doctor-card-container {
-    width: 285px;
+    width: 280px;
+  }
+
+  .doctor-schedule-grid {
+    gap: 3px;
+  }
+
+  .doctor-schedule-container {
+    padding: 15px 0;
   }
 }
 
