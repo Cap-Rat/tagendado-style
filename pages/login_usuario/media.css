@@ -311,6 +311,17 @@
     .form-sub-text{
       text-align: center;
     }
+    body{
+      --fs-14: 1.3rem;
+      --fs-16: 1.5rem;
+      --fs-23: 2.2rem;
+      --fs-35: 2.5rem;
+      --fs-39: 2.5rem;
+    }
+    .info-main-text {
+      line-height: 32px;
+    }
+
   }
 /*---------*/
 /*RESPONSIVO MOBILE*/

@@ -262,6 +262,11 @@
       .user-container .user-auth-button {
         font-size: 1.1rem;
       }
+      body{
+        --fs-14: 1.3rem;
+        --fs-16: 1.5rem;
+        --fs-35: 2.5rem;
+      }
 }
 
 @media (max-width: 700px) {

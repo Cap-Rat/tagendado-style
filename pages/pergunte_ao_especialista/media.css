@@ -273,12 +273,19 @@
       }
 
       .ask-info-title{
-        font-size: 26px;
+        font-size: 25px;
         text-align: center;
       }
 
       .info-text-subtitle{
-        font-size: 20px;
+        font-size: 22px;
+      }
+      body{
+        --fs-14: 1.3rem;
+        --fs-16: 1.5rem;
+      }
+      .ask-form-btn{
+          margin: auto;
       }
 }
 
