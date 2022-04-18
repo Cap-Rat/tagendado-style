@@ -612,4 +612,8 @@
   .contactInfos img {
     width: 150px;
   }
+  /*PADRONIZANDO*/
+  .title-filter-by, .filter-form-btn{
+    font-size: 12px;
+  }
 }

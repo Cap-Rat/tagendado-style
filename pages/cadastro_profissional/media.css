@@ -559,4 +559,20 @@
   .form-btn {
     padding: 1.2em 4em;
   }
+  /*PADRONIZANDO*/
+  .profile-title{
+    font-size: 22px;
+  }
+  .page-identifier{
+    font-size: 10px;
+  }
+  .professional-form-title, .clinic-form-title{
+    font-size: 16px;
+  }
+  .form-input{
+    font-size: 10px;
+  }
+  .checkbox-text{
+    font-size: 12px;
+  }
 }

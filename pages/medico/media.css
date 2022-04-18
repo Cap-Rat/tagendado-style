@@ -674,4 +674,12 @@
     margin-left: 2px !important;
     margin-right: 8px;
   }
+
+  /*PADRONIZANDO*/
+  .doctor-name{
+    font-size: 20px;
+  }
+  .doctor-specialties, .comment-date{
+    font-size: 9px;
+  }
 }

@@ -873,5 +873,10 @@
   .contactInfos img {
     width: 150px;
   }
+
+  /*PADRONIZANDO*/
+  button.schedulingButton, .schedulingSpecialties{
+    font-size: 12px;
+  }
   /*-------------*/
 }

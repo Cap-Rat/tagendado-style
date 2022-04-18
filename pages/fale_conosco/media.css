@@ -507,6 +507,27 @@
   .page-title{
     text-align: center;
   }
+  /*PADRONIZANDO*/
+  .page-title{
+    font-size: 22px;
+  }
+  .text-content-title{
+    font-size: 16px;
+  }
+  .form-label, .checkbox-text{
+    font-size: 12px;
+  }
+
+  .checkbox-container{
+    justify-content: flex-start;
+  }
+
+  .costumer-service-input{
+    font-size: 10px;
+  }
+  .page-identifier{
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 320px){

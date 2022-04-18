@@ -436,4 +436,9 @@
         display: flex;
         justify-content: center;
     }
+
+    /*Padronizando*/
+    .page-identifier, .form-input{
+      font-size: 10px;
+    }
 }

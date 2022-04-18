@@ -758,10 +758,10 @@
   body {
     --fs-41: 2.2rem;
     --fs-40: 2.2rem;
-    --fs-35: 1.9rem;
-    --fs-30: 1.9rem;
-    --fs-26: 1.5rem;
-    --fs-22: 1.4rem;
+    --fs-35: 2.2rem;
+    --fs-30: 2.2rem;
+    --fs-26: 1.6rem;
+    --fs-22: 1.2rem;
     --fs-20: 1.2rem;
     --fs-19: 1.2rem;
     --fs-16: 1.2rem;
@@ -792,6 +792,11 @@
   }
   .benefitsContainerItem {
     width: 70%;
+  }
+
+  /*PADRONIZANDO*/
+  p#responsiveWebsiteText{
+    line-height: 18px;
   }
 }
 

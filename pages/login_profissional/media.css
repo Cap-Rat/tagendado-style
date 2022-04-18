@@ -531,4 +531,17 @@
   .auth-button-container {
     flex-direction: column;
   }
+  /*PADRONIZANDO*/
+  .info-main-text{
+    font-size: 22px;
+  }
+  .info-sub-text{
+    font-size: 14px;
+  }
+  .login-form-btn{
+    font-size: 12px;
+  }
+  .signup-text{
+    font-size: 12px;
+  }
 }
