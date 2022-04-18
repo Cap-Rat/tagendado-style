@@ -784,12 +784,22 @@
     --fs-22: 1.2rem;
     --fs-20: 1.2rem;
     --fs-19: 1.2rem;
+    --fs-18: 1.2rem;
     --fs-16: 1.2rem;
   }
 
   div.mobile-online {
     gap: 10px
   }
+
+  section#benefits {
+    gap: 20px;
+  }
+
+  .costumer-service-input {
+    margin-bottom: 10px;
+  }
+
   p#WinWinSituationTitle {
     font-size: 2.2rem;
   }
