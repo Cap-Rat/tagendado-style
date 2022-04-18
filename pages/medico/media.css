@@ -350,6 +350,15 @@
 
     background-color: #1560A0;
   }
+  body{
+    --fs-12: 1.4rem;
+    --fs-14: 1.4rem;
+    --fs-19: 2.5rem;
+    --fs-28: 2.5rem;
+  }
+  .doctor-experience-description, .comment-content, .doctor-address-content, .doctor-experience-description {
+    font-size: 16px;
+  }
 }
   
 @media (max-width: 950px) {

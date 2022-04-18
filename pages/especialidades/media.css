@@ -333,6 +333,14 @@
 
     background-color: #1560A0;
   }
+  body{
+    --fs-12: 1.4rem;
+    --fs-14: 1.5rem;
+    --fs-15: 1.6rem;
+    --fs-16: 1.6rem;
+    --fs-17: 2.5rem;
+    --fs-22: 2.5rem;
+  }
 }
 
 @media (max-width: 800px) {
