@@ -502,7 +502,11 @@
       flex-direction: row;
       gap: 20px;
     }
-  }
+
+    .page-identifier {
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 340px) {
     /*==== FOOTER ====*/
