@@ -195,6 +195,8 @@
   margin-top: 5px;
   width: 100%;
 
+  min-height: 30px;
+
   border: solid 1px #525252;
   border-radius: 6px;
 }
