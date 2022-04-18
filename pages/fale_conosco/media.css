@@ -386,8 +386,20 @@
   .right-container {
     padding-right: 4%;
   }
-}
 
+  body {
+    --fs-35: 2.5rem;
+    --fs-20: 2.2rem;
+    --fs-16: 1.3rem;
+    --fs-14: 1.2rem;
+  }
+  .costumer-service-btn{
+    margin: auto;
+  }
+  .checkbox-container {
+    justify-content: flex-start;
+  }
+}
 @media (max-width: 550px) {
   .search-form {
     min-width: 350px;

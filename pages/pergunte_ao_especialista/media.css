@@ -387,6 +387,20 @@
     .form-bottom-container{
         align-items: baseline;
     }
+
+    body {
+        --fs-35: 2.4rem;
+        --fs-19: 1.8rem;
+        --fs-16: 1.3rem;
+        --fs-14: 1.2rem;
+        --fs-12: 1.2rem;
+    }
+    .ask-info-title{
+        font-size: 25px;
+    }
+    .info-text-subtitle {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 550px) {

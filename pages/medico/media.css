@@ -467,13 +467,19 @@
 
 @media (max-width: 650px) {
   body {
-    --fs-12: 1rem;
     --fs-14: 1rem;
     --fs-15: 1.3rem;
     --fs-16: 1.3rem;
     --fs-18: 1.5rem;
-    --fs-19: 1.6rem;
+    --fs-40: 2.5rem;
     --fs-28: 2.2rem;
+    --fs-22: 2.2rem;
+    --fs-19: 2.2rem;
+    --fs-12: 1.2rem;
+  }
+
+  .doctor-experience-description, .comment-content {
+    font-size: 13px;
   }
 
   .schedule-container {
@@ -511,6 +517,8 @@
   .doctor-details-header, .doctor-experience-container, .doctor-address-container, .doctor-education-container, .doctor-feedback-container {
     padding: 15px 0;
   }
+  
+  
 }
 
 @media (max-width: 550px) {

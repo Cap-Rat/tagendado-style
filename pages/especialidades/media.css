@@ -451,6 +451,20 @@
   .filter-form-input {
     width: 100%;
   }
+
+  body {
+    --fs-40: 2.5rem;
+    --fs-38: 2.4rem;
+    --fs-28: 2.2rem;
+    --fs-22: 2.2rem;
+    --fs-21: 1.3rem;
+    --fs-18: 1.4rem;
+    --fs-17: 2.2rem;
+    --fs-16: 1.4rem;
+    --fs-15: 1.3rem;
+    --fs-14: 1.2rem;
+    --fs-12: 1.2rem;
+  }
 }
 
 @media (max-width: 550px) {

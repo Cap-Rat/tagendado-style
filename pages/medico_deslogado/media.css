@@ -529,14 +529,21 @@
 
 @media (max-width: 600px) {
   body {
-    --fs-41: 2.7rem;
-    --fs-40: 2.7rem;
+    --fs-41: 2.5rem;
+    --fs-40: 2.5rem;
     --fs-35: 2.3rem;
-    --fs-30: 2.3rem;
-    --fs-26: 1.9rem;
-    --fs-22: 1.6rem;
+    --fs-30: 2.2rem;
+    --fs-26: 2.2rem;
+    --fs-22: 1.8rem;
     --fs-20: 1.5rem;
-    --fs-19: 1.4rem;
+    --fs-19: 1.5rem;
+    --fs-18: 1.5rem;
+    --fs-13: 1.3rem;
+    --fs-14: 1.2rem;
+  }
+
+  #benefitsTitle{
+    line-height: 32px;
   }
 
   .logotype img {
