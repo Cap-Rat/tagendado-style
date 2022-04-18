@@ -467,6 +467,16 @@
     margin-right: 0px;
     margin-left: 15px;
   }
+  body {
+    --fs-14: 1.4rem;
+    --fs-15: 1.7rem;
+    --fs-16: 1.6rem;
+    --fs-18: 1.6rem;
+    --fs-21: 1.7rem;
+    --fs-28: 2.5rem;
+    --fs-38: 2.5rem;
+    --fs-40: 2.8rem;
+  }
 }
 
 /*MOBILE - DEUS ABENÇOE*/
