@@ -187,6 +187,9 @@
   .form-label {
     margin-top: 10px;
   } */
+  #ufsLabel{
+    min-width: auto; 
+  }
 }
 
 
@@ -205,12 +208,23 @@
 
     background-color: #1560A0;
   }
+
+  .form-group{
+    flex-direction: column;
+  }
+  #ufsLabel {
+    min-width: 20vh;
+  }
 }
 
 @media (max-width: 800px) {
   /* === HEADER === */
   .logo {
     width: 120px;
+  }
+
+  .form-group{
+    gap: 15px;
   }
 
   .btn-search, .search-form .radio-label {
@@ -249,7 +263,6 @@
 
   #numeroConselho{
     margin-right: 50px;
-    max-width: 155px;
   }
 
   .conselho{
@@ -257,19 +270,24 @@
   }
 
   #houseNumber{
-    max-width: 110px !important;
+    max-width: 110px;
   }
   #clinicUF{
     max-width: 110px !important;
   }
-  #clinicComplement{
-    max-width: 165px !important;
-  }
-  #clinicDistrict{
-    max-width: 141px;
-  }
   #emailAndPass{
     gap: 20px;
+  }
+  #registerButton{
+    text-align: center;
+  }
+  .profile-title{
+    text-align: center;
+  }
+  .profile-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
   }
 }
 
@@ -331,10 +349,10 @@
     margin-right: 20px;
   }
   #conselhoAfiliado{
-    min-width: 188px !important;
+    min-width: 150px;
   }
   #numeroConselho{
-    min-width: 188px !important;
+    min-width: 188px;
   }
   #ufs{
     min-width: 110px !important;
@@ -354,11 +372,33 @@
     justify-content: center;
     width: 100%;
   }
+  #ufsLabel {
+    min-width: 15vh;
+  }
+  #clinicDistrict {
+    min-width: 250px;
+  }
+  .form-group {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 550px) {
   .search-form {
     min-width: 350px;
+  }
+  #conselhoInfo {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  #conselhoAfiliado {
+    min-width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
+  #houseNumber{
+    max-width: none;
   }
 }
 
@@ -394,12 +434,14 @@
 
 @media (max-width: 480px){
   #conselhoAfiliado {
-    min-width: 282px !important;
+    min-width: none;
+    margin-right: 0;
   }
   #numeroConselho {
-    min-width: 182px !important;
+    min-width: 182px;
+    margin-right: 0;
   }
-  #ufs {
+  #ufsLabel {
     min-width: 79px !important;
   }
   #clinicDistrict {
@@ -420,24 +462,18 @@
     flex-direction: column;
     row-gap: 25px;
   }
-  #houseNumber{
-    max-width: 280px !important;
-  }
   #address{
     margin-right: 0 !important;
   }
   #clinicComplement{
     margin-right: 0 !important;
-    max-width: 280px !important;
+    max-width: none;
   }
   #clinicDistrict {
     min-width: 280px;
   }
   #clinicUF{
     max-width: 85px !important;
-  }
-  #clinicCity{
-    max-width: 175px;
   }
   #passAndConfirm{
     display: flex;
@@ -446,6 +482,38 @@
   }
   #firstPass{
     margin-right: 0 !important;
+  }
+  #numeroConselho {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 400px){
+  #conselhoAfiliado {
+    min-width: 100%;
+  }
+  .form-btn{
+    padding: 1.2em 5em;
+  }
+  .profile-title{
+    font-size: 24px;
+  }
+  .page-identifier-container{
+    margin-top: 5%;
+    margin-bottom: 30px;
+  }
+  .profile-btn-container label{
+    font-size: 12px;
+  }
+  .professional-form-title, .clinic-form-title{
+    margin-top: 5%;
+    font-size: 18px;
+  }
+  .form-label{
+    font-size: 12px;
+  }
+  .form-btn{
+    font-size: 12px;
   }
 }
 

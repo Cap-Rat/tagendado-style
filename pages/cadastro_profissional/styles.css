@@ -32,6 +32,10 @@
   margin: 0 8px;
 }
 
+#ufsLabel{ 
+  max-width: 5vw; min-width: 65px;
+}
+
 .search-form .radio-label {
   font-size: 1.5rem;
 }
@@ -302,4 +306,24 @@ a#seeAll {
 img#imgGooglePlay {
   height: 46px;
   width: 156px;
+}
+
+#houseNumber{
+  max-width: 140px;
+}
+
+#numeroConselho{
+  margin-right: 20px; 
+  flex: 1 1;
+}
+
+#conselhoAfiliado{
+  min-width: 152px; 
+  max-width: 11.5vw;
+  margin-right: 20px;
+}
+
+#clinicComplement{
+  margin-right: 20px; 
+  max-width: 220px;
 }
