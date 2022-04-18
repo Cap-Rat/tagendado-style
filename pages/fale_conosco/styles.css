@@ -180,6 +180,8 @@
   border: #525252 solid 1px;
   border-radius: 6px;
 
+  min-height: 35px;
+
   font-size: var(--fs-14);
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
