@@ -196,6 +196,22 @@
   border-radius: 6px;
 }
 
+#gender {
+  margin-right: 20px;
+}
+
+#complemento {
+  margin-left: 10px;
+}
+
+#ddd {
+  margin-right: 20px;
+}
+
+#pass {
+  margin-right: 20px;
+}
+
 .dropdown-input::-webkit-calendar-picker-indicator {
   color: transparent;
   background-image: url("./img/arrow_forward_ios_black_24dp.svg");

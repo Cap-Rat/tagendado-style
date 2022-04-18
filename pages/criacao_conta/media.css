@@ -183,6 +183,19 @@
 }
 
 @media (max-width: 900px) {
+    body {
+      --fs-35: 2.8rem;
+      --fs-14: 1.1rem;
+    }
+
+    .page-identifier-container {
+      margin-bottom: 40px;
+    }
+
+    .form-section {
+        padding-top: 4%
+    }
+
     .form-group {
         flex-direction: column;
         gap: 0px;
@@ -192,6 +205,27 @@
     
     .form-label {
         margin-top: 10px;
+    }
+
+    #gender {
+      margin-right: 10px;
+    }
+
+    #complemento {
+      margin-left: 0;
+    }
+
+    #ddd {
+      margin-right: 10px;
+    }
+
+    #pass {
+      margin-right: 10px;
+    }
+
+    #buttonDiv {
+      display: flex;
+      justify-content: center;
     }
 }
 
@@ -279,6 +313,11 @@
 }
 
 @media (max-width: 550px) {
+    body {
+      --fs-35: 2.5rem;
+      --fs-16: 1.2rem;
+    }
+
     .search-form {
       min-width: 350px;
     }
@@ -326,7 +365,13 @@
       flex-direction: row;
       gap: 20px;
     }
-  }
+
+    /*--------*/
+
+    body {
+      --fs-35: 2.2rem;
+    }
+}
 
 @media (max-width: 340px) {
     /*==== FOOTER ====*/
@@ -355,10 +400,6 @@
 }
 
 @media (max-width: 320px) {
-    #dataNascimento{
-        width: 160px;
-    }
-
     #gender{
         min-width: 100px !important;
     }
