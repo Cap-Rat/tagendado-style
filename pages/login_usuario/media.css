@@ -400,6 +400,10 @@
 @media (max-width: 490px) {
   /*==== FOOTER ====*/
 
+  .info-main-text{
+    line-height: 32px;
+  }
+
   footer div.footer-options {
     display: flex;
     flex-direction: column;
@@ -435,6 +439,15 @@
   
   .auth-button-container{
     flex-direction: column;
+  }
+
+  body {
+    --fs-39: 2.4rem;
+    --fs-35: 2.4rem;
+    --fs-23: 2.0rem;
+    --fs-16: 1.2rem;
+    --fs-15: 1.2rem;
+    --fs-14: 1.1rem;
   }
 }
 

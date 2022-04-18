@@ -486,6 +486,16 @@
   #numeroConselho {
     margin-right: 20px;
   }
+  body {
+    --fs-39: 2.4rem;
+    --fs-35: 2.4rem;
+    --fs-24: 2rem;
+    --fs-23: 2.0rem;
+    --fs-20: 1.2rem;
+    --fs-16: 1.2rem;
+    --fs-15: 1.2rem;
+    --fs-14: 1.1rem;
+  }
 }
 
 @media (max-width: 400px){

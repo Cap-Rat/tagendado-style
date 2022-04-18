@@ -484,6 +484,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  body {
+    --fs-17: 2rem;
+    --fs-15: 1.2rem;
+    --fs-12: 1.1rem;
+  }
 }
 
 @media (max-width: 450px) {

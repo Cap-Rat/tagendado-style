@@ -742,17 +742,18 @@
 
   /* === BODY === */
   body {
-    --fs-40: 2rem;
-    --fs-38: 2rem;
-    --fs-28: 1.8rem;
+    --fs-40: 2.4rem;
+    --fs-38: 2.4rem;
+    --fs-28: 2.0rem;
     --fs-24: 1.6rem;
-    --fs-21: 1.2rem;
+    --fs-21: 1.3rem;
     --fs-20: 1.4rem;
     --fs-19: 1.3rem;
-    --fs-18: 1.2rem;
-    --fs-17: 1.3rem;
+    --fs-18: 1.3rem;
+    --fs-17: 1.4rem;
     --fs-16: 1.2rem;
-    --fs-14: 1.1rem;
+    --fs-15: 1.2rem;
+    --fs-14: 1.2rem;
   }
 
   section#sectionSearch form {
@@ -770,6 +771,7 @@
 
   .search {
     width: 100%;
+    text-align: center;
   }
 
   .buttonSpecialties{

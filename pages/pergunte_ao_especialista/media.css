@@ -426,11 +426,8 @@
 }
 
 @media only screen and (max-width: 480px){
-    body {
-        --fs-16: 1.2rem
-    }
     .page-identifier {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .ask-info-title {
         font-size: 2.2rem;
@@ -455,13 +452,20 @@
     img#doctors {
         width: 300px;
     }
-    .ask-info-title {
-        font-size: 2.2rem;
-    }
 
     /*PADRONIZANDO*/
     .info-text-subtitle {
-        font-size: 1.6rem;
+        font-size: 2rem;
+    }
+
+    body {
+        --fs-35: 2.4rem;
+        --fs-19: 1.8rem;
+        --fs-16: 1.2rem;
+        --fs-12: 1.2rem;
+    }
+    .ask-info-title{
+        font-size: 24px;
     }
 }
 

@@ -351,6 +351,12 @@
       align-items: center;
     }
     /*-------------*/
+    body {
+      --fs-35: 2.4rem;
+      --fs-14: 1.1rem;
+      --fs-20: 2rem;
+      --fs-16: 1.2rem;
+    }
 }
 
 @media (max-width: 390px) {

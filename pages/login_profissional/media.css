@@ -457,6 +457,22 @@
   .login-form {
     margin-top: 5%;
   }
+
+  .info-sub-text{
+    font-size: 20px;
+  }
+  h2.form-main-text{
+    font-size: 24px;
+  }
+  body {
+    --fs-39: 2.4rem;
+    --fs-35: 2.4rem;
+    --fs-23: 2.0rem;
+    --fs-20: 1.2rem;
+    --fs-16: 1.2rem;
+    --fs-15: 1.2rem;
+    --fs-14: 1.1rem;
+  }
 }
 
 @media (max-width: 390px) {
