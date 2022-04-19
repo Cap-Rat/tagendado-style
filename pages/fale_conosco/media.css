@@ -244,6 +244,14 @@
   
       background-color: #1560A0;
     }
+    body{
+      --fs-15: 1.6rem;
+      --fs-16: 1.6rem;
+      --fs-20: 1.8rem;
+    }
+    .costumer-service-btn {
+      margin: auto;
+    }
 }
 
 @media only screen and (max-width: 801px){

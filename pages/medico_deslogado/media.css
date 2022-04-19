@@ -342,21 +342,19 @@
   .costumer-service-input {
     padding: 1rem 0.6rem;
   }
+
+  body{
+    --fs-14: 1.4rem;
+    --fs-16: 1.6rem;
+    --fs-19: 1.8rem;
+    --fs-26: 2.5rem;
+    --fs-30: 2.8rem;
+    --fs-40: 2.8rem;
+    --fs-41: 2.8rem;
+  }
 }
 
 @media (max-width: 900px){
-  body {
-    --fs-40: 3rem;
-    --fs-35: 2.7rem;
-    --fs-30: 2.5rem;
-    --fs-26: 2.1rem;
-    --fs-22: 1.7rem;
-    --fs-20: 1.6rem;
-    --fs-19: 1.5rem;
-    --fs-18: 1.4rem;
-    --fs-16: 1.3rem;
-    --fs-14: 1.2rem;
-  }
 
   section#benefits {
     padding: 3% 0 3% 4%;

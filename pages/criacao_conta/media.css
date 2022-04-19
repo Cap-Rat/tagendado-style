@@ -180,6 +180,12 @@
     
         background-color: #1560A0;
     }
+
+    body{
+      --fs-14: 1.4rem;
+      --fs-16: 1.6rem;
+      --fs-35: 2.8rem;
+    }
 }
 
 @media (max-width: 900px) {

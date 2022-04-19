@@ -215,6 +215,16 @@
   #ufsLabel {
     min-width: 20vh;
   }
+
+  body{
+    --fs-14: 1.4rem;
+    --fs-16: 1.6rem;
+    --fs-24: 2.6rem;
+    --fs-35: 2.8rem;
+  }
+  .form-group{
+    gap: 20px;
+  }
 }
 
 @media (max-width: 800px) {
