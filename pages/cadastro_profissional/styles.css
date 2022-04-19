@@ -196,6 +196,7 @@
 
 .ddd-input {
   max-height: 50px;
+  margin-right: 20px;
 }
 
 .dropdown-input::-webkit-calendar-picker-indicator {
@@ -326,4 +327,8 @@ img#imgGooglePlay {
 #clinicComplement{
   margin-right: 20px; 
   max-width: 220px;
+}
+
+#clinicCity {
+  margin-right: 20px;
 }

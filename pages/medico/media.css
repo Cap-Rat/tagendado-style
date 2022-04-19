@@ -487,7 +487,7 @@
 
 @media (max-width: 650px) {
   body {
-    --fs-14: 1rem;
+    --fs-14: 1.2rem;
     --fs-15: 1.3rem;
     --fs-16: 1.3rem;
     --fs-18: 1.5rem;
@@ -596,6 +596,7 @@
     body {
       --fs-28: 2rem;
       --fs-19: 1.8rem;
+      --fs-14: 1rem;
       --fs-12: 1.2rem;
     }
 }

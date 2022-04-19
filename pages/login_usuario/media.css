@@ -404,14 +404,19 @@
   body {
     --fs-39: 2.5rem;
     --fs-35: 2.4rem;
-    --fs-23: 2.2rem;
-    --fs-20: 1.3rem;
+    --fs-23: 2rem;
+    --fs-20: 1.4rem;
     --fs-16: 1.3rem;
     --fs-15: 1.3rem;
     --fs-14: 1.2rem;
   }
+
   .info-main-text {
     line-height: 32px;
+  }
+
+  .page-identifier {
+    font-size: 1.2rem;
   }
 }
 
@@ -455,8 +460,13 @@
   /*-------------*/
   
   .login-info-container{
-    padding-top: 6%;
+    padding-top: 2%;
   }
+
+  .login-input-container {
+    margin-bottom: 10px;
+  }
+
   .auth-btn {
     min-width: 200px;
   }
@@ -471,7 +481,11 @@
     --fs-23: 2.0rem;
     --fs-16: 1.2rem;
     --fs-15: 1.2rem;
-    --fs-14: 1.1rem;
+    --fs-14: 1.2rem;
+  }
+
+  .page-identifier {
+    font-size: 1.1rem;
   }
 }
 
@@ -543,7 +557,7 @@
     margin-top: 3vh;
   }
   .form-main-text{
-    font-size: 16px;
+    font-size: 22px;
   }
   .page-identifier{
     font-size: 10px;

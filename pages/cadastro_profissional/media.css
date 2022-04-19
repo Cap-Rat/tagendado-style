@@ -474,7 +474,7 @@
   }
   #addressNumber{
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 10px;
   }
   #district{
     flex-direction: column;
@@ -520,6 +520,15 @@
   #conselhoAfiliado {
     min-width: 100%;
   }
+  #conselhoInfo {
+    gap: 10px;
+  }
+  #clinicCity {
+    margin-right: 10px;
+  }
+  #district{
+    gap: 10px;
+  }
   .form-btn{
     padding: 1.2em 5em;
   }
@@ -527,7 +536,6 @@
     font-size: 24px;
   }
   .page-identifier-container{
-    margin-top: 5%;
     margin-bottom: 30px;
   }
   .profile-btn-container label{
@@ -542,6 +550,19 @@
   }
   .form-btn{
     font-size: 12px;
+  }
+  .ddd-input {
+    margin-right: 10px;
+    max-height: 35px;
+  }
+  #numeroConselho{
+    margin-right: 10px; 
+  }
+  #emailAndPass{
+    gap: 10px;
+  }
+  #passAndConfirm{
+    gap: 10px;
   }
 }
 

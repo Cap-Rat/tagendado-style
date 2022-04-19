@@ -386,12 +386,7 @@
   }
 
   .info-sub-text {
-    font-size: 22px;
     text-align: center;
-  }
-
-  h2.form-main-text {
-    font-size: 22px;
   }
 
   .main{
@@ -403,6 +398,11 @@
   .login-form-container {
     width: 100%;
   }
+
+  .login-form {
+    margin-top: 35px;
+  }
+
   .auth-button-container {
     flex-direction: row;
   }
@@ -413,7 +413,6 @@
     margin-top: 10%;
   }
   .info-main-text{
-    font-size: 24px;
     text-align: center;
     line-height: 32px;
   }
@@ -426,7 +425,7 @@
   }
   
   .form-main-text {
-      font-size: 22px;
+    margin-top: 40px;
   }
 
   .form-title-container {
@@ -434,18 +433,17 @@
   }
 
   .login-form-container {
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 6%;
+    padding-left: 6%;
     margin-left: 0;
   }
 
   .login-info-container{
-    padding-top: 4%;
+    padding-top: 2%;
   }
   .form-sub-text{
     text-align: center;
   }
-
 }
 
 @media (max-width: 550px) {
@@ -495,6 +493,7 @@
   }
   h2.form-main-text{
     font-size: 24px;
+    margin-top: 35px;
   }
   body {
     --fs-39: 2.4rem;
@@ -522,6 +521,14 @@
   .stamp-image {
     height: 100px;
     width: 100px;
+  }
+
+  .login-input-container {
+    margin-bottom: 10px;
+  }
+
+  body {
+    --fs-14: 1rem;
   }
 }
 
@@ -566,8 +573,8 @@
     text-align: center;
   }
   .stamp-image {
-    width: 64px;
-    height: 64px;
+    width: 75px;
+    height: 75px;
   }
   .stamp-text{
     margin-top: 1rem;
@@ -591,5 +598,8 @@
   }
   .signup-text{
     font-size: 12px;
+  }
+  h2.form-main-text{
+    font-size: 22px;
   }
 }

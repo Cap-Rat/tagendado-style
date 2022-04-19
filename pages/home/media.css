@@ -816,6 +816,7 @@
 
   div.selectedSpecialties {
     padding: 10px 15px;
+    min-width: 200px;
   }
 
   .selectedSpecialties img {
