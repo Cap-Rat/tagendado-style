@@ -351,9 +351,7 @@
     background-color: #1560A0;
   }
   body{
-    --fs-12: 1.4rem;
     --fs-14: 1.4rem;
-    --fs-19: 2.5rem;
     --fs-28: 2.5rem;
   }
   .doctor-experience-description, .comment-content, .doctor-address-content, .doctor-experience-description {
@@ -425,14 +423,15 @@
   }
 
   body {
-    --fs-12: 1.3rem;
+    --fs-28: 2.3rem;
+    --fs-19: 1.7rem;
+    --fs-15: 1.4rem;
     --fs-14: 1.3rem;
-    --fs-17: 2.5rem;
-    --fs-19: 2.4rem;
-    --fs-22: 2.4rem;
+    --fs-12: 1.3rem;
   }
+
   .doctor-experience-description, .comment-content, .day-title-weekday, .doctor-address-content, .doctor-experience-description {
-    font-size: 15px;
+    font-size: 1.4rem;
   }
 }
 /*-----*/
@@ -494,7 +493,6 @@
     --fs-40: 2.5rem;
     --fs-28: 2.2rem;
     --fs-22: 2.2rem;
-    --fs-19: 2.2rem;
     --fs-12: 1.2rem;
   }
 
@@ -537,8 +535,10 @@
   .doctor-details-header, .doctor-experience-container, .doctor-address-container, .doctor-education-container, .doctor-feedback-container {
     padding: 15px 0;
   }
-  
-  
+
+  .doctor-experience-description, .comment-content, .day-title-weekday, .doctor-address-content, .doctor-experience-description {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 550px) {

@@ -234,7 +234,6 @@
     
     /* BODY */
     body {
-        --fs-14: 1.5rem;
         --fs-16: 1.6rem;
         --fs-26: 2.5rem;
         --fs-35: 2.8rem;
@@ -276,8 +275,15 @@
       }
 
       .ask-info-title{
-        font-size: 25px;
-        text-align: center;
+        font-size: 24px;
+      }
+
+      .main-info-image {
+          justify-content: flex-start;
+      }
+
+      .info-text-container {
+          margin-left: 0;
       }
 
       .info-text-subtitle{
@@ -285,7 +291,7 @@
       }
       body{
         --fs-14: 1.3rem;
-        --fs-16: 1.5rem;
+        --fs-16: 1.4rem;
       }
       .ask-form-btn{
           margin: auto;
@@ -406,10 +412,13 @@
         --fs-12: 1.2rem;
     }
     .ask-info-title{
-        font-size: 25px;
+        font-size: 24px;
+    }
+    .main-info-image {
+        justify-content: center;
     }
     .info-text-subtitle {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 

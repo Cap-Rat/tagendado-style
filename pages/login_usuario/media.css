@@ -320,12 +320,17 @@
     .form-sub-text{
       text-align: center;
     }
+
+    .page-identifier {
+      font-size: 1.3rem;
+    }
     body{
       --fs-14: 1.3rem;
-      --fs-16: 1.5rem;
-      --fs-23: 2.2rem;
-      --fs-35: 2.5rem;
-      --fs-39: 2.5rem;
+      --fs-16: 1.4rem;
+      --fs-20: 1.5rem;
+      --fs-23: 2rem;
+      --fs-35: 2.4rem;
+      --fs-39: 2.4rem;
     }
     .info-main-text {
       line-height: 32px;
@@ -411,7 +416,7 @@
   }
 
   body {
-    --fs-39: 2.5rem;
+    --fs-39: 2.4rem;
     --fs-35: 2.4rem;
     --fs-23: 2rem;
     --fs-20: 1.4rem;

@@ -386,6 +386,10 @@
     padding: 0 7%
   }
 
+  .costumer-service-input {
+    margin-bottom: 10px;
+  }
+
   .costumer-service-btn {
     padding: 0.8em 1em;
   }
@@ -425,12 +429,12 @@
     font-size: 18px;
   }
   ul#WinWinSituationList{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
   }
   body{
     --fs-14: 1.3rem;
-    --fs-16: 1.5rem;
+    --fs-16: 1.4rem;
     --fs-18: 1.5rem;
     --fs-20: 1.5rem;
     --fs-22: 1.8rem;

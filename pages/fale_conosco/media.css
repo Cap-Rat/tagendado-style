@@ -300,18 +300,34 @@
     flex-direction: column;
     margin-top: 5%;
   }
+   
+  .left-container {
+    padding-left: 6%;
+    max-width: 420px;
+  }
+  .right-container {
+    padding-right: 6%;
+  }
+
+  .checkbox-container {
+    justify-content: flex-start;
+  }
 
   img.img-attendant{
     width: 280px;
     height: 280px;
   }
 
+  .text-content {
+    margin-bottom: 15px;
+  }
+
   body{
     --fs-14: 1.3rem;
-    --fs-15: 1.5rem;
-    --fs-16: 1.5rem;
-    --fs-20: 2.2rem;
-    --fs-35: 2.5rem;
+    --fs-15: 1.4rem;
+    --fs-16: 1.4rem;
+    --fs-20: 1.8rem;
+    --fs-35: 2.4rem;
   }
 }
 
@@ -388,6 +404,7 @@
   .left-main-content{
     flex-direction: column;
     margin-top: 2%;
+    text-align: center;
   }
   .left-container{
     max-width: 100%;
@@ -402,10 +419,13 @@
   .right-container {
     padding: 2% 6% 4% 6%;
   }
+  .page-title {
+    text-align: center;
+  }
 
   body {
-    --fs-35: 2.5rem;
-    --fs-20: 2.2rem;
+    --fs-35: 2.4rem;
+    --fs-20: 2rem;
     --fs-16: 1.3rem;
     --fs-14: 1.2rem;
   }
@@ -484,7 +504,6 @@
     body {
       --fs-35: 2.4rem;
       --fs-14: 1.1rem;
-      --fs-20: 2rem;
       --fs-16: 1.2rem;
   }
   .checkbox-container {

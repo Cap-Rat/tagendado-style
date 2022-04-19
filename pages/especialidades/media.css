@@ -334,12 +334,7 @@
     background-color: #1560A0;
   }
   body{
-    --fs-12: 1.4rem;
-    --fs-14: 1.5rem;
-    --fs-15: 1.6rem;
     --fs-16: 1.6rem;
-    --fs-17: 2.5rem;
-    --fs-22: 2.5rem;
   }
 }
 
@@ -380,12 +375,6 @@
 
   .user-container .user-auth-button {
     font-size: 1.1rem;
-  }
-  body {
-    --fs-12: 1.3rem;
-    --fs-14: 1.3rem;
-    --fs-17: 2.5rem;
-    --fs-22: 2.4rem;
   }
 }
 /*------*/
@@ -473,7 +462,6 @@
     --fs-22: 2.2rem;
     --fs-21: 1.3rem;
     --fs-18: 1.4rem;
-    --fs-17: 2.2rem;
     --fs-16: 1.4rem;
     --fs-15: 1.3rem;
     --fs-14: 1.2rem;
@@ -514,7 +502,7 @@
   }
 
   body {
-    --fs-17: 2rem;
+    --fs-17: 1.5rem;
     --fs-15: 1.2rem;
     --fs-12: 1.1rem;
   }

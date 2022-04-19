@@ -219,7 +219,6 @@
   body{
     --fs-14: 1.4rem;
     --fs-16: 1.6rem;
-    --fs-24: 2.6rem;
     --fs-35: 2.8rem;
   }
   .form-group{
@@ -300,9 +299,9 @@
     max-width: 100%;
   }
   body{
-    --fs-16: 1.5rem;
-    --fs-24: 2.4rem;
-    --fs-35: 2.5rem;
+    --fs-14: 1.3rem;
+    --fs-16: 1.4rem;
+    --fs-35: 2.4rem;
   }
   #conselhoAfiliado {
     max-width: 20.5vw;
@@ -405,8 +404,7 @@
   }
 
   body {
-    --fs-35: 2.5rem;
-    --fs-24: 2.2rem;
+    --fs-35: 2.4rem;
     --fs-16: 1.3rem;
     --fs-14: 1.2rem;
   }
