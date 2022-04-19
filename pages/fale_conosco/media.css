@@ -383,7 +383,7 @@
   }
   .left-container{
     max-width: 100%;
-    padding-left: 4%;
+    padding: 2% 6% 0 6%;
   }
   .right-container{
     width: 100%;
@@ -411,6 +411,14 @@
 @media (max-width: 550px) {
   .search-form {
     min-width: 350px;
+  }
+
+  .left-main-content {
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 15px;
   }
 }
 
