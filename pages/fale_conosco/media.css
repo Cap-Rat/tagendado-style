@@ -244,13 +244,24 @@
   
       background-color: #1560A0;
     }
+
     body{
-      --fs-15: 1.6rem;
-      --fs-16: 1.6rem;
-      --fs-20: 1.8rem;
+      --fs-15: 1.3rem;
+      --fs-16: 1.4rem;
+      --fs-20: 1.6rem;
+      --fs-35: 2.6rem;
     }
     .costumer-service-btn {
       margin: auto;
+    }
+
+    .left-container {
+      padding-top: 22px;
+      padding-left: 6%;
+    }
+
+    .right-container {
+      padding-right: 6%;
     }
 }
 

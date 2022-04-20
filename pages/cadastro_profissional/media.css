@@ -218,8 +218,8 @@
 
   body{
     --fs-14: 1.4rem;
-    --fs-16: 1.6rem;
-    --fs-35: 2.8rem;
+    --fs-16: 1.5rem;
+    --fs-35: 2.6rem;
   }
   .form-group{
     gap: 20px;

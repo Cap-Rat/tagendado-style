@@ -333,8 +333,13 @@
 
     background-color: #1560A0;
   }
+
   body{
     --fs-16: 1.6rem;
+  }
+
+  .rating-star, .rating-star-empty {
+    width: 15px;
   }
 }
 

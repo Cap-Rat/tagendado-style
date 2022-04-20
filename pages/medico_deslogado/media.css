@@ -308,13 +308,15 @@
   }
 
   /* BODY */
-  body {
-    --fs-41: 3rem
-  }
 
   img#medicalImg {
     width: 50vw;
     height: 100%;
+  }
+
+  section#benefits {
+    padding: 3% 0 3% 4%;
+    gap: 30px;
   }
 
   section#marketing {
@@ -343,24 +345,24 @@
     padding: 1rem 0.6rem;
   }
 
-  body{
+  .checkbox-text {
+    font-size: 1.3rem;
+  }
+
+  body {
     --fs-14: 1.4rem;
-    --fs-16: 1.6rem;
-    --fs-19: 1.8rem;
-    --fs-26: 2.5rem;
-    --fs-30: 2.8rem;
-    --fs-40: 2.8rem;
-    --fs-41: 2.8rem;
+    --fs-16: 1.5rem;
+    --fs-19: 1.7rem;
+    --fs-20: 1.8rem;
+    --fs-26: 2.2rem;
+    --fs-30: 2.4rem;
+    --fs-35: 2.6rem;
+    --fs-40: 2.6rem;
+    --fs-41: 2.7rem;
   }
 }
 
 @media (max-width: 900px){
-
-  section#benefits {
-    padding: 3% 0 3% 4%;
-    gap: 30px;
-  }
-
   #benefitsTitle {
     width: 70%;
   }

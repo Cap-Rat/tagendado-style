@@ -261,12 +261,31 @@
     }
     body{
       --fs-14: 1.4rem;
-      --fs-16: 1.6rem;
-      --fs-20: 1.6rem;
-      --fs-39: 2.8rem;
+      --fs-16: 1.4rem;
+      --fs-20: 1.5rem;
+      --fs-35: 2.6rem;
+      --fs-39: 2.6rem;
     }
+
     .info-main-text{
+      margin-top: 20px;
       line-height: 35px;
+    }
+
+    .form-main-text {
+      margin-top: 10px;
+    }
+
+    .login-form {
+      margin-top: 35px;
+    }
+
+    .checkbox-text {
+      text-align: left;
+    }
+
+    .info-stamps-container {
+      margin-top: 20%;
     }
   }
   
