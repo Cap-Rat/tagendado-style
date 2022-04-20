@@ -103,7 +103,7 @@
 
 @media (max-width: 1360px) {
     body {
-      --fs-16: 1.2rem;
+      --fs-16: 1.5rem;
     }
 
     .checkbox-text{
@@ -133,6 +133,10 @@
   
     .btn-search {
       padding: 1em 1.5em;
+    }
+
+    .form-main-text {
+      margin-top: 20px;
     }
   }
   /* user-options passa a ser dropdown escondido no icone de usuario */

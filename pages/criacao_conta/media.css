@@ -93,6 +93,10 @@
         --fs-14: 1.3rem;
     }
 
+    .page-identifier {
+      font-size: 1.4rem;
+    }
+
     .form-input {
         padding: 10px 7px;
         margin-top: 5px;

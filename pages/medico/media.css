@@ -186,6 +186,10 @@
     .btn-search {
       padding: 1em 1.5em;
     }
+
+    small.page-identifier {
+      font-size: 1.4rem;
+    }
 }
 
 /* user-options passa a ser dropdown escondido no icone de usuario */
@@ -355,10 +359,6 @@
     --fs-14: 1.2rem;
     --fs-15: 1.4rem;
     --fs-28: 2.5rem;
-  }
-
-  .page-identifier {
-    font-size: 1.4rem;
   }
 
   .doctor-experience-description, .comment-content, .doctor-address-content, .doctor-experience-description {

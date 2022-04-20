@@ -99,6 +99,10 @@
   .btn-search {
     padding: 1em 1.5em;
   }
+
+  .doctor-image {
+    width: 130px;
+  }
 }
 /*----*/
 
@@ -106,10 +110,6 @@
   body {
     --fs-22: 2.1rem;
     --fs-16: 1.5rem;
-  }
-
-  .doctor-image {
-    width: 130px;
   }
 
   /* ============= DOCTOR CARD ADDRESS ============= */

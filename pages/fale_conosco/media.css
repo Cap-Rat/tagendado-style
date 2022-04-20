@@ -110,6 +110,18 @@
     .btn-search {
       padding: 1em 1.5em;
     }
+
+    body {
+      --fs-16: 1.5rem;
+    }
+
+    .left-container {
+      padding-left: 6%;
+    }
+
+    .right-container {
+      padding-right: 6%;
+    }
   }
 /*-----*/
 /*HEADER*/
